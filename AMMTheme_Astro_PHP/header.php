@@ -10,7 +10,12 @@
     <title><?php wp_title('|', true, 'right'); ?></title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_astro/Footer.DBtUDt3V.css">
     <style>
-        .slide-item[data-astro-cid-txmsbymr].active .slide-text[data-astro-cid-txmsbymr]{opacity:1!important;transform:translateY(0)!important}@keyframes kenBurnsOut{0%{transform:scale(1.1)}to{transform:scale(1)}}.slide-item[data-astro-cid-txmsbymr].active .zoom-bg[data-astro-cid-txmsbymr]{animation:kenBurnsOut 8s ease-out forwards;will-change:transform}.active-service[data-astro-cid-g5jplrhu]{box-shadow:0 10px 30px #06b6d41a}.clients-simple-marquee[data-astro-cid-cktvhckl]{animation:marquee 40s linear infinite}@keyframes marquee{0%{transform:translate(0)}to{transform:translate(-50%)}}
+        .slide-item.active .slide-text{opacity:1!important;transform:translateY(0)!important}
+        @keyframes kenBurnsOut{0%{transform:scale(1.1)}to{transform:scale(1)}}
+        .slide-item.active .zoom-bg{animation:kenBurnsOut 8s ease-out forwards;will-change:transform}
+        .active-service{box-shadow:0 10px 30px #06b6d41a}
+        .clients-simple-marquee{animation:marquee 40s linear infinite}
+        @keyframes marquee{0%{transform:translate(0)}to{transform:translate(-50%)}}
     </style>
     <?php wp_head(); ?>
 </head>
