@@ -559,7 +559,7 @@
                   <span>Control total de comprobantes masivos</span>
                 </li>
               </ul>
-              <a href="/productos/dbcheck" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <a href="<?php echo home_url('/productos/dbcheck'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
@@ -602,7 +602,7 @@
                   <span>Seguridad de nivel bancario</span>
                 </li>
               </ul>
-              <a href="/productos/digidoc" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <a href="<?php echo home_url('/productos/digidoc'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
@@ -645,7 +645,7 @@
                   <span>Reportes financieros en tiempo real</span>
                 </li>
               </ul>
-              <a href="/productos/transvalnet" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <a href="<?php echo home_url('/productos/transvalnet'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
@@ -688,7 +688,7 @@
                   <span>Dashboard de estatus logístico</span>
                 </li>
               </ul>
-              <a href="/productos/transvalarribos" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <a href="<?php echo home_url('/productos/transvalarribos'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
@@ -731,7 +731,7 @@
                   <span>Reportes financieros y auditoría</span>
                 </li>
               </ul>
-              <a href="/productos/toka" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <a href="<?php echo home_url('/productos/plataforma-toka'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
