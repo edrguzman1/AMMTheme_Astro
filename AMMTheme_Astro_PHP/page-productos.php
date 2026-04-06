@@ -40,7 +40,7 @@ get_header();
                     <div class="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-hide pr-16 w-full" id="brand-filters" data-astro-cid-d326op7z>
                         <button class="filter-pill active px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="*" data-astro-cid-d326op7z> Todas las Marcas </button>
                         <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Alaris" data-astro-cid-d326op7z> Alaris </button>
-                        <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Digital Check" data-astro-cid-d326op7z> Digital Check </button>
+                        <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Digital-Check" data-astro-cid-d326op7z> Digital Check </button>
                         <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Vertiv" data-astro-cid-d326op7z> Vertiv </button>
                     </div>
                 </div>
@@ -96,7 +96,7 @@ get_header();
                                 $clases = $prod->getAttribute('class');
                                 
                                 $marca = 'General';
-                                if (strpos($clases, 'DigitalCheck') !== false) $marca = 'Digital Check';
+                                if (strpos($clases, 'DigitalCheck') !== false) $marca = 'Digital-Check';
                                 if (strpos($clases, 'Kodak') !== false) $marca = 'Alaris';
                                 if (strpos($clases, 'Vertiv') !== false) $marca = 'Vertiv';
 
@@ -239,6 +239,30 @@ document.addEventListener("DOMContentLoaded", () => {
             filterProducts();
         });
     }
+
+    const handleUrlHash = () => {
+        const hash = window.location.hash.substring(1);
+        if (hash) {
+            // Decodificamos y normalizamos el hash (quitamos espacios or %20)
+            const decodedHash = decodeURIComponent(hash).replace(/\s+/g, '-');
+            
+            // Buscamos el botón que coincida con el data-brand
+            const targetPill = Array.from(brandPills).find(p => 
+                p.getAttribute('data-brand').toLowerCase() === decodedHash.toLowerCase()
+            );
+
+            if (targetPill) {
+                // Simulamos el clic para activar el filtro de Astro/Tailwind
+                targetPill.click();
+                // Scroll suave hacia los productos
+                document.getElementById('product-grid')?.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    };
+
+    // Ejecutamos con un pequeño delay para asegurar la carga completa
+    setTimeout(handleUrlHash, 300);
+
 });
 </script>
 
