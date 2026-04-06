@@ -370,7 +370,7 @@
                     </div> 
                 </div> 
                 <div class="mt-12 text-center animate-on-scroll"> 
-                    <a href="/productos" class="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-slate-900 text-white font-black uppercase tracking-widest hover:bg-sky-600 transition-all shadow-xl shadow-slate-950/20 hover:shadow-sky-500/40 text-sm group"> Ver todos los productos <svg class="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path> </svg> </a> 
+                    <a href="<?php echo home_url('/productos/'); ?>" class="inline-flex items-center justify-center px-10 py-5 rounded-2xl bg-slate-900 text-white font-black uppercase tracking-widest hover:bg-sky-600 transition-all shadow-xl shadow-slate-950/20 hover:shadow-sky-500/40 text-sm group"> Ver todos los productos <svg class="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 8l4 4m0 0l-4 4m4-4H3"></path> </svg> </a> 
                 </div> 
             </div> 
         </section> 

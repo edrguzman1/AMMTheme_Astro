@@ -8,7 +8,6 @@
     <meta name="generator" content="Astro v6.0.8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <title><?php wp_title('|', true, 'right'); ?></title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/_astro/Footer.DBtUDt3V.css">
     <style>
         .slide-item.active .slide-text{opacity:1!important;transform:translateY(0)!important}
         @keyframes kenBurnsOut{0%{transform:scale(1.1)}to{transform:scale(1)}}
