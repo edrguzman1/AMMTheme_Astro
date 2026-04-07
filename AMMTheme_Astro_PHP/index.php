@@ -1259,10 +1259,10 @@
           </div>
           <div class="bg-white border border-slate-100 shadow-2xl p-8 md:p-12 rounded-3xl relative overflow-hidden animate-on-scroll delay-200">
             <div class="absolute top-0 right-0 w-64 h-64 bg-cyan-400/5 rounded-full blur-[80px] pointer-events-none"></div>
-            <form id="contact-form" class="space-y-6 relative z-10" novalidate>
+            <form id="contact-form" class="space-y-6 relative z-10" method="POST" novalidate>
               <div>
-                <label for="nombre_completo" class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-['Outfit']">Nombre Completo</label>
-                <input type="text" id="nombre_completo" name="nombre_completo" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-500 transition-all font-medium font-['Inter']" placeholder="Ej. Carlos Pérez" required>
+                <label for="nombre" class="block text-xs font-bold text-slate-500 uppercase tracking-widest mb-2 font-['Outfit']">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" class="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 text-slate-900 placeholder-slate-400 focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-500 transition-all font-medium font-['Inter']" placeholder="Ej. Carlos Pérez" required>
               </div>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
