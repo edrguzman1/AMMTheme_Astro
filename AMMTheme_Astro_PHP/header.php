@@ -15,6 +15,16 @@
         .active-service{box-shadow:0 10px 30px #06b6d41a}
         .clients-simple-marquee{animation:marquee 40s linear infinite}
         @keyframes marquee{0%{transform:translate(0)}to{transform:translate(-50%)}}
+
+        /* FIX GENERAL: Ajuste for el Admin Bar de WordPress */
+        body.admin-bar #main-navbar {
+            top: 32px;
+        }
+        @media screen and (max-width: 782px) {
+            body.admin-bar #main-navbar {
+                top: 46px;
+            }
+        }
     </style>
     <?php wp_head(); ?>
 </head>
@@ -45,7 +55,7 @@
                     <a href="<?php echo home_url('/#productos'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="#productos"> <span class="relative z-10 uppercase tracking-wider">Productos</span> <span class="nav-underline"></span> </a>
                     <a href="<?php echo home_url('/#soluciones'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="#soluciones"> <span class="relative z-10 uppercase tracking-wider">Soluciones</span> <span class="nav-underline"></span> </a>
                     <a href="<?php echo home_url('/#servicios'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="#servicios"> <span class="relative z-10 uppercase tracking-wider">Consultoría</span> <span class="nav-underline"></span> </a>
-                    <a href="<?php echo home_url('/noticias'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="noticias"> <span class="relative z-10 uppercase tracking-wider">Noticias</span> <span class="nav-underline"></span> </a>
+                    <a href="<?php echo home_url('/#noticias'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="#noticias"> <span class="relative z-10 uppercase tracking-wider">Noticias</span> <span class="nav-underline"></span> </a>
                     <a href="<?php echo home_url('/#contacto'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="#contacto"> <span class="relative z-10 uppercase tracking-wider">Contacto</span> <span class="nav-underline"></span> </a>
                 </nav>
                 <div class="hidden lg:flex items-center justify-end animate-on-scroll delay-300">
@@ -60,14 +70,14 @@
                 </button>
             </div>
         </div>
-        <div id="mobile-menu" class="lg:hidden fixed inset-x-0 top-[72px] bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-2xl transition-all duration-300 ease-in-out opacity-0 translate-y-[-10px] pointer-events-none z-40 overflow-hidden">
+        <div id="mobile-menu" class="lg:hidden fixed inset-x-0 top-[80px] bg-white/95 backdrop-blur-xl border-b border-slate-200 shadow-2xl transition-all duration-300 ease-in-out opacity-0 translate-y-[-10px] pointer-events-none z-40 overflow-hidden">
             <div class="px-6 py-8 flex flex-col space-y-6">
-                <a href="<?php echo home_url('/#nosotros'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group"> Nosotros <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
-                <a href="<?php echo home_url('/#productos'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group"> Productos <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
-                <a href="<?php echo home_url('/#soluciones'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group"> Soluciones <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
-                <a href="<?php echo home_url('/#servicios'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group"> Consultoría <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
-                <a href="<?php echo home_url('/noticias'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group"> Noticias <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
-                <a href="<?php echo home_url('/#contacto'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group"> Contacto <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
+                <a href="<?php echo home_url('/#nosotros'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group" data-href="#nosotros"> Nosotros <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
+                <a href="<?php echo home_url('/#productos'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group" data-href="#productos"> Productos <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
+                <a href="<?php echo home_url('/#soluciones'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group" data-href="#soluciones"> Soluciones <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
+                <a href="<?php echo home_url('/#servicios'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group" data-href="#servicios"> Consultoría <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
+                <a href="<?php echo home_url('/#noticias'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group" data-href="#noticias"> Noticias <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
+                <a href="<?php echo home_url('/#contacto'); ?>" class="mobile-link text-slate-700 font-bold uppercase tracking-widest text-sm hover:text-sky-600 transition-colors flex items-center justify-between group" data-href="#contacto"> Contacto <svg class="w-4 h-4 text-slate-300 group-hover:text-sky-500 transform group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"></path> </svg> </a>
                 <div class="pt-6 border-t border-slate-100">
                     <a href="https://ammstore.com.mx" target="_blank" class="flex items-center justify-center w-full py-4 bg-sky-500 text-white font-black rounded-xl uppercase tracking-widest text-[11px] shadow-lg shadow-sky-500/20 active:scale-95 transition-all"> Tienda en Línea </a>
                 </div>
@@ -81,9 +91,9 @@
             c?.addEventListener("click",()=>{l=!l,l?(a?.classList.remove("opacity-0","translate-y-[-10px]","pointer-events-none"),document.body.style.overflow="hidden",e&&e.length===3&&(e[0].style.transform="translateY(8px) rotate(45deg)",e[1].style.opacity="0",e[2].style.transform="translateY(-8px) rotate(-45deg)")):(a?.classList.add("opacity-0","translate-y-[-10px]","pointer-events-none"),document.body.style.overflow="",e&&e.length===3&&(e[0].style.transform="none",e[1].style.opacity="1",e[2].style.transform="none"))});
             a?.querySelectorAll("a").forEach(i=>{i.addEventListener("click",()=>{l=!1,a?.classList.add("opacity-0","translate-y-[-10px]","pointer-events-none"),document.body.style.overflow="",e&&e.length===3&&(e[0].style.transform="none",e[1].style.opacity="1",e[2].style.transform="none")})});
             
-            // Corregimos la detección de la home path for subcarpetas como /amm/
             const homePath = "<?php echo parse_url(home_url('/'), PHP_URL_PATH); ?>";
-            const b = window.location.pathname === homePath || window.location.pathname === homePath + "index.php";
+            const currentPath = window.location.pathname.replace(/\/$/, "");
+            const b = currentPath === homePath.replace(/\/$/, "") || currentPath === homePath.replace(/\/$/, "") + "/index.php";
             
             if(b){
                 const i=document.querySelectorAll(".nav-link"),d=Array.from(i).map(s=>{const n=s.getAttribute("data-href"); if(!n)return null; const o=n.split("#")[1]; return o?document.getElementById(o):null}),m={root:null,threshold:.1,rootMargin:"-20% 0px -40% 0px"},y=new IntersectionObserver(s=>{s.forEach(n=>{const o=n.target.getAttribute("id");if(!o)return;document.querySelectorAll(".nav-link, .mobile-link").forEach(t=>{t.getAttribute("data-href")?.includes(`#${o}`)&&(n.isIntersecting?(t.classList.add("text-sky-600","active"),t.classList.contains("mobile-link")&&t.classList.add("border-l-4","border-sky-500","pl-4","bg-sky-50/50")):(t.classList.remove("text-sky-600","active"),t.classList.contains("mobile-link")&&t.classList.remove("border-l-4","border-sky-500","pl-4","bg-sky-50/50")))})})},m);d.forEach(s=>{s&&y.observe(s)})
@@ -91,4 +101,4 @@
         </script>
     </header>
 
-    <main id="top" class="relative pt-20">
+    <main id="top" class="relative">
