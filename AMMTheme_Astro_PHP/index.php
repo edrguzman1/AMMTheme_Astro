@@ -562,8 +562,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="
-																																												<?php echo get_template_directory_uri(); ?>/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -605,8 +604,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="
-																																													<?php echo get_template_directory_uri(); ?>/images/Products/Software/DD.png" alt="DigiDoc" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/DD.png" alt="DigiDoc" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -648,8 +646,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="
-																																														<?php echo get_template_directory_uri(); ?>/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -691,8 +688,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="
-																																															<?php echo get_template_directory_uri(); ?>/images/Products/Software/TVA.png" alt="TransvalArribos" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/TVA.png" alt="TransvalArribos" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -734,8 +730,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="
-																																																<?php echo get_template_directory_uri(); ?>/images/Products/Software/Toka.png" alt="Toka" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/Toka.png" alt="Toka" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -747,10 +742,12 @@
         const panels = document.querySelectorAll(".software-panel");
         const activeClasses = ["bg-cyan-500", "text-white", "shadow-lg", "shadow-cyan-500/20"];
         const inactiveClasses = ["text-white/60"];
+        
         tabs.forEach(tab => {
           tab.addEventListener("click", () => {
             const index = tab.getAttribute("data-index");
             const currentInner = tab.querySelector(".pill-inner");
+            
             tabs.forEach(t => {
               const inner = t.querySelector(".pill-inner");
               if (inner) {
@@ -758,10 +755,12 @@
                 inner.classList.add(...inactiveClasses);
               }
             });
+            
             if (currentInner) {
               currentInner.classList.remove(...inactiveClasses);
               currentInner.classList.add(...activeClasses);
             }
+            
             panels.forEach((panel, pIndex) => {
               if (pIndex.toString() === index) {
                 panel.classList.remove("opacity-0", "translate-x-4", "pointer-events-none");
@@ -771,6 +770,22 @@
                 panel.classList.add("opacity-0", "translate-x-4", "pointer-events-none");
               }
             });
+
+            // NUEVO UPDATE: Desplazamiento matemático horizontal seguro
+            const scrollContainer = tab.closest('.overflow-x-auto');
+            if (scrollContainer) {
+                const containerRect = scrollContainer.getBoundingClientRect();
+                const tabRect = tab.getBoundingClientRect();
+                
+                // Calculamos el centro exacto only in el eje X
+                const scrollTarget = scrollContainer.scrollLeft + (tabRect.left - containerRect.left) - (containerRect.width / 2) + (tabRect.width / 2);
+                
+                scrollContainer.scrollTo({
+                    left: scrollTarget,
+                    behavior: 'smooth'
+                });
+            }
+            
           });
         });
       }
