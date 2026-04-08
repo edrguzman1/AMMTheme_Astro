@@ -801,55 +801,66 @@
           </h2>
           <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic opacity-80" data-astro-cid-g5jplrhu> Diseñamos arquitecturas digitales robustas y seguras que transforman procesos complejos en operaciones eficientes. </p>
         </div>
-        <div class="flex flex-col lg:flex-row gap-6 lg:gap-0 items-stretch min-h-[600px]" data-astro-cid-g5jplrhu>
-          <div class="w-full lg:w-[350px] flex-shrink-0 relative z-20" data-astro-cid-g5jplrhu>
-            <div class="flex flex-col gap-2 p-3 bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-[2rem] lg:rounded-[2.5rem] lg:rounded-r-none h-full overflow-hidden" id="service-nav" data-astro-cid-g5jplrhu>
-              <div class="px-6 py-4 mb-2 lg:mb-4 border-b border-slate-100/30" data-astro-cid-g5jplrhu>
+        <div class="flex flex-row items-stretch min-h-[600px] w-full" data-astro-cid-g5jplrhu>
+          
+          <div class="w-[96px] sm:w-[112px] lg:w-[350px] flex-shrink-0 relative z-20" data-astro-cid-g5jplrhu>
+            <div class="flex flex-col gap-2 p-3 bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-l-[2rem] lg:rounded-l-[2.5rem] rounded-r-none h-full overflow-hidden" id="service-nav" data-astro-cid-g5jplrhu>
+              
+              <div class="hidden lg:block px-6 py-4 mb-2 lg:mb-4 border-b border-slate-100/30" data-astro-cid-g5jplrhu>
                 <span class="text-[10px] font-black text-cyan-600 uppercase tracking-[0.3em]" data-astro-cid-g5jplrhu>Nuestras Áreas</span>
               </div>
-              <div class="flex flex-col space-y-2 overflow-y-auto max-h-[300px] lg:max-h-none scrollbar-hide py-2" data-astro-cid-g5jplrhu>
+              
+              <div class="flex flex-col space-y-2 overflow-y-auto max-h-[450px] lg:max-h-none scrollbar-hide py-2" data-astro-cid-g5jplrhu>
+                
                 <button data-target="dotnet" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border active-service bg-white shadow-md border-cyan-500/10" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-cyan-500 text-white shadow-lg shadow-cyan-500/30" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-cyan-500 text-white shadow-lg shadow-cyan-500/30" data-astro-cid-g5jplrhu>
                     <i class="fa-brands fa-windows"></i>
                   </div>
-                  <span class="text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-900" data-astro-cid-g5jplrhu> Microsoft .NET y C# </span>
+                  <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-900" data-astro-cid-g5jplrhu> Microsoft .NET y C# </span>
                 </button>
+                
                 <button data-target="webapi" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
                     <i class="fa-solid fa-server"></i>
                   </div>
-                  <span class="text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Desarrollo Web y APIs </span>
+                  <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Desarrollo Web y APIs </span>
                 </button>
+                
                 <button data-target="database" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
                     <i class="fa-solid fa-database"></i>
                   </div>
-                  <span class="text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Bases de Datos SQL Server </span>
+                  <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Bases de Datos SQL Server </span>
                 </button>
+                
                 <button data-target="hardware" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
                     <i class="fa-solid fa-microchip"></i>
                   </div>
-                  <span class="text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Integración de Hardware </span>
+                  <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Integración de Hardware </span>
                 </button>
+                
                 <button data-target="legacy" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
                     <i class="fa-solid fa-sync-alt"></i>
                   </div>
-                  <span class="text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Modernización de Sistemas </span>
+                  <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Modernización de Sistemas </span>
                 </button>
+                
                 <button data-target="java" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-slate-100 text-slate-400 group-hover:text-cyan-600 group-hover:bg-cyan-50" data-astro-cid-g5jplrhu>
                     <i class="fa-brands fa-java"></i>
                   </div>
-                  <span class="text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Desarrollo en Java </span>
+                  <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-500 group-hover:text-slate-700" data-astro-cid-g5jplrhu> Desarrollo en Java </span>
                 </button>
               </div>
             </div>
           </div>
-          <div class="flex-1 relative w-full lg:-ml-1" data-astro-cid-g5jplrhu>
-            <div class="bg-white/[0.03] backdrop-blur-lg border border-white/10 rounded-[2rem] lg:rounded-[2.5rem] lg:rounded-l-none h-full p-6 sm:p-8 lg:p-16 shadow-2xl overflow-hidden min-h-[750px] sm:min-h-[600px]" data-astro-cid-g5jplrhu>
+          
+          <div class="flex-1 min-w-0 relative w-full -ml-2 lg:-ml-1" data-astro-cid-g5jplrhu>
+            <div class="bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-r-[2rem] lg:rounded-r-[2.5rem] rounded-l-none h-full p-5 sm:p-8 lg:p-16 overflow-hidden min-h-[750px] sm:min-h-[600px]" data-astro-cid-g5jplrhu>
               <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-100/20 rounded-full blur-[100px] pointer-events-none" data-astro-cid-g5jplrhu></div>
+              
               <div id="content-dotnet" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-100 translate-x-0" data-astro-cid-g5jplrhu>
                 <div class="flex items-center gap-6 mb-10" data-astro-cid-g5jplrhu>
                   <div class="w-20 h-20 bg-cyan-50 border border-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-4xl shadow-lg shadow-cyan-100/50" data-astro-cid-g5jplrhu>
@@ -893,6 +904,7 @@
                   </a>
                 </div>
               </div>
+              
               <div id="content-webapi" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-0 translate-x-10 pointer-events-none" data-astro-cid-g5jplrhu>
                 <div class="flex items-center gap-6 mb-10" data-astro-cid-g5jplrhu>
                   <div class="w-20 h-20 bg-cyan-50 border border-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-4xl shadow-lg shadow-cyan-100/50" data-astro-cid-g5jplrhu>
@@ -936,6 +948,7 @@
                   </a>
                 </div>
               </div>
+              
               <div id="content-database" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-0 translate-x-10 pointer-events-none" data-astro-cid-g5jplrhu>
                 <div class="flex items-center gap-6 mb-10" data-astro-cid-g5jplrhu>
                   <div class="w-20 h-20 bg-cyan-50 border border-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-4xl shadow-lg shadow-cyan-100/50" data-astro-cid-g5jplrhu>
@@ -979,6 +992,7 @@
                   </a>
                 </div>
               </div>
+              
               <div id="content-hardware" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-0 translate-x-10 pointer-events-none" data-astro-cid-g5jplrhu>
                 <div class="flex items-center gap-6 mb-10" data-astro-cid-g5jplrhu>
                   <div class="w-20 h-20 bg-cyan-50 border border-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-4xl shadow-lg shadow-cyan-100/50" data-astro-cid-g5jplrhu>
@@ -1022,6 +1036,7 @@
                   </a>
                 </div>
               </div>
+              
               <div id="content-legacy" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-0 translate-x-10 pointer-events-none" data-astro-cid-g5jplrhu>
                 <div class="flex items-center gap-6 mb-10" data-astro-cid-g5jplrhu>
                   <div class="w-20 h-20 bg-cyan-50 border border-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-4xl shadow-lg shadow-cyan-100/50" data-astro-cid-g5jplrhu>
@@ -1065,6 +1080,7 @@
                   </a>
                 </div>
               </div>
+              
               <div id="content-java" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-0 translate-x-10 pointer-events-none" data-astro-cid-g5jplrhu>
                 <div class="flex items-center gap-6 mb-10" data-astro-cid-g5jplrhu>
                   <div class="w-20 h-20 bg-cyan-50 border border-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-4xl shadow-lg shadow-cyan-100/50" data-astro-cid-g5jplrhu>
