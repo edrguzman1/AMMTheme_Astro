@@ -48,7 +48,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="<?php echo home_url('/'); ?>" class="flex items-center group relative z-10 h-full">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="AM&M Logo" class="h-16 md:h-20 w-auto object-contain group-hover:opacity-80 transition-opacity">
+                    <img src="<?php echo get_template_directory_uri(); ?>/template/images/logo.png" alt="AM&M Logo" class="h-16 md:h-20 w-auto object-contain group-hover:opacity-80 transition-opacity">
                 </a>
                 <nav class="hidden lg:flex space-x-6 xl:space-x-8 items-center ml-auto mr-8 xl:mr-12" id="desktop-nav">
                     <a href="<?php echo home_url('/#nosotros'); ?>" class="nav-link text-[12px] xl:text-[13px] font-bold text-slate-600 hover:text-sky-600 transition-colors relative group py-2 flex flex-col items-center" data-href="#nosotros"> <span class="relative z-10 uppercase tracking-wider">Nosotros</span> <span class="nav-underline"></span> </a>

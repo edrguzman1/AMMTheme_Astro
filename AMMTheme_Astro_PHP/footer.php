@@ -7,7 +7,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 gap-x-8 lg:gap-x-12 pb-10 border-b border-slate-900/40">
                 <div class="flex flex-col items-center md:items-start space-y-4 text-center md:text-left">
                     <a href="#top" class="block transition-transform hover:scale-105 duration-500">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-wide-withe.png" alt="AM&M Logo" class="h-10 w-auto object-contain opacity-90">
+                        <img src="<?php echo get_template_directory_uri(); ?>/template/images/logo-wide-withe.png" alt="AM&M Logo" class="h-10 w-auto object-contain opacity-90">
                     </a>
                     <div class="space-y-1">
                         <p class="text-xs font-black text-cyan-500 uppercase tracking-widest mb-1">Ingeniería que Impulsa</p>

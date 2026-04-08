@@ -2,7 +2,7 @@
   <section class="relative w-full h-[75vh] lg:h-[90vh] min-h-[500px] lg:min-h-[600px] bg-slate-900 overflow-hidden" id="hero-slider" data-astro-cid-txmsbymr>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-100 z-10" data-index="0" data-astro-cid-txmsbymr>
       <img src="
-				<?php echo get_template_directory_uri(); ?>/images/slide-tienda.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+				<?php echo get_template_directory_uri(); ?>/template/images/slide-tienda.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -17,7 +17,7 @@
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="1" data-astro-cid-txmsbymr>
       <img src="
-					<?php echo get_template_directory_uri(); ?>/images/slide-documentos.jpg" alt="Documentos con valor." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+					<?php echo get_template_directory_uri(); ?>/template/images/slide-documentos.jpg" alt="Documentos con valor." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -32,7 +32,7 @@
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="2" data-astro-cid-txmsbymr>
       <img src="
-						<?php echo get_template_directory_uri(); ?>/images/slide-consultoria.jpg" alt="Asesoría y Consultoría." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+						<?php echo get_template_directory_uri(); ?>/template/images/slide-consultoria.jpg" alt="Asesoría y Consultoría." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -47,7 +47,7 @@
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="3" data-astro-cid-txmsbymr>
       <img src="
-							<?php echo get_template_directory_uri(); ?>/images/slide-vertiv.jpg" alt="Infraestructura Crítica y Energía." class="absolute inset-0 w-full h-full object-cover zoom-bg object-top" data-astro-cid-txmsbymr>
+							<?php echo get_template_directory_uri(); ?>/template/images/slide-vertiv.jpg" alt="Infraestructura Crítica y Energía." class="absolute inset-0 w-full h-full object-cover zoom-bg object-top" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -62,7 +62,7 @@
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="4" data-astro-cid-txmsbymr>
       <img src="
-								<?php echo get_template_directory_uri(); ?>/images/slide-ddc.jpg" alt="Digitalizadores Digital Check." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+								<?php echo get_template_directory_uri(); ?>/template/images/slide-ddc.jpg" alt="Digitalizadores Digital Check." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -77,7 +77,7 @@
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
       <img src="
-									<?php echo get_template_directory_uri(); ?>/images/slide-alaris.jpg" alt="Escáneres Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+									<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -334,45 +334,45 @@
         <div class="absolute top-0 bottom-0 right-0 w-32 md:w-64 bg-gradient-to-l from-slate-50 via-slate-50/95 to-transparent z-20 pointer-events-none" data-astro-cid-cktvhckl></div>
         <div class="clients-simple-marquee py-6 relative z-10 flex flex-row items-center" data-astro-cid-cktvhckl>
           <img src="
-																<?php echo get_template_directory_uri(); ?>/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
+																<?php echo get_template_directory_uri(); ?>/template/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
           <img src="
-																	<?php echo get_template_directory_uri(); ?>/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
+																	<?php echo get_template_directory_uri(); ?>/template/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
           <img src="
-																		<?php echo get_template_directory_uri(); ?>/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
+																		<?php echo get_template_directory_uri(); ?>/template/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
           <img src="
-																			<?php echo get_template_directory_uri(); ?>/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
+																			<?php echo get_template_directory_uri(); ?>/template/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
           <img src="
-																				<?php echo get_template_directory_uri(); ?>/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
+																				<?php echo get_template_directory_uri(); ?>/template/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
           <img src="
-																					<?php echo get_template_directory_uri(); ?>/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
+																					<?php echo get_template_directory_uri(); ?>/template/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
           <img src="
-																						<?php echo get_template_directory_uri(); ?>/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
+																						<?php echo get_template_directory_uri(); ?>/template/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
           <img src="
-																							<?php echo get_template_directory_uri(); ?>/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
+																							<?php echo get_template_directory_uri(); ?>/template/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
           <img src="
-																								<?php echo get_template_directory_uri(); ?>/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
+																								<?php echo get_template_directory_uri(); ?>/template/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
           <img src="
-																									<?php echo get_template_directory_uri(); ?>/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
+																									<?php echo get_template_directory_uri(); ?>/template/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
           <img src="
-																										<?php echo get_template_directory_uri(); ?>/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
+																										<?php echo get_template_directory_uri(); ?>/template/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
           <img src="
-																											<?php echo get_template_directory_uri(); ?>/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
+																											<?php echo get_template_directory_uri(); ?>/template/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
           <img src="
-																												<?php echo get_template_directory_uri(); ?>/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
+																												<?php echo get_template_directory_uri(); ?>/template/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
           <img src="
-																													<?php echo get_template_directory_uri(); ?>/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
+																													<?php echo get_template_directory_uri(); ?>/template/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
           <img src="
-																														<?php echo get_template_directory_uri(); ?>/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
+																														<?php echo get_template_directory_uri(); ?>/template/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
           <img src="
-																															<?php echo get_template_directory_uri(); ?>/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
+																															<?php echo get_template_directory_uri(); ?>/template/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
           <img src="
-																																<?php echo get_template_directory_uri(); ?>/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
+																																<?php echo get_template_directory_uri(); ?>/template/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
           <img src="
-																																	<?php echo get_template_directory_uri(); ?>/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
+																																	<?php echo get_template_directory_uri(); ?>/template/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
           <img src="
-																																		<?php echo get_template_directory_uri(); ?>/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
+																																		<?php echo get_template_directory_uri(); ?>/template/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
           <img src="
-																																			<?php echo get_template_directory_uri(); ?>/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
+																																			<?php echo get_template_directory_uri(); ?>/template/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
         </div>
       </div>
     </section>
@@ -393,19 +393,19 @@
         <div class="grid grid-cols-1 lg:grid-cols-[4fr_6fr] gap-12 lg:gap-20 relative">
           <div class="hidden lg:block relative h-[350px] w-full max-w-md mx-auto sticky top-40">
             <div id="product-img-0" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-100">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
             <div id="product-img-1" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-0">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
             <div id="product-img-2" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-0">
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
           </div>
           <div class="space-y-16 lg:pb-20">
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="0">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain">
+                <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain">
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Digital Check</h3>
@@ -420,7 +420,7 @@
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="1">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
                 <img src="
-																																											<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain">
+																																											<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain">
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Kodak Alaris</h3>
@@ -435,7 +435,7 @@
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="2">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
                 <img src="
-																																												<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain">
+																																												<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain">
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware / Infra</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Vertiv</h3>
@@ -562,7 +562,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -604,7 +604,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/DD.png" alt="DigiDoc" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/DD.png" alt="DigiDoc" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -646,7 +646,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -688,7 +688,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/TVA.png" alt="TransvalArribos" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVA.png" alt="TransvalArribos" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
@@ -730,7 +730,7 @@
             </div>
             <div class="w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/Software/Toka.png" alt="Toka" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/Toka.png" alt="Toka" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
         </div>
@@ -795,9 +795,103 @@
   <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="servicios" class="py-20 lg:py-32 relative overflow-hidden bg-white font-['Inter']" data-astro-cid-g5jplrhu>
+      
+      <style>
+        /* --- ONDAS --- */
+        .waves-container {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+          opacity: 0.14;
+        }
+        @media screen and (max-width: 1024px) {
+          .waves-container {
+            width: 250%; 
+            top: 60%; 
+          }
+        }
+
+        /* --- MÓVIL (< 500px) --- */
+        @media screen and (max-width: 500px) {
+          .consulting-header-area {
+            margin-bottom: 2rem !important; 
+          }
+          
+          .consulting-wrapper { 
+            flex-direction: column !important; 
+            gap: 0 !important; 
+          }
+          .consulting-sidebar { width: 100% !important; }
+          
+          .consulting-sidebar-inner {
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-top-right-radius: 2rem !important; 
+            padding-bottom: 0 !important; /* FIX: Relleno inferior a 0 for evitar el espacio */
+            border-bottom: none !important;
+            box-shadow: none !important; 
+          }
+          .consulting-nav-container {
+            flex-direction: row !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            scrollbar-width: none !important; 
+            -ms-overflow-style: none !important; 
+            padding-bottom: 0 !important; /* FIX: Relleno inferior a 0 */
+            margin-bottom: 0 !important;
+          }
+          .consulting-nav-container::-webkit-scrollbar {
+            display: none !important; 
+          }
+          .consulting-nav-container > button {
+            width: auto !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important; /* FIX: Margen inferior a 0 */
+            margin-right: 0.75rem !important;
+            padding: 0.75rem !important;
+            flex-shrink: 0 !important;
+          }
+          .consulting-content-wrapper {
+            margin-left: 0 !important;
+            margin-top: -1px !important; /* FIX: Tira de la caja hacia arriba for sellar la unión */
+          }
+          
+          .consulting-content-inner {
+            border-top-left-radius: 0 !important; 
+            border-top-right-radius: 0 !important; 
+            border-bottom-left-radius: 2rem !important; 
+            padding-top: 1.5rem !important; 
+            border-top: none !important;
+            min-height: 700px !important; 
+          }
+          
+          /* --- FIX DE CAJA Y TEXTOS --- */
+          .service-content .mb-10 { margin-bottom: 1.25rem !important; }
+          .service-content .mb-12 { margin-bottom: 1.25rem !important; }
+          .service-content .p-6 { padding: 1.25rem !important; }
+          .service-content p.text-lg { 
+              font-size: 0.95rem !important; 
+              line-height: 1.5 !important; 
+          }
+          .service-content h4 { font-size: 1.75rem !important; }
+          .service-content .gap-y-5 { row-gap: 0.75rem !important; }
+          .service-content.inset-x-6 { inset-inline: 1rem !important; }
+          
+          /* --- FIX: Centrado of botón --- */
+          .service-content .mt-auto { 
+              margin-top: 1.5rem !important; 
+              display: flex !important;
+              justify-content: center !important; 
+              width: 100% !important;
+          }
+        }
+      </style>
+
       <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden select-none" data-astro-cid-g5jplrhu>
-        <div class="opacity-[0.14]" data-astro-cid-g5jplrhu>
-          <svg viewBox="0 0 1440 1200" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full preserve-3d" data-astro-cid-g5jplrhu>
+        <div class="waves-container" data-astro-cid-g5jplrhu>
+          <svg viewBox="0 0 1440 1200" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;" class="preserve-3d" data-astro-cid-g5jplrhu>
             <path d="M-100 550C200 400 400 700 720 550C1040 400 1200 700 1540 550" stroke="#06b6d4" stroke-width="22" stroke-linecap="round" data-astro-cid-g5jplrhu></path>
             <path d="M-100 750C300 950 600 550 900 850C1200 1150 1500 650 1600 750" stroke="#0891b2" stroke-width="15" stroke-linecap="round" data-astro-cid-g5jplrhu></path>
             <path d="M-100 1000C400 850 800 1150 1100 1000C1400 850 1500 1050 1600 950" stroke="#22d3ee" stroke-width="25" stroke-linecap="round" data-astro-cid-g5jplrhu></path>
@@ -807,7 +901,8 @@
       </div>
       <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-cyan-100/30 rounded-full blur-[120px] pointer-events-none" data-astro-cid-g5jplrhu></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10" data-astro-cid-g5jplrhu>
-        <div class="text-center max-w-4xl mx-auto mb-16 lg:mb-20 px-4 sm:px-0 animate-on-scroll" data-astro-cid-g5jplrhu>
+        
+        <div class="text-center max-w-4xl mx-auto mb-16 lg:mb-20 px-4 sm:px-0 animate-on-scroll consulting-header-area" data-astro-cid-g5jplrhu>
           <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-200 bg-cyan-50 mb-6 group backdrop-blur-md" data-astro-cid-g5jplrhu>
             <span class="w-2 h-2 rounded-full bg-cyan-500 mr-2.5 animate-pulse" data-astro-cid-g5jplrhu></span>
             <span class="text-[11px] font-black font-['Outfit'] text-cyan-900 tracking-widest uppercase" data-astro-cid-g5jplrhu>Consultoría Estratégica</span>
@@ -816,16 +911,17 @@
           </h2>
           <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic opacity-80" data-astro-cid-g5jplrhu> Diseñamos arquitecturas digitales robustas y seguras que transforman procesos complejos en operaciones eficientes. </p>
         </div>
-        <div class="flex flex-row items-stretch min-h-[600px] w-full" data-astro-cid-g5jplrhu>
+        
+        <div class="flex flex-row items-stretch min-h-[600px] w-full consulting-wrapper" data-astro-cid-g5jplrhu>
           
-          <div class="w-[96px] sm:w-[112px] lg:w-[350px] flex-shrink-0 relative z-20" data-astro-cid-g5jplrhu>
-            <div class="flex flex-col gap-2 p-3 bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-l-[2rem] lg:rounded-l-[2.5rem] rounded-r-none h-full overflow-hidden" id="service-nav" data-astro-cid-g5jplrhu>
+          <div class="w-[96px] sm:w-[112px] lg:w-[350px] flex-shrink-0 relative z-20 consulting-sidebar" data-astro-cid-g5jplrhu>
+            <div class="flex flex-col gap-2 p-3 bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-l-[2rem] lg:rounded-l-[2.5rem] rounded-r-none h-full overflow-hidden consulting-sidebar-inner" id="service-nav" data-astro-cid-g5jplrhu>
               
               <div class="hidden lg:block px-6 py-4 mb-2 lg:mb-4 border-b border-slate-100/30" data-astro-cid-g5jplrhu>
                 <span class="text-[10px] font-black text-cyan-600 uppercase tracking-[0.3em]" data-astro-cid-g5jplrhu>Nuestras Áreas</span>
               </div>
               
-              <div class="flex flex-col space-y-2 overflow-y-auto max-h-[450px] lg:max-h-none scrollbar-hide py-2" data-astro-cid-g5jplrhu>
+              <div class="flex flex-col space-y-2 overflow-y-auto max-h-[450px] lg:max-h-none scrollbar-hide py-2 consulting-nav-container" data-astro-cid-g5jplrhu>
                 
                 <button data-target="dotnet" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border active-service bg-white shadow-md border-cyan-500/10" data-astro-cid-g5jplrhu>
                   <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-cyan-500 text-white shadow-lg shadow-cyan-500/30" data-astro-cid-g5jplrhu>
@@ -872,8 +968,8 @@
             </div>
           </div>
           
-          <div class="flex-1 min-w-0 relative w-full -ml-2 lg:-ml-1" data-astro-cid-g5jplrhu>
-            <div class="bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-r-[2rem] lg:rounded-r-[2.5rem] rounded-l-none h-full p-5 sm:p-8 lg:p-16 overflow-hidden min-h-[750px] sm:min-h-[600px]" data-astro-cid-g5jplrhu>
+          <div class="flex-1 min-w-0 relative w-full lg:-ml-1 consulting-content-wrapper" data-astro-cid-g5jplrhu>
+            <div class="bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-r-[2rem] lg:rounded-r-[2.5rem] rounded-l-none h-full p-5 sm:p-8 lg:p-16 overflow-hidden min-h-[750px] sm:min-h-[600px] consulting-content-inner" data-astro-cid-g5jplrhu>
               <div class="absolute -top-24 -right-24 w-96 h-96 bg-cyan-100/20 rounded-full blur-[100px] pointer-events-none" data-astro-cid-g5jplrhu></div>
               
               <div id="content-dotnet" class="service-content transition-all duration-700 absolute top-6 sm:top-12 bottom-6 sm:bottom-12 inset-x-6 sm:inset-x-8 lg:inset-x-16 flex flex-col justify-center opacity-100 translate-x-0" data-astro-cid-g5jplrhu>
@@ -1142,48 +1238,59 @@
             </div>
           </div>
         </div>
-      </div>
+        <script>
+          function initConsultoria() {
+            const tabs = document.querySelectorAll(".service-tab");
+            const contents = document.querySelectorAll(".service-content");
+            tabs.forEach(tab => {
+              tab.addEventListener("click", () => {
+                const targetId = tab.dataset.target;
+                tabs.forEach(t => {
+                  t.classList.remove("active-service", "bg-white", "shadow-lg", "border-cyan-500/20");
+                  t.classList.add("bg-transparent", "border-transparent");
+                  const icon = t.querySelector("div");
+                  icon?.classList.remove("bg-cyan-500", "text-white", "shadow-xl", "shadow-cyan-500/30");
+                  icon?.classList.add("bg-slate-100", "text-slate-400");
+                  const span = t.querySelector("span");
+                  span?.classList.remove("text-slate-900");
+                  span?.classList.add("text-slate-500");
+                });
+                tab.classList.add("active-service", "bg-white", "shadow-lg", "border-cyan-500/20");
+                tab.classList.remove("bg-transparent", "border-transparent");
+                const icon = tab.querySelector("div");
+                icon?.classList.remove("bg-slate-100", "text-slate-400");
+                icon?.classList.add("bg-cyan-500", "text-white", "shadow-xl", "shadow-cyan-500/30");
+                const span = tab.querySelector("span");
+                span?.classList.remove("text-slate-500");
+                span?.classList.add("text-slate-900");
+                contents.forEach(content => {
+                  if (content.id === `content-${targetId}`) {
+                    content.classList.add("opacity-100", "translate-x-0");
+                    content.classList.remove("opacity-0", "translate-x-10", "pointer-events-none");
+                  } else {
+                    content.classList.remove("opacity-100", "translate-x-0");
+                    content.classList.add("opacity-0", "translate-x-10", "pointer-events-none");
+                  }
+                });
+
+                // Lógica de centrado matemático
+                const scrollContainer = tab.closest('.consulting-nav-container');
+                if (scrollContainer && window.innerWidth <= 500) {
+                    const containerRect = scrollContainer.getBoundingClientRect();
+                    const tabRect = tab.getBoundingClientRect();
+                    const scrollTarget = scrollContainer.scrollLeft + (tabRect.left - containerRect.left) - (containerRect.width / 2) + (tabRect.width / 2);
+                    scrollContainer.scrollTo({
+                        left: scrollTarget,
+                        behavior: 'smooth'
+                    });
+                }
+              });
+            });
+          }
+          document.addEventListener("DOMContentLoaded", initConsultoria);
+        </script>
     </section>
-    <script>
-      function initConsultoria() {
-        const tabs = document.querySelectorAll(".service-tab");
-        const contents = document.querySelectorAll(".service-content");
-        tabs.forEach(tab => {
-          tab.addEventListener("click", () => {
-            const targetId = tab.dataset.target;
-            tabs.forEach(t => {
-              t.classList.remove("active-service", "bg-white", "shadow-lg", "border-cyan-500/20");
-              t.classList.add("bg-transparent", "border-transparent");
-              const icon = t.querySelector("div");
-              icon?.classList.remove("bg-cyan-500", "text-white", "shadow-xl", "shadow-cyan-500/30");
-              icon?.classList.add("bg-slate-100", "text-slate-400");
-              const span = t.querySelector("span");
-              span?.classList.remove("text-slate-900");
-              span?.classList.add("text-slate-500");
-            });
-            tab.classList.add("active-service", "bg-white", "shadow-lg", "border-cyan-500/20");
-            tab.classList.remove("bg-transparent", "border-transparent");
-            const icon = tab.querySelector("div");
-            icon?.classList.remove("bg-slate-100", "text-slate-400");
-            icon?.classList.add("bg-cyan-500", "text-white", "shadow-xl", "shadow-cyan-500/30");
-            const span = tab.querySelector("span");
-            span?.classList.remove("text-slate-500");
-            span?.classList.add("text-slate-900");
-            contents.forEach(content => {
-              if (content.id === `content-${targetId}`) {
-                content.classList.add("opacity-100", "translate-x-0");
-                content.classList.remove("opacity-0", "translate-x-10", "pointer-events-none");
-              } else {
-                content.classList.remove("opacity-100", "translate-x-0");
-                content.classList.add("opacity-0", "translate-x-10", "pointer-events-none");
-              }
-            });
-          });
-        });
-      }
-      document.addEventListener("DOMContentLoaded", initConsultoria);
-    </script>
-  </div>
+</div>
   <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="socios" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
@@ -1202,7 +1309,7 @@
           <a href="https://www.digitalcheck.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-100 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
               <img src="
-																																																	<?php echo get_template_directory_uri(); ?>/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
+																																																	<?php echo get_template_directory_uri(); ?>/template/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Digital Check </h3>
             <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Líder mundial en diseño y fabricación de digitalizadores de cheques, con presencia en instituciones financieras de todo el globo. </p>
@@ -1214,7 +1321,7 @@
           <a href="https://www.teamnet.com.mx/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-200 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
               <img src="
-																																																		<?php echo get_template_directory_uri(); ?>/images/member4.jpg" alt="TEAM" class="max-w-full max-h-full object-contain">
+																																																		<?php echo get_template_directory_uri(); ?>/template/images/member4.jpg" alt="TEAM" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> TEAM </h3>
             <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Especialista mayorista de valor agregado en la industria de soluciones TI, integrando marcas de clase mundial. </p>
@@ -1226,7 +1333,7 @@
           <a href="https://www.vertiv.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
               <img src="
-																																																			<?php echo get_template_directory_uri(); ?>/images/member10.jpg" alt="Vertiv" class="max-w-full max-h-full object-contain">
+																																																			<?php echo get_template_directory_uri(); ?>/template/images/member10.jpg" alt="Vertiv" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Vertiv </h3>
             <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Proveedor líder global de infraestructura crítica y soluciones de continuidad para sistemas de comunicaciones y centros de datos. </p>
