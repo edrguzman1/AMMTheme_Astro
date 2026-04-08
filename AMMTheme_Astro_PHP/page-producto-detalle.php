@@ -202,6 +202,8 @@ function setupGallery() {
     buttons.forEach(btn => {
         btn.addEventListener('click', () => {
             const newSrc = btn.getAttribute('data-image-url');
+            
+            // 1. Cambio of imagen principal with transición
             if (mainImg) {
                 mainImg.style.opacity = '0';
                 setTimeout(() => {
@@ -209,12 +211,21 @@ function setupGallery() {
                     mainImg.style.opacity = '1';
                 }, 150);
             }
+
+            // 2. Gestión of clases visuales (border and background)
             buttons.forEach(b => {
                 b.classList.remove('border-sky-600', 'bg-blue-50/30', 'shadow-inner');
                 b.classList.add('border-slate-100');
             });
             btn.classList.add('border-sky-600', 'bg-blue-50/30', 'shadow-inner');
             btn.classList.remove('border-slate-100');
+
+            // 3. CENTRADO AUTOMÁTICO: Desplazar la fila to centrar el botón seleccionado
+            btn.scrollIntoView({
+                behavior: 'smooth', // Animación fluida
+                block: 'nearest',   // Evita saltos verticales in la página
+                inline: 'center'    // Centra el elemento horizontalmente in su contenedor
+            });
         });
     });
 }

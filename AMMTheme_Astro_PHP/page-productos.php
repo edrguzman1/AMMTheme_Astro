@@ -2,6 +2,40 @@
 /* Template Name: Catálogo de Productos Dinámico */
 get_header(); 
 ?>
+<style>
+        .slide-item.active .slide-text{opacity:1!important;transform:translateY(0)!important}
+        @keyframes kenBurnsOut{0%{transform:scale(1.1)}to{transform:scale(1)}}
+        .slide-item.active .zoom-bg{animation:kenBurnsOut 8s ease-out forwards;will-change:transform}
+        .active-service{box-shadow:0 10px 30px #06b6d41a}
+        .clients-simple-marquee{animation:marquee 40s linear infinite}
+        @keyframes marquee{0%{transform:translate(0)}to{transform:translate(-50%)}}
+
+        /* FIX GENERAL: Ajuste for el Admin Bar de WordPress */
+        body.admin-bar #main-navbar {
+            top: 32px;
+        }
+        /* NUEVO FIX: Empujamos la barra de filtros al same nivel When WP está activo */
+        body.admin-bar .sticky.top-20 {
+            top: 112px !important;
+        }
+        .filter-pill.active-pill {
+            color: #076d7b !important; /* El azul oscuro corporativo of tu texto interactivo */
+            border-color: #54a6b6 !important; /* El azul claro corporativo of tus bordes */
+            background-color: #ffffff !important;
+            /* Un único remarcado fino usando tu color corporativo exacto */
+            box-shadow: 0 0 0 1px #54a6b6 !important; 
+            transition: all 0.3s ease;
+        }
+        
+        @media screen and (max-width: 782px) {
+            body.admin-bar #main-navbar {
+                top: 46px;
+            }
+            body.admin-bar .sticky.top-20 {
+                top: 126px !important;
+            }
+        }
+    </style>
 
 <main class="pt-24 lg:pt-32" data-astro-cid-d326op7z>
     <section class="relative py-16 overflow-hidden" data-astro-cid-d326op7z>
@@ -215,13 +249,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    brandPills.forEach(pill => {
-        pill.addEventListener('click', () => {
-            brandPills.forEach(p => p.classList.remove('active', 'border-sky-400', 'text-sky-600'));
-            pill.classList.add('active', 'border-sky-400', 'text-sky-600');
-            activeBrand = pill.getAttribute('data-brand');
-            activeCategory = '*';
-            if(categorySelect) categorySelect.value = '*';
+    brandPills.forEach(btn => {
+        btn.addEventListener('click', () => {
+            activeBrand = btn.getAttribute('data-brand');
+
+            // 1. Limpiamos el estilo active de todos los botones
+            brandPills.forEach(p => {
+                p.classList.remove('active-pill');
+                // Restauramos el estado original base
+                p.classList.add('text-slate-500', 'border-slate-100', 'bg-white');
+            });
+
+            // 2. Aplicamos la nueva clase al botón seleccionado
+            btn.classList.add('active-pill');
+            btn.classList.remove('text-slate-500', 'border-slate-100');
+            
             filterProducts();
         });
     });

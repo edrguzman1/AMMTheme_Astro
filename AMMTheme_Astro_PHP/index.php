@@ -187,7 +187,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
         <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col text-center animate-on-scroll delay-100 overflow-hidden group">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=600&h=400" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/software.jpg" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           </div>
           <div class="p-8 flex flex-col flex-1 mt-2">
             <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 group-hover:text-cyan-600 transition-colors uppercase"> Desarrollo de Software </h3>
@@ -196,7 +196,7 @@
         </div>
         <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col text-center animate-on-scroll delay-200 overflow-hidden group">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600&h=400" alt="Hardware de Captura" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/hardware.jpg" alt="Hardware de Captura" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           </div>
           <div class="p-8 flex flex-col flex-1 mt-2">
             <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 group-hover:text-cyan-600 transition-colors uppercase"> Hardware de Captura </h3>
@@ -205,7 +205,7 @@
         </div>
         <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col text-center animate-on-scroll delay-300 overflow-hidden group">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=600&h=400" alt="Consultoría en TI" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/consultoria.jpg" alt="Consultoría en TI" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
           </div>
           <div class="p-8 flex flex-col flex-1 mt-2">
             <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 group-hover:text-cyan-600 transition-colors uppercase"> Consultoría en TI </h3>
@@ -393,23 +393,19 @@
         <div class="grid grid-cols-1 lg:grid-cols-[4fr_6fr] gap-12 lg:gap-20 relative">
           <div class="hidden lg:block relative h-[350px] w-full max-w-md mx-auto sticky top-40">
             <div id="product-img-0" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-100">
-              <img src="
-																																						<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
             <div id="product-img-1" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-0">
-              <img src="
-																																							<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
             <div id="product-img-2" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-0">
-              <img src="
-																																								<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
           </div>
           <div class="space-y-16 lg:pb-20">
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="0">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
-                <img src="
-																																										<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain">
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Digital Check</h3>

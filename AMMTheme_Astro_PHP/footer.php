@@ -46,7 +46,7 @@
                             <div class="w-8 h-8 rounded-lg bg-cyan-950/50 border border-cyan-500/20 flex items-center justify-center text-cyan-400"> <i class="fa-solid fa-phone-volume text-xs"></i> </div>
                             <div class="text-left">
                                 <p class="text-white text-xs font-black tracking-widest uppercase mb-0.5">+52 (55) 5254-4868</p>
-                                <p class="text-[9px] text-slate-500 font-bold uppercase tracking-tight">Soporte Técnico Matrix</p>
+                                <p class="text-[9px] text-slate-500 font-bold uppercase tracking-tight">Soporte Técnico</p>
                             </div>
                         </div>
                     </div>
