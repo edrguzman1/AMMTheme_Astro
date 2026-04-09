@@ -7,9 +7,23 @@ add_theme_support('post-thumbnails');
 
 // 1. CARGAR ESTILOS Y SCRIPTS DEL TEMA
 function ammtheme_scripts() {
-    // Cargar el CSS compilado of Astro (Revisar that la ruta coincida in /_astro/)
-    // Reemplaza 'Footer.COI5Y6L1.css' con el nombre exacto of tu archivo CSS generado
-    wp_enqueue_style('amm-astro-style', get_template_directory_uri() . '/_astro/Footer.COI5Y6L1.css', array(), '1.0');
+    // NUEVO UPDATE: Cargador dinámico for unificar todos los CSS of Astro automatically
+    $astro_dir = get_template_directory() . '/_astro/';
+    $astro_uri = get_template_directory_uri() . '/_astro/';
+
+    if (is_dir($astro_dir)) {
+        $files = scandir($astro_dir);
+        $css_counter = 1;
+        foreach ($files as $file) {
+            if (pathinfo($file, PATHINFO_EXTENSION) === 'css') {
+                wp_enqueue_style('amm-astro-style-' . $css_counter, $astro_uri . $file, array(), null);
+                $css_counter++;
+            }
+        }
+    }
+
+    // NUEVO UPDATE: Cargar Google Fonts directamente desde CDN for evitar bloqueos
+    wp_enqueue_style('amm-google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap', array(), null);
     
     // Cargar SweetAlert2 (desde CDN for garantizar that cargue without conflictos locales)
     wp_enqueue_style('amm-sweetalert-style', 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css', array(), null);
@@ -21,7 +35,6 @@ function ammtheme_scripts() {
     wp_enqueue_script('amm-sweetalert-js', 'https://cdn.jsdelivr.net/npm/sweetalert2@11', array(), null, true);
 
     // Cargar mailer.js original with FETCH (Asegúrate of that esté in la carpeta /js/)
-    // Lo ponemos in el footer (true) and dependency with sweetalert for orden correcto
     wp_enqueue_script('amm-mailer', get_template_directory_uri() . '/js/mailer.js', array('jquery', 'amm-sweetalert-js'), time(), true);
 
     // Pasar la variable ammData with la URL of AJAX to mailer.js
@@ -30,6 +43,21 @@ function ammtheme_scripts() {
     ));
 }
 add_action('wp_enqueue_scripts', 'ammtheme_scripts');
+
+// NUEVO UPDATE: Forzar tipografía in producción (Bypass de archivos locales)
+function ammtheme_fix_production_typography() {
+    $override_css = "
+        body, p, span, a, li, .font-\\[\\'Inter\\'\\] {
+            font-family: 'Inter', sans-serif !important;
+        }
+        h1, h2, h3, h4, h5, h6, .font-\\[\\'Outfit\\'\\] {
+            font-family: 'Outfit', sans-serif !important;
+        }
+    ";
+    wp_add_inline_style('amm-google-fonts', $override_css);
+}
+// El número 99 asegura that este fix cargue al final
+add_action('wp_enqueue_scripts', 'ammtheme_fix_production_typography', 99);
 
 // -----------------------------------------------------------------------------
 // 2. LOGICA DE PROCESAMIENTO DEL FORMULARIO DE CONTACTO (AJAX)
@@ -54,7 +82,6 @@ function procesar_formulario_contacto() {
     }
 
     // Ruta to the email template (ContactTemplate.txt)
-    // Asegúrate of that el archivo ContactTemplate.txt exista in /template/Contact/
     $template_path = get_template_directory() . '/template/Contact/ContactTemplate.txt';
     
     if ( ! file_exists($template_path) ) {
