@@ -829,18 +829,21 @@
             border-bottom-left-radius: 0 !important;
             border-bottom-right-radius: 0 !important;
             border-top-right-radius: 2rem !important; 
-            padding-bottom: 0 !important; /* FIX: Relleno inferior a 0 for evitar el espacio */
-            border-bottom: none !important;
+            padding-bottom: 0 !important; 
             box-shadow: none !important; 
+            background-color: #f1f5f9 !important; 
+            border: 1px solid #cbd5e1 !important; 
+            border-bottom: none !important; 
           }
+          
           .consulting-nav-container {
             flex-direction: row !important;
             overflow-x: auto !important;
             overflow-y: hidden !important;
             scrollbar-width: none !important; 
             -ms-overflow-style: none !important; 
-            padding-bottom: 0 !important; /* FIX: Relleno inferior a 0 */
             margin-bottom: 0 !important;
+            padding-bottom: 0.5rem !important; 
           }
           .consulting-nav-container::-webkit-scrollbar {
             display: none !important; 
@@ -848,23 +851,40 @@
           .consulting-nav-container > button {
             width: auto !important;
             margin-top: 0 !important;
-            margin-bottom: 0 !important; /* FIX: Margen inferior a 0 */
+            margin-bottom: 0 !important;
             margin-right: 0.75rem !important;
             padding: 0.75rem !important;
             flex-shrink: 0 !important;
           }
+
+          /* --- NUEVO FIX: Animación of salto doble for el botón activo --- */
+          @keyframes doubleJump {
+            0%, 20%, 100% { transform: translateY(0); }
+            5% { transform: translateY(-8px); }
+            10% { transform: translateY(0); }
+            15% { transform: translateY(-4px); }
+          }
+          .consulting-nav-container .active-service > div {
+            animation: doubleJump 3s infinite ease-in-out !important;
+          }
+          
           .consulting-content-wrapper {
             margin-left: 0 !important;
-            margin-top: -1px !important; /* FIX: Tira de la caja hacia arriba for sellar la unión */
+            margin-top: -1.25rem !important; 
+            position: relative !important;
+            z-index: 10 !important; 
           }
           
           .consulting-content-inner {
             border-top-left-radius: 0 !important; 
             border-top-right-radius: 0 !important; 
             border-bottom-left-radius: 2rem !important; 
-            padding-top: 1.5rem !important; 
+            padding-top: 2rem !important; 
             border-top: none !important;
             min-height: 700px !important; 
+            background-color: #ffffff !important; 
+            border: 1px solid #cbd5e1 !important;
+            border-top: none !important;
           }
           
           /* --- FIX DE CAJA Y TEXTOS --- */
@@ -879,7 +899,6 @@
           .service-content .gap-y-5 { row-gap: 0.75rem !important; }
           .service-content.inset-x-6 { inset-inline: 1rem !important; }
           
-          /* --- FIX: Centrado of botón --- */
           .service-content .mt-auto { 
               margin-top: 1.5rem !important; 
               display: flex !important;
@@ -923,8 +942,8 @@
               
               <div class="flex flex-col space-y-2 overflow-y-auto max-h-[450px] lg:max-h-none scrollbar-hide py-2 consulting-nav-container" data-astro-cid-g5jplrhu>
                 
-                <button data-target="dotnet" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border active-service bg-white shadow-md border-cyan-500/10" data-astro-cid-g5jplrhu>
-                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-cyan-500 text-white shadow-lg shadow-cyan-500/30" data-astro-cid-g5jplrhu>
+                <button data-target="dotnet" class="service-tab w-full max-[500px]:w-auto group text-left transition-all duration-500 relative rounded-2xl py-4 max-[500px]:py-3 px-4 max-[500px]:px-3 sm:py-5 sm:px-6 outline-none flex items-center justify-center lg:justify-start gap-0 lg:gap-4 flex-shrink-0 border active-service bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
+                  <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-cyan-500 text-white shadow-xl shadow-cyan-500/30" data-astro-cid-g5jplrhu>
                     <i class="fa-brands fa-windows"></i>
                   </div>
                   <span class="hidden lg:block text-sm font-bold font-['Outfit'] transition-all tracking-wide text-slate-900" data-astro-cid-g5jplrhu> Microsoft .NET y C# </span>
