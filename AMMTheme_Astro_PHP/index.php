@@ -488,6 +488,62 @@
   <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="soluciones" class="py-24 relative overflow-hidden bg-[#002129]">
+      
+      <style>
+        @media screen and (max-width: 600px) {
+          /* 1. Transformamos el contenedor in Grid to apilar sin usar absolutos */
+          .software-main-container {
+            display: grid !important;
+            padding: 1.5rem !important;
+            padding-bottom: 2rem !important;
+            min-height: auto !important; 
+            border-radius: 2rem !important;
+          }
+          
+          /* 2. Todos los paneles comparten la misma celda and respetan su propio tamaño */
+          .software-panel {
+            grid-area: 1 / 1 !important;
+            position: relative !important; /* Matamos el absolute que rompía la caja */
+            inset: auto !important;
+            padding: 0 !important; /* Limpiamos el padding sobrante de escritorio */
+            flex-direction: column-reverse !important;
+            gap: 1rem !important;
+            align-self: start !important; /* Alineamos arriba to evitar estiramientos feos */
+          }
+          
+          /* 3. Reducimos el contenedor of la imagen and la volvemos miniatura cuadrada */
+          .software-img-col {
+            margin-bottom: 0.5rem !important;
+          }
+          .software-img-col img {
+            min-height: 100px !important;
+            height: 100px !important;
+            max-height: 100px !important;
+            width: 100px !important;
+            padding: 0.75rem !important;
+            aspect-ratio: 1 / 1 !important;
+            margin: 0 auto !important; 
+            border-radius: 1.25rem !important;
+          }
+          
+          /* 4. Compactamos los textos and títulos */
+          .software-text-col > span { margin-bottom: 0.5rem !important; }
+          .software-text-col h3 { font-size: 1.875rem !important; margin-bottom: 0.75rem !important; }
+          .software-text-col p { font-size: 0.9rem !important; line-height: 1.4 !important; margin-bottom: 1.25rem !important; }
+          
+          /* 5. Compactamos la lista and el botón */
+          .software-text-col ul { gap: 0.75rem !important; margin-bottom: 1.5rem !important; }
+          .software-text-col ul li span { font-size: 0.8rem !important; line-height: 1.2 !important; }
+          .software-text-col a {
+            display: flex !important;
+            justify-content: center !important;
+            width: 100% !important;
+            padding-top: 0.875rem !important;
+            padding-bottom: 0.875rem !important;
+          }
+        }
+      </style>
+
       <div class="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-sky-500/20 rounded-full blur-[150px] pointer-events-none mix-blend-screen"></div>
       <div class="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-400/30 rounded-full blur-[100px] pointer-events-none mix-blend-screen"></div>
       <div class="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-white/10 rounded-full blur-[60px] pointer-events-none mix-blend-screen"></div>
@@ -521,10 +577,12 @@
             </div>
           </div>
         </div>
-        <div class="relative z-10 bg-[#002436] border border-white/5 rounded-[2.5rem] p-8 lg:p-14 pt-20 lg:pt-24 shadow-2xl overflow-hidden min-h-[550px] lg:min-h-[500px]">
+        
+        <div class="software-main-container relative z-10 bg-[#002436] border border-white/5 rounded-[2.5rem] p-8 lg:p-14 pt-20 lg:pt-24 shadow-2xl overflow-hidden min-h-[550px] lg:min-h-[500px]">
           <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+          
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out relative opacity-100 translate-x-0">
-            <div class="w-full lg:w-[55%]">
+            <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Compensación Electrónica</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">DbCheck</span>
               </h3>
@@ -560,13 +618,14 @@
                 </svg>
               </a>
             </div>
-            <div class="w-full lg:w-[45%] relative flex justify-center items-center">
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
+          
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
-            <div class="w-full lg:w-[55%]">
+            <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Gestión Documental Pro</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">DigiDoc</span>
               </h3>
@@ -602,13 +661,14 @@
                 </svg>
               </a>
             </div>
-            <div class="w-full lg:w-[45%] relative flex justify-center items-center">
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/DD.png" alt="DigiDoc" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
+          
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
-            <div class="w-full lg:w-[55%]">
+            <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Optimización de Vales</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">TransvalNet</span>
               </h3>
@@ -644,13 +704,14 @@
                 </svg>
               </a>
             </div>
-            <div class="w-full lg:w-[45%] relative flex justify-center items-center">
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
+          
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
-            <div class="w-full lg:w-[55%]">
+            <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Control Logístico</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">TransvalArribos</span>
               </h3>
@@ -686,13 +747,14 @@
                 </svg>
               </a>
             </div>
-            <div class="w-full lg:w-[45%] relative flex justify-center items-center">
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVA.png" alt="TransvalArribos" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
+          
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
-            <div class="w-full lg:w-[55%]">
+            <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Reembolso e Inventario</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">Toka</span>
               </h3>
@@ -728,7 +790,7 @@
                 </svg>
               </a>
             </div>
-            <div class="w-full lg:w-[45%] relative flex justify-center items-center">
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/Toka.png" alt="Toka" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
@@ -771,13 +833,10 @@
               }
             });
 
-            // NUEVO UPDATE: Desplazamiento matemático horizontal seguro
             const scrollContainer = tab.closest('.overflow-x-auto');
-            if (scrollContainer) {
+            if (scrollContainer && window.innerWidth <= 600) {
                 const containerRect = scrollContainer.getBoundingClientRect();
                 const tabRect = tab.getBoundingClientRect();
-                
-                // Calculamos el centro exacto only in el eje X
                 const scrollTarget = scrollContainer.scrollLeft + (tabRect.left - containerRect.left) - (containerRect.width / 2) + (tabRect.width / 2);
                 
                 scrollContainer.scrollTo({
@@ -791,7 +850,7 @@
       }
       document.addEventListener("DOMContentLoaded", initSoftwareTabs);
     </script>
-  </div>
+</div>
   <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="servicios" class="py-20 lg:py-32 relative overflow-hidden bg-white font-['Inter']" data-astro-cid-g5jplrhu>
@@ -814,7 +873,7 @@
         }
 
         /* --- MÓVIL (< 500px) --- */
-        @media screen and (max-width: 500px) {
+        @media screen and (max-width: 600px) {
           .consulting-header-area {
             margin-bottom: 2rem !important; 
           }
@@ -1309,7 +1368,7 @@
           document.addEventListener("DOMContentLoaded", initConsultoria);
         </script>
     </section>
-</div>
+  </div>
   <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="socios" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
