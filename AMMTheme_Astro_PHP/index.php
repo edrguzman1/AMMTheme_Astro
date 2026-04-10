@@ -850,7 +850,7 @@
       }
       document.addEventListener("DOMContentLoaded", initSoftwareTabs);
     </script>
-</div>
+  </div>
   <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="servicios" class="py-20 lg:py-32 relative overflow-hidden bg-white font-['Inter']" data-astro-cid-g5jplrhu>
@@ -1001,7 +1001,7 @@
               
               <div class="flex flex-col space-y-2 overflow-y-auto max-h-[450px] lg:max-h-none scrollbar-hide py-2 consulting-nav-container" data-astro-cid-g5jplrhu>
                 
-                <button data-target="dotnet" class="service-tab w-full max-[500px]:w-auto group text-left transition-all duration-500 relative rounded-2xl py-4 max-[500px]:py-3 px-4 max-[500px]:px-3 sm:py-5 sm:px-6 outline-none flex items-center justify-center lg:justify-start gap-0 lg:gap-4 flex-shrink-0 border active-service bg-transparent border-transparent hover:bg-white/40" data-astro-cid-g5jplrhu>
+                <button data-target="dotnet" class="service-tab w-full group text-left transition-all duration-500 relative rounded-2xl py-4 sm:py-5 px-4 sm:px-6 outline-none flex items-center gap-4 flex-shrink-0 border active-service bg-white shadow-lg border-cyan-500/20" data-astro-cid-g5jplrhu>
                   <div class="w-10 h-10 flex-shrink-0 rounded-xl flex items-center justify-center text-lg transition-all duration-500 bg-cyan-500 text-white shadow-xl shadow-cyan-500/30" data-astro-cid-g5jplrhu>
                     <i class="fa-brands fa-windows"></i>
                   </div>
@@ -1429,6 +1429,32 @@
     <section id="noticias" class="py-12 lg:py-16 border-t border-slate-200 bg-slate-50 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
       
+      <style>
+        @media screen and (max-width: 1023px) {
+          .news-carousel {
+            display: flex !important;
+            flex-wrap: nowrap !important;
+            overflow-x: auto !important;
+            overflow-y: hidden !important;
+            scroll-snap-type: x mandatory !important;
+            padding-bottom: 2rem !important; /* Espacio for la sombra */
+            gap: 1.5rem !important;
+            
+            /* Ocultar barra de desplazamiento */
+            scrollbar-width: none !important; 
+            -ms-overflow-style: none !important; 
+          }
+          .news-carousel::-webkit-scrollbar {
+            display: none !important; 
+          }
+          .news-carousel > a {
+            flex: 0 0 85% !important; /* Cada tarjeta ocupa el 85% de la pantalla */
+            scroll-snap-align: center !important;
+            max-width: 400px !important;
+          }
+        }
+      </style>
+
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center max-w-4xl mx-auto mb-16 animate-on-scroll">
           <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6 group">
@@ -1443,7 +1469,7 @@
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto font-['Inter']">
+        <div class="news-carousel grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto font-['Inter']">
             <?php
             // Consulta WP_Query to extraer solo los 3 posts más recientes
             $args_noticias = array(
@@ -1466,7 +1492,7 @@
             ?>
             
           <a href="<?php the_permalink(); ?>" class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col overflow-hidden animate-on-scroll group block">
-            <div class="w-full h-48 sm:h-56 relative overflow-hidden bg-slate-100">
+            <div class="w-full h-48 sm:h-56 relative overflow-hidden bg-slate-100 flex-shrink-0">
               <img src="<?php echo esc_url($img_url); ?>" alt="<?php the_title_attribute(); ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               <div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-[10px] font-bold text-sky-600 uppercase tracking-widest font-['Outfit'] shadow-sm">
                 <?php echo esc_html($cat_name); ?>
@@ -1490,7 +1516,7 @@
                 endwhile;
                 wp_reset_postdata();
             else :
-                echo '<p class="text-slate-500 text-center col-span-full font-[\'Inter\']">Aún no hay noticias publicadas in el sistema.</p>';
+                echo '<p class="text-slate-500 text-center col-span-full font-[\'Inter\']">Aún no hay noticias publicadas en el sistema.</p>';
             endif;
             ?>
         </div>
