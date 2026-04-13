@@ -610,7 +610,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
                     </svg>
                   </div>
-                  <span>Control total de comprobantes masivos</span>
+                  <span>Generación de archivos de intercambio bancario (TEI y CII) con Cecoban.</span>
                 </li>
               </ul>
               <a href="<?php echo home_url('/productos/dbcheck'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -654,6 +654,14 @@
                     </svg>
                   </div>
                   <span>Seguridad de nivel bancario</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Control total de comprobantes masivos</span>
                 </li>
               </ul>
               <a href="<?php echo home_url('/productos/digidoc'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
