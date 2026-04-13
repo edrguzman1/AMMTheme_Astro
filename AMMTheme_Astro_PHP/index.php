@@ -77,12 +77,12 @@
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
       <img src="
-									<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+									<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Kodak Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
         <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Escáneres Alaris. </h1>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Escáneres Kodak Alaris. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Captura de información inteligente y digitalización de documentos a gran escala con la mejor calidad de imagen del mercado. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
             <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Explorar catálogo </a>
@@ -149,7 +149,7 @@
       };
       const startAutoPlay = () => {
         clearInterval(interval);
-        interval = setInterval(nextSlide, 5000);
+        interval = setInterval(nextSlide, 8000);
       };
       nextBtn?.addEventListener('click', () => {
         nextSlide();
@@ -173,7 +173,7 @@
     initHeroSlider();
     document.addEventListener("astro:after-swap", initHeroSlider);
   </script>
-  <section id="nosotros" class="relative pt-20 lg:pt-32 pb-12 bg-white overflow-hidden">
+  <section id="nosotros" class="relative pt-20 lg:pt-32 pb-12 bg-white overflow-hidden"><!--NOSOTROS PARTE 1-->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
       <div class="text-center max-w-4xl mx-auto mb-12 sm:mb-16 px-4 sm:px-0 animate-on-scroll">
         <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6 group">
@@ -217,7 +217,7 @@
     <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-50/50 rounded-full blur-3xl opacity-60 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
     <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-cyan-50/50 rounded-full blur-3xl opacity-60 -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
   </section>
-  <div class="relative">
+  <div class="relative"><!--NOSOTROS PARTE 2-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section class="pb-24 pt-0 relative z-10 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -316,7 +316,7 @@
       });
     </script>
   </div>
-  <div class="relative">
+  <div class="relative"><!--CLIENTES-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="clientes" class="py-12 lg:py-16 border-y border-slate-100 bg-slate-50 overflow-hidden relative" data-astro-cid-cktvhckl>
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-slate-400/5 blur-[150px] pointer-events-none" data-astro-cid-cktvhckl></div>
@@ -377,7 +377,7 @@
       </div>
     </section>
   </div>
-  <div class="relative">
+  <div class="relative"> <!--PRODUCTOS-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="productos" class="py-12 lg:py-16 relative border-t border-slate-200 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -485,7 +485,7 @@
       });
     </script>
   </div>
-  <div class="relative">
+  <div class="relative"><!--SOLUCIONES-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="soluciones" class="py-24 relative overflow-hidden bg-[#002129]">
       
@@ -851,7 +851,7 @@
       document.addEventListener("DOMContentLoaded", initSoftwareTabs);
     </script>
   </div>
-  <div class="relative">
+  <div class="relative"><!--CONSULTORIA-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="servicios" class="py-20 lg:py-32 relative overflow-hidden bg-white font-['Inter']" data-astro-cid-g5jplrhu>
       
@@ -1369,7 +1369,7 @@
         </script>
     </section>
   </div>
-  <div class="relative">
+  <div class="relative"><!--SOCIOS-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="socios" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
@@ -1424,7 +1424,7 @@
       </div>
     </section>
   </div>
-  <div class="relative">
+  <div class="relative"><!--NOTICIAS-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="noticias" class="py-12 lg:py-16 border-t border-slate-200 bg-slate-50 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
@@ -1533,7 +1533,7 @@
       </div>
     </section>
   </div>
-  <div class="relative">
+  <div class="relative"><!--CONTACTO-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="contacto" class="py-12 lg:py-16 bg-white relative overflow-hidden">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-100/20 via-white to-white pointer-events-none"></div>
