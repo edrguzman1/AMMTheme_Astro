@@ -78,6 +78,22 @@ get_header();
                 <div class="wp-content">
                     <?php the_content(); ?>
                 </div>
+
+                <nav class="flex mt-12 pt-8 border-t border-slate-100" aria-label="Breadcrumb">
+                    <ol class="inline-flex items-center uppercase tracking-[0.2em] font-black text-[10px] space-x-2 text-slate-400">
+                        <li class="inline-flex items-center">
+                            <a href="<?php echo home_url('/'); ?>" class="hover:text-sky-600 transition-colors">Inicio</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <span>/</span>
+                            <a href="<?php echo home_url('/noticias/'); ?>" class="hover:text-sky-600 transition-colors">Noticias</a>
+                        </li>
+                        <li class="flex items-center space-x-2 hidden md:flex" aria-current="page">
+                            <span>/</span>
+                            <span class="text-sky-600 font-bold max-w-[300px] truncate"><?php the_title(); ?></span>
+                        </li>
+                    </ol>
+                </nav>
             </article>
 
             <aside class="lg:w-1/3">
