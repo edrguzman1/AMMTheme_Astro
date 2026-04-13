@@ -28,7 +28,7 @@
     </style>
     <?php wp_head(); ?>
 </head>
-<body <?php body_class("bg-white text-slate-700 font-sans antialiased selection:bg-cyan-500 selection:text-white relative"); ?>>
+<body <?php body_class("bg-white text-slate-700 font-sans antialiased select-none relative"); ?>>
     <div class="fixed inset-0 overflow-hidden pointer-events-none z-[-1]">
         <div class="absolute -top-[40%] text-slate-900 opacity-[0.02]">
             <svg width="100vw" height="100vh" xmlns="http://www.w3.org/2000/svg">

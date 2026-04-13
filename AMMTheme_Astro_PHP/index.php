@@ -55,7 +55,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Infraestructura Crítica y Energía. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Asegura la continuidad de tus centros de datos con soluciones Vertiv líderes a nivel global, diseñadas para entornos empresariales. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Conocer más </a>
+            <a href="#productos" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Conocer más </a>
           </div>
         </div>
       </div>
@@ -70,7 +70,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Digitalizadores Digital Check. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Velocidad y precisión para tu flujo financiero con la compañía No. 1 en el mundo en diseño y fabricación de escáneres de cheques. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Ver equipos </a>
+            <a href="#productos" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Ver equipos </a>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Escáneres Kodak Alaris. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Captura de información inteligente y digitalización de documentos a gran escala con la mejor calidad de imagen del mercado. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Explorar catálogo </a>
+            <a href="#productos" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Explorar catálogo </a>
           </div>
         </div>
       </div>
