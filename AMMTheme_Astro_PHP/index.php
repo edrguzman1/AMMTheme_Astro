@@ -1434,7 +1434,7 @@
   </div>
   <div class="relative"><!--NOTICIAS-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="noticias" class="py-12 lg:py-16 border-t border-slate-200 bg-slate-50 relative overflow-hidden">
+    <section id="noticias" class="py-12 lg:py-16 border-t border-slate-200 bg-white relative overflow-hidden">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
       
       <style>
@@ -1543,7 +1543,7 @@
   </div>
   <div class="relative"><!--CONTACTO-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="contacto" class="py-12 lg:py-16 bg-white relative overflow-hidden">
+    <section id="contacto" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-100/20 via-white to-white pointer-events-none"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-stretch">

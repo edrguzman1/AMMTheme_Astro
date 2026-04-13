@@ -20,7 +20,7 @@
                     <h3 class="text-white text-xs font-black uppercase tracking-widest mb-4 flex items-center gap-2"> <span class="w-1 h-3 bg-cyan-500 rounded-full"></span> Institucional </h3>
                     <ul class="flex flex-col items-center md:items-start gap-4">
                         <li>
-                            <a href="https://www.amm.com.mx/Aviso-de-privacidad/" target="_blank" class="text-slate-400 hover:text-cyan-400 transition-colors text-xs font-bold uppercase tracking-wider flex items-center gap-2 group"> <span class="w-0 h-px bg-cyan-500 group-hover:w-4 transition-all duration-300"></span> Aviso de Privacidad </a>
+                            <a href="<?php echo home_url('/Aviso-de-privacidad/'); ?>" target="_blank" class="text-slate-400 hover:text-cyan-400 transition-colors text-xs font-bold uppercase tracking-wider flex items-center gap-2 group"> <span class="w-0 h-px bg-cyan-500 group-hover:w-4 transition-all duration-300"></span> Aviso de Privacidad </a>
                         </li>
                     </ul>
                 </div>
