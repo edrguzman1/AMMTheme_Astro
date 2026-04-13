@@ -127,7 +127,7 @@ get_header();
                     </div>
                     <div class="mt-8 pt-6 border-t border-slate-100 text-center">
                         <a href="<?php echo home_url('/noticias/'); ?>" class="inline-flex items-center text-sm font-bold tracking-wider text-sky-600 hover:text-sky-700 uppercase transition-colors">
-                            Ver todo el Catálogo
+                            Ver todas las Noticias
                             <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                             </svg>
