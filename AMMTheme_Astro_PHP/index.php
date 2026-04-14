@@ -235,26 +235,30 @@
             <div class="glass-panel p-6 md:p-8 rounded-2xl flex flex-col justify-center items-center text-center col-span-2 bg-white border border-slate-100 shadow-md">
               <h3 class="text-lg md:text-xl font-bold text-slate-800 mb-6 uppercase tracking-widest text-center">Presencia y Cobertura Operativa</h3>
               <div class="flex flex-col md:flex-row justify-center items-center space-y-6 md:space-y-0 md:space-x-6 text-slate-500">
-                <div class="flex flex-col items-center">
-                  <svg class="w-8 h-8 mb-2 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                  </svg>
-                  <span class="text-[10px] md:text-xs font-bold uppercase text-slate-600 text-center">Norteamérica</span>
-                </div>
-                <div class="flex flex-col items-center">
-                  <svg class="w-8 h-8 mb-2 text-cyan-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-                  </svg>
-                  <span class="text-[10px] md:text-xs font-bold uppercase text-slate-600 text-center">Latinoamérica</span>
-                </div>
-                <div class="flex flex-col items-center">
-                  <svg class="w-8 h-8 mb-2 text-teal-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                  </svg>
-                  <span class="text-[10px] md:text-xs font-bold uppercase text-slate-600 text-center">Alianzas Globales</span>
-                </div>
+                  
+                  <div class="flex flex-col items-center">
+                      <svg class="w-8 h-8 mb-2 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      <span class="text-[10px] md:text-xs font-bold uppercase text-slate-600 text-center">Norteamérica</span>
+                  </div>
+                  
+                  <div class="flex flex-col items-center">
+                      <svg class="w-8 h-8 mb-2 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                      </svg>
+                      <span class="text-[10px] md:text-xs font-bold uppercase text-slate-600 text-center">Latinoamérica</span>
+                  </div>
+                  
+                  <div class="flex flex-col items-center">
+                      <svg class="w-8 h-8 mb-2 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                      </svg>
+                      <span class="text-[10px] md:text-xs font-bold uppercase text-slate-600 text-center">Alianzas Globales</span>
+                  </div>
+                  
               </div>
-            </div>
+          </div>
           </div>
           <div class="animate-on-scroll delay-200 text-center lg:text-left">
             <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight leading-tight sm:leading-none mb-6 sm:mb-8"> La Excelencia Constante <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-500">

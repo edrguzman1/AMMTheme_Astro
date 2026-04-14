@@ -32,11 +32,11 @@
                                 <div class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-cyan-600 transition-all shadow-lg shadow-cyan-900/40"> <i class="fa-brands fa-linkedin-in text-xs w-4 text-center"></i> </div> LinkedIn
                             </a>
                         </li>
-                        <li>
+                        <!--<li>
                             <a href="#" class="text-slate-400 hover:text-white transition-all text-xs font-bold uppercase tracking-wider flex items-center gap-3 group">
                                 <div class="w-7 h-7 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center group-hover:bg-blue-600 transition-all shadow-lg shadow-blue-900/40"> <i class="fa-brands fa-facebook-f text-xs w-4 text-center"></i> </div> Facebook
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
                 </div>
                 <div class="flex flex-col items-center md:items-start">
