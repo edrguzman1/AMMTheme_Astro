@@ -10,30 +10,35 @@ get_header();
         .clients-simple-marquee{animation:marquee 40s linear infinite}
         @keyframes marquee{0%{transform:translate(0)}to{transform:translate(-50%)}}
 
+        /* ANIMACIÓN DINÁMICA DE TÍTULOS LARGOS */
+        @keyframes scroll-oscillation {
+            0%, 15% { transform: translateX(0); }
+            45%, 55% { transform: translateX(var(--scroll-dist)); }
+            85%, 100% { transform: translateX(0); }
+        }
+        .animate-scroll-title {
+            animation: scroll-oscillation var(--scroll-duration) ease-in-out infinite;
+        }
+        /* Máscara de desvanecimiento for los bordes del título */
+        .title-mask-edges {
+            -webkit-mask-image: linear-gradient(to right, black 90%, transparent 100%);
+            mask-image: linear-gradient(to right, black 90%, transparent 100%);
+        }
+
         /* FIX GENERAL: Ajuste for el Admin Bar de WordPress */
-        body.admin-bar #main-navbar {
-            top: 32px;
-        }
-        /* NUEVO FIX: Empujamos la barra de filtros al same nivel When WP está activo */
-        body.admin-bar .sticky.top-20 {
-            top: 112px !important;
-        }
+        body.admin-bar #main-navbar { top: 32px; }
+        body.admin-bar .sticky.top-20 { top: 112px !important; }
         .filter-pill.active-pill {
-            color: #076d7b !important; /* El azul oscuro corporativo of tu texto interactivo */
-            border-color: #54a6b6 !important; /* El azul claro corporativo of tus bordes */
+            color: #076d7b !important; 
+            border-color: #54a6b6 !important; 
             background-color: #ffffff !important;
-            /* Un único remarcado fino usando tu color corporativo exacto */
             box-shadow: 0 0 0 1px #54a6b6 !important; 
             transition: all 0.3s ease;
         }
         
         @media screen and (max-width: 782px) {
-            body.admin-bar #main-navbar {
-                top: 46px;
-            }
-            body.admin-bar .sticky.top-20 {
-                top: 126px !important;
-            }
+            body.admin-bar #main-navbar { top: 46px; }
+            body.admin-bar .sticky.top-20 { top: 126px !important; }
         }
     </style>
 
@@ -72,7 +77,7 @@ get_header();
             <div class="flex flex-col lg:grid lg:grid-cols-[1fr_320px] items-center gap-8 lg:gap-12" data-astro-cid-d326op7z>
                 <div class="w-full min-w-0 relative group order-1" data-astro-cid-d326op7z>
                     <div class="flex items-center gap-3 overflow-x-auto pb-2 scrollbar-hide pr-16 w-full" id="brand-filters" data-astro-cid-d326op7z>
-                        <button class="filter-pill active px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="*" data-astro-cid-d326op7z> Todas las Marcas </button>
+                        <button class="filter-pill active-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="*" data-astro-cid-d326op7z> Todas las Marcas </button>
                         <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Alaris" data-astro-cid-d326op7z> Alaris </button>
                         <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Digital-Check" data-astro-cid-d326op7z> Digital Check </button>
                         <button class="filter-pill px-6 py-2.5 rounded-full border-2 border-slate-100 text-[11px] font-black uppercase tracking-widest text-slate-500 bg-white hover:border-sky-400 hover:text-sky-600 whitespace-nowrap transition-all shadow-sm" data-brand="Vertiv" data-astro-cid-d326op7z> Vertiv </button>
@@ -83,6 +88,7 @@ get_header();
                     <select id="category-select" class="px-5 py-2.5 rounded-xl border-2 border-slate-100 bg-white text-[11px] font-black uppercase tracking-widest text-slate-700 outline-none focus:border-sky-500 transition-all cursor-pointer w-full lg:min-w-[200px] shadow-sm" data-astro-cid-d326op7z>
                         <option value="*" data-astro-cid-d326op7z>Todas las Categorías</option>
                         <option value="Accesorios" data-astro-cid-d326op7z>Accesorios</option>
+                        <option value="Consumibles" data-astro-cid-d326op7z>Consumibles</option>
                         <option value="Alimentación crítica" data-astro-cid-d326op7z>Alimentación crítica</option>
                         <option value="CheXpress" data-astro-cid-d326op7z>CheXpress</option>
                         <option value="Escáneres Departamentales" data-astro-cid-d326op7z>Escáneres Departamentales</option>
@@ -104,29 +110,32 @@ get_header();
 
     <section class="py-20 relative bg-slate-50/50" data-astro-cid-d326op7z>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-astro-cid-d326op7z>
+            
+            <div class="flex justify-between items-center mb-8 pb-4 border-b border-slate-200/60" data-astro-cid-d326op7z>
+                <div class="bg-white border border-slate-200 shadow-sm rounded-full px-4 py-1.5 text-[10px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2" data-astro-cid-d326op7z>
+                    <div class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" data-astro-cid-d326op7z></div>
+                    Productos Encontrados <span id="results-count" class="text-sky-600 font-black text-sm ml-1" data-astro-cid-d326op7z>0</span>
+                </div>
+            </div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" id="product-grid" data-astro-cid-d326op7z>
                 
                 <?php
                 if ( have_posts() ) :
                     while ( have_posts() ) : the_post();
                         
-                        // Extraemos el HTML crudo
                         $html_content = apply_filters('the_content', get_the_content());
                         
-                        // Creamos un DOM Document para leer el HTML viejo
                         $dom = new DOMDocument();
                         libxml_use_internal_errors(true);
-                        // Aseguramos formato UTF-8
                         $dom->loadHTML('<?xml encoding="utf-8" ?>' . $html_content);
                         libxml_clear_errors();
                         $xpath = new DOMXPath($dom);
 
-                        // Buscamos todas las tarjetas viejas (tienen la clase 'product-item')
                         $productos = $xpath->query("//div[contains(@class, 'product-item')]");
 
                         if ($productos->length > 0) {
                             foreach ($productos as $prod) {
-                                // 1. Extraer las clases for adivinar la marca and categoría
                                 $clases = $prod->getAttribute('class');
                                 
                                 $marca = 'General';
@@ -139,7 +148,7 @@ get_header();
                                     'CheXpress' => 'CheXpress', 'TellerScan' => 'TellerScan', 'UVCheck' => 'Escáneres UV',
                                     'SmartNetwork' => 'SmartSource Red', 'SmartElite' => 'SmartSource Elite USB',
                                     'SmartPro' => 'SmartSource Professional', 'Specialty' => 'Especializados',
-                                    'Accesorios' => 'Accesorios', 'Personal' => 'Escáneres Personales',
+                                    'Accesorios' => 'Accesorios', 'Consumibles' => 'Consumibles', 'Personal' => 'Escáneres Personales',
                                     'Oficina' => 'Escáneres de Oficina', 'Departamental' => 'Escáneres Departamentales',
                                     'Produccion' => 'Escáneres de Producción', 'Alimentacion' => 'Alimentación crítica',
                                     'Racks' => 'Racks y gabinetes'
@@ -148,22 +157,40 @@ get_header();
                                     if (strpos($clases, $key) !== false) { $categoria = $val; break; }
                                 }
 
-                                // 2. Extraer Enlace
                                 $a = $xpath->query(".//a", $prod)->item(0);
-                                $link = $a ? $a->getAttribute('href') : '#';
-                                $link = str_replace('[url_sitio]', home_url(), $link);
+                                $has_link = false;
+                                $link = '#';
+                                $descripcion_tarjeta = 'Ver especificaciones operativas.'; 
+                                
+                                if ($a) {
+                                    $link_href = $a->getAttribute('href');
+                                    if (!empty($link_href) && $link_href !== '#') {
+                                        $has_link = true;
+                                        $link = str_replace('[url_sitio]', home_url(), $link_href);
+                                    }
+                                } 
+                                
+                                if (!$has_link) {
+                                    $spans = $xpath->query(".//p/span", $prod);
+                                    if ($spans->length > 0) {
+                                        $descripcion_tarjeta = '';
+                                        foreach ($spans as $index => $span) {
+                                            $descripcion_tarjeta .= esc_html(trim($span->nodeValue));
+                                            if ($index < $spans->length - 1) {
+                                                $descripcion_tarjeta .= '<br/>';
+                                            }
+                                        }
+                                    }
+                                }
 
-                                // 3. Extraer Imagen
                                 $img = $xpath->query(".//img", $prod)->item(0);
                                 $img_src = $img ? $img->getAttribute('src') : get_template_directory_uri().'/images/default.jpg';
                                 $img_src = str_replace('[url_tema]', get_template_directory_uri(), $img_src);
                                 $img_src = str_replace('[url_sitio]', home_url(), $img_src);
 
-                                // 4. Extraer Título (Está in una etiqueta <b> dentro del <p>)
                                 $b = $xpath->query(".//p/b", $prod)->item(0);
                                 $titulo = $b ? $b->nodeValue : 'Equipo Empresarial';
 
-                                // Imprimimos la tarjeta nueva of Tailwind CSS combinada with los datos viejos
                                 ?>
                                 <div data-brand="<?php echo esc_attr($marca); ?>" data-category="<?php echo esc_attr($categoria); ?>" data-name="<?php echo esc_attr(strtolower($titulo)); ?>" class="product-item transition-all duration-500" data-astro-cid-d326op7z>
                                     <div class="product-card group relative flex flex-col bg-white rounded-3xl border border-slate-100 shadow-md hover:shadow-2xl hover:border-sky-400/30 transition-all duration-500 overflow-hidden animate-on-scroll h-full" data-astro-cid-tjdfhdqb>
@@ -179,12 +206,24 @@ get_header();
                                             <img src="<?php echo esc_url($img_src); ?>" alt="<?php echo esc_attr($titulo); ?>" class="max-w-full max-h-48 object-contain transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 drop-shadow-xl p-4" data-astro-cid-tjdfhdqb>
                                         </div>
                                         <div class="p-6 pt-0 bg-gradient-to-t from-slate-50/80 to-transparent" data-astro-cid-tjdfhdqb>
-                                            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-2 truncate group-hover:text-sky-600 transition-colors" data-astro-cid-tjdfhdqb><?php echo esc_html($titulo); ?></h3>
-                                            <p class="text-sm text-slate-500 font-medium leading-relaxed line-clamp-2 mb-6" data-astro-cid-tjdfhdqb>
-                                                Ver especificaciones operativas.
+                                            
+                                            <div class="overflow-hidden w-full mb-2 title-mask-edges" data-astro-cid-tjdfhdqb>
+                                                <h3 class="product-title-anim text-xl font-black font-['Outfit'] text-slate-900 group-hover:text-sky-600 transition-colors inline-block whitespace-nowrap" data-astro-cid-tjdfhdqb>
+                                                    <?php echo esc_html($titulo); ?>
+                                                </h3>
+                                            </div>
+                                            
+                                            <p class="text-sm text-slate-500 font-medium leading-relaxed line-clamp-3 mb-6" data-astro-cid-tjdfhdqb>
+                                                <?php echo $descripcion_tarjeta; ?>
                                             </p>
+                                            
                                             <div class="flex items-center justify-between border-t border-gray-100 pt-5" data-astro-cid-tjdfhdqb>
-                                                <a href="<?php echo esc_url($link); ?>" class="group/btn inline-flex items-center text-sm font-bold text-sky-600 hover:text-sky-700 transition-colors" data-astro-cid-tjdfhdqb> DETALLES </a>
+                                                <?php if($has_link): ?>
+                                                    <a href="<?php echo esc_url($link); ?>" class="group/btn inline-flex items-center text-sm font-bold text-sky-600 hover:text-sky-700 transition-colors" data-astro-cid-tjdfhdqb> DETALLES </a>
+                                                <?php else: ?>
+                                                    <span class="inline-flex items-center text-sm font-bold opacity-0 pointer-events-none" data-astro-cid-tjdfhdqb> DETALLES </span>
+                                                <?php endif; ?>
+                                                
                                                 <a href="<?php echo home_url('/#contacto'); ?>" class="text-[10px] font-extrabold text-gray-300 hover:text-cyan-500 tracking-widest uppercase transition-colors" data-astro-cid-tjdfhdqb> COTIZAR </a>
                                             </div>
                                         </div>
@@ -217,6 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const brandPills = document.querySelectorAll('.filter-pill');
     const products = document.querySelectorAll('.product-item');
     const noResults = document.getElementById('no-results');
+    const resultsCountEl = document.getElementById('results-count'); 
 
     let activeBrand = '*';
     let activeCategory = '*';
@@ -242,6 +282,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
+        if (resultsCountEl) {
+            resultsCountEl.textContent = visibleCount;
+        }
+
         if (visibleCount === 0) {
             noResults?.classList.remove('hidden');
         } else {
@@ -252,18 +296,12 @@ document.addEventListener("DOMContentLoaded", () => {
     brandPills.forEach(btn => {
         btn.addEventListener('click', () => {
             activeBrand = btn.getAttribute('data-brand');
-
-            // 1. Limpiamos el estilo active de todos los botones
             brandPills.forEach(p => {
                 p.classList.remove('active-pill');
-                // Restauramos el estado original base
                 p.classList.add('text-slate-500', 'border-slate-100', 'bg-white');
             });
-
-            // 2. Aplicamos la nueva clase al botón seleccionado
             btn.classList.add('active-pill');
             btn.classList.remove('text-slate-500', 'border-slate-100');
-            
             filterProducts();
         });
     });
@@ -285,25 +323,57 @@ document.addEventListener("DOMContentLoaded", () => {
     const handleUrlHash = () => {
         const hash = window.location.hash.substring(1);
         if (hash) {
-            // Decodificamos y normalizamos el hash (quitamos espacios or %20)
             const decodedHash = decodeURIComponent(hash).replace(/\s+/g, '-');
-            
-            // Buscamos el botón que coincida con el data-brand
             const targetPill = Array.from(brandPills).find(p => 
                 p.getAttribute('data-brand').toLowerCase() === decodedHash.toLowerCase()
             );
 
             if (targetPill) {
-                // Simulamos el clic para activar el filtro de Astro/Tailwind
                 targetPill.click();
-                // Scroll suave hacia los productos
                 document.getElementById('product-grid')?.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                filterProducts();
             }
+        } else {
+            filterProducts();
         }
     };
 
-    // Ejecutamos con un pequeño delay para asegurar la carga completa
-    setTimeout(handleUrlHash, 300);
+    const initTitleScroll = () => {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                const title = entry.target.querySelector('.product-title-anim');
+                if(!title) return;
+                
+                const container = title.parentElement;
+                const scrollDist = container.clientWidth - title.scrollWidth;
+                
+                if (scrollDist < -2) { 
+                    if (entry.isIntersecting) {
+                        title.style.setProperty('--scroll-dist', scrollDist + 'px');
+                        const duration = Math.max(5, Math.abs(scrollDist) / 20) + 's';
+                        title.style.setProperty('--scroll-duration', duration);
+                        title.classList.add('animate-scroll-title');
+                    } else {
+                        title.classList.remove('animate-scroll-title');
+                    }
+                } else {
+                    title.style.textOverflow = 'ellipsis';
+                    title.style.overflow = 'hidden';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.product-card').forEach(card => observer.observe(card));
+    };
+
+    // FORZAMOS LA EJECUCIÓN DEL CONTADOR DIRECTAMENTE AL CARGAR EL DOM
+    filterProducts();
+
+    setTimeout(() => {
+        handleUrlHash();
+        initTitleScroll(); 
+    }, 300);
 
 });
 </script>
