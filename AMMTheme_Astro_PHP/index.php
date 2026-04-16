@@ -772,7 +772,7 @@
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Reembolso e Inventario</span>
-              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">Toka</span>
+              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">Administración Vale Papel</span>
               </h3>
               <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> Ecosistema web integral diseñado para la administración, inventario y conciliación de vales de papel con trazabilidad absoluta. </p>
               <ul class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
@@ -801,7 +801,7 @@
                   <span>Reportes financieros y auditoría</span>
                 </li>
               </ul>
-              <a href="<?php echo home_url('/productos/plataforma-toka'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <a href="<?php echo home_url('/productos/plataforma-administracion-vales'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
