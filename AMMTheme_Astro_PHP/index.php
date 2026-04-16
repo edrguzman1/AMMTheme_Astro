@@ -173,10 +173,10 @@
     initHeroSlider();
     document.addEventListener("astro:after-swap", initHeroSlider);
   </script>
-  <section id="nosotros" class="relative pt-20 lg:pt-32 pb-12 bg-white overflow-hidden"><!--NOSOTROS PARTE 1-->
+  <section id="nosotros" class="relative pt-20 lg:pt-32 pb-12 bg-white overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
       <div class="text-center max-w-4xl mx-auto mb-12 sm:mb-16 px-4 sm:px-0 animate-on-scroll">
-        <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6 group">
+        <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6">
           <span class="w-2 h-2 rounded-full bg-cyan-500 mr-2.5 animate-pulse"></span>
           <span class="text-[11px] font-black font-['Outfit'] text-cyan-900 tracking-widest uppercase">Quiénes Somos</span>
         </div>
@@ -185,33 +185,37 @@
         <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto"> Somos una empresa mexicana con más de 30 años de trayectoria, dedicada a la integración e innovación de soluciones para el procesamiento y digitalización de documentos con valor. </p>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
-        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col text-center animate-on-scroll delay-100 overflow-hidden group">
+        
+        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col text-center animate-on-scroll delay-100 overflow-hidden">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="<?php echo get_template_directory_uri(); ?>/template/images/software.jpg" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/software.jpg" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="p-8 flex flex-col flex-1 mt-2">
-            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 group-hover:text-cyan-600 transition-colors uppercase"> Desarrollo de Software </h3>
+            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 uppercase"> Desarrollo de Software </h3>
             <p class="text-slate-600 font-medium leading-relaxed text-sm flex-1"> Construimos plataformas robustas e inteligentes, diseñadas específicamente para el control, procesamiento y resguardo de documentos con valor. </p>
           </div>
         </div>
-        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col text-center animate-on-scroll delay-200 overflow-hidden group">
+
+        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col text-center animate-on-scroll delay-200 overflow-hidden">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="<?php echo get_template_directory_uri(); ?>/template/images/hardware.jpg" alt="Hardware de Captura" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/hardware.jpg" alt="Hardware de Captura" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="p-8 flex flex-col flex-1 mt-2">
-            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 group-hover:text-cyan-600 transition-colors uppercase"> Hardware de Captura </h3>
+            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 uppercase"> Hardware de Captura </h3>
             <p class="text-slate-600 font-medium leading-relaxed text-sm flex-1"> Proveemos escáneres de alto rendimiento de marcas líderes a nivel mundial, ideales para optimizar procesos de digitalización masiva y remota. </p>
           </div>
         </div>
-        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col text-center animate-on-scroll delay-300 overflow-hidden group">
+
+        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col text-center animate-on-scroll delay-300 overflow-hidden">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="<?php echo get_template_directory_uri(); ?>/template/images/consultoria.jpg" alt="Consultoría en TI" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/consultoria.jpg" alt="Consultoría en TI" class="absolute inset-0 w-full h-full object-cover">
           </div>
           <div class="p-8 flex flex-col flex-1 mt-2">
-            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 group-hover:text-cyan-600 transition-colors uppercase"> Consultoría en TI </h3>
+            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 uppercase"> Consultoría en TI </h3>
             <p class="text-slate-600 font-medium leading-relaxed text-sm flex-1"> Brindamos asesoría tecnológica especializada para modernizar la infraestructura de las organizaciones y garantizar operaciones eficientes y seguras. </p>
           </div>
         </div>
+
       </div>
     </div>
     <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-sky-50/50 rounded-full blur-3xl opacity-60 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
