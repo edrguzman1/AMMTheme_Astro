@@ -67,7 +67,7 @@
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
         <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Digitalizadores Digital Check. </h1>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Digitalizadores <br>Digital Check. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Velocidad y precisión para tu flujo financiero con la compañía No. 1 en el mundo en diseño y fabricación de escáneres de cheques. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
             <a href="#productos" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Ver equipos </a>
@@ -76,8 +76,7 @@
       </div>
     </div>
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
-      <img src="
-									<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Kodak Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Kodak Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -186,16 +185,6 @@
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-20">
         
-        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col text-center animate-on-scroll delay-100 overflow-hidden">
-          <div class="w-full h-48 sm:h-56 relative overflow-hidden">
-            <img src="<?php echo get_template_directory_uri(); ?>/template/images/software.jpg" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover">
-          </div>
-          <div class="p-8 flex flex-col flex-1 mt-2">
-            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 uppercase"> Desarrollo de Software </h3>
-            <p class="text-slate-600 font-medium leading-relaxed text-sm flex-1"> Construimos plataformas robustas e inteligentes, diseñadas específicamente para el control, procesamiento y resguardo de documentos con valor. </p>
-          </div>
-        </div>
-
         <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col text-center animate-on-scroll delay-200 overflow-hidden">
           <div class="w-full h-48 sm:h-56 relative overflow-hidden">
             <img src="<?php echo get_template_directory_uri(); ?>/template/images/hardware.jpg" alt="Hardware de Captura" class="absolute inset-0 w-full h-full object-cover">
@@ -203,6 +192,16 @@
           <div class="p-8 flex flex-col flex-1 mt-2">
             <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 uppercase"> Hardware de Captura </h3>
             <p class="text-slate-600 font-medium leading-relaxed text-sm flex-1"> Proveemos escáneres de alto rendimiento de marcas líderes a nivel mundial, ideales para optimizar procesos de digitalización masiva y remota. </p>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl flex flex-col text-center animate-on-scroll delay-100 overflow-hidden">
+          <div class="w-full h-48 sm:h-56 relative overflow-hidden">
+            <img src="<?php echo get_template_directory_uri(); ?>/template/images/software.jpg" alt="Desarrollo de Software" class="absolute inset-0 w-full h-full object-cover">
+          </div>
+          <div class="p-8 flex flex-col flex-1 mt-2">
+            <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 uppercase"> Desarrollo de Software </h3>
+            <p class="text-slate-600 font-medium leading-relaxed text-sm flex-1"> Construimos plataformas robustas e inteligentes, diseñadas específicamente para el control, procesamiento y resguardo de documentos con valor. </p>
           </div>
         </div>
 
@@ -1402,8 +1401,7 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto font-['Inter']">
           <a href="https://www.digitalcheck.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-100 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="
-																																																	<?php echo get_template_directory_uri(); ?>/template/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Digital Check </h3>
             <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Líder mundial en diseño y fabricación de digitalizadores de cheques, con presencia en instituciones financieras de todo el globo. </p>
@@ -1414,8 +1412,7 @@
           </a>
           <a href="https://www.teamnet.com.mx/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-200 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="
-																																																		<?php echo get_template_directory_uri(); ?>/template/images/member4.jpg" alt="TEAM" class="max-w-full max-h-full object-contain">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member4.jpg" alt="TEAM" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> TEAM </h3>
             <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Especialista mayorista de valor agregado en la industria de soluciones TI, integrando marcas de clase mundial. </p>
@@ -1426,11 +1423,21 @@
           </a>
           <a href="https://www.vertiv.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="
-																																																			<?php echo get_template_directory_uri(); ?>/template/images/member10.jpg" alt="Vertiv" class="max-w-full max-h-full object-contain">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member10.jpg" alt="Vertiv" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Vertiv </h3>
             <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Proveedor líder global de infraestructura crítica y soluciones de continuidad para sistemas de comunicaciones y centros de datos. </p>
+            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.credit-force.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
+            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member11.png" alt="Vertiv" class="max-w-full max-h-full object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Credit Force </h3>
+            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6">Líderes en soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza en bancos, financieras, retail, telcos, cableras, cooperativas y cualquier otro tipo de institución que otorgue crédito.</p>
             <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
               </svg>
