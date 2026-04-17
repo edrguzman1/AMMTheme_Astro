@@ -72,7 +72,7 @@ get_header();
         </div>
     </section>
 
-    <section class="sticky top-20 z-40 bg-white/90 backdrop-blur-xl border-y border-slate-100 shadow-sm" data-astro-cid-d326op7z>
+    <section id="main-filter-bar" class="sticky top-20 z-40 bg-white/90 backdrop-blur-xl border-y border-slate-100 shadow-sm" data-astro-cid-d326op7z>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4" data-astro-cid-d326op7z>
             <div class="flex flex-col lg:grid lg:grid-cols-[1fr_320px] items-center gap-8 lg:gap-12" data-astro-cid-d326op7z>
                 <div class="w-full min-w-0 relative group order-1" data-astro-cid-d326op7z>
@@ -108,10 +108,10 @@ get_header();
         </div>
     </section>
 
-    <section class="py-20 relative bg-slate-50/50" data-astro-cid-d326op7z>
+    <section class="pt-10 pb-20 relative bg-slate-50/50" data-astro-cid-d326op7z>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-astro-cid-d326op7z>
             
-            <div class="flex justify-between items-center mb-8 pb-4 border-b border-slate-200/60" data-astro-cid-d326op7z>
+            <div id="counter-bar" class="sticky z-30 flex items-center mb-8 py-3 transition-all duration-200 -mx-4 px-4 sm:mx-0 sm:px-0" data-astro-cid-d326op7z>
                 <div class="bg-white border border-slate-200 shadow-sm rounded-full px-4 py-1.5 text-[10px] sm:text-[11px] font-bold text-slate-500 uppercase tracking-widest flex items-center gap-2" data-astro-cid-d326op7z>
                     <div class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]" data-astro-cid-d326op7z></div>
                     Productos Encontrados <span id="results-count" class="text-sky-600 font-black text-sm ml-1" data-astro-cid-d326op7z>0</span>
@@ -258,6 +258,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const noResults = document.getElementById('no-results');
     const resultsCountEl = document.getElementById('results-count'); 
 
+    // --- LÓGICA DE APILAMIENTO DINÁMICO (CONTADOR DEBAJO DEL FILTRO) ---
+    const syncStickyCounter = () => {
+        const filterBar = document.getElementById('main-filter-bar');
+        const counterBar = document.getElementById('counter-bar');
+        if (filterBar && counterBar) {
+            // Obtenemos la posición 'top' dinámica de la barra de filtros (incluyendo margen de WordPress si existe)
+            const filterTop = parseInt(window.getComputedStyle(filterBar).top, 10) || 0;
+            // Sumamos la altura de la barra para que el contador quede exactamente debajo
+            counterBar.style.top = (filterTop + filterBar.offsetHeight - 1) + 'px';
+        }
+    };
+    window.addEventListener('resize', syncStickyCounter);
+    
+    // Verificamos cambios de tamaño durante el scroll (por barras de navegadores móviles)
+    let lastFilterHeight = 0;
+    window.addEventListener('scroll', () => {
+        const filterBar = document.getElementById('main-filter-bar');
+        if(filterBar && filterBar.offsetHeight !== lastFilterHeight) {
+            syncStickyCounter();
+            lastFilterHeight = filterBar.offsetHeight;
+        }
+    }, { passive: true });
+
     let activeBrand = '*';
     let activeCategory = '*';
     let searchQuery = '';
@@ -367,12 +390,12 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll('.product-card').forEach(card => observer.observe(card));
     };
 
-    // FORZAMOS LA EJECUCIÓN DEL CONTADOR DIRECTAMENTE AL CARGAR EL DOM
     filterProducts();
 
     setTimeout(() => {
         handleUrlHash();
         initTitleScroll(); 
+        syncStickyCounter(); // Aseguramos el cálculo inicial del apilamiento
     }, 300);
 
 });
