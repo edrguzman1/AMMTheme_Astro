@@ -567,19 +567,22 @@
           <div class="w-full flex items-center p-2 rounded-full border border-white/20 shadow-2xl overflow-x-auto scrollbar-hide [&::-webkit-scrollbar]:hidden" style="background: transparent; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);">
             <div class="flex min-w-max w-full">
               <button data-index="0" class="software-tab flex-1 py-1.5 px-1 sm:px-0 transition-all duration-500 relative flex justify-center items-center">
-                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center bg-cyan-500 text-white shadow-lg shadow-cyan-500/20"> DbCheck </span>
+                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center bg-cyan-500 text-white shadow-lg shadow-cyan-500/20"> IDocx </span>
               </button>
               <button data-index="1" class="software-tab flex-1 py-1.5 px-1 sm:px-0 transition-all duration-500 relative flex justify-center items-center">
-                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> DigiDoc </span>
+                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> DbCheck </span>
               </button>
               <button data-index="2" class="software-tab flex-1 py-1.5 px-1 sm:px-0 transition-all duration-500 relative flex justify-center items-center">
-                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> TransvalNet </span>
+                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> DigiDoc </span>
               </button>
               <button data-index="3" class="software-tab flex-1 py-1.5 px-1 sm:px-0 transition-all duration-500 relative flex justify-center items-center">
-                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> TransvalArribos </span>
+                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> Transval </span>
               </button>
               <button data-index="4" class="software-tab flex-1 py-1.5 px-1 sm:px-0 transition-all duration-500 relative flex justify-center items-center">
-                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> Toka </span>
+                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> Control Vales </span>
+              </button>
+              <button data-index="5" class="software-tab flex-1 py-1.5 px-1 sm:px-0 transition-all duration-500 relative flex justify-center items-center">
+                <span class="pill-inner px-4 py-1.5 rounded-full text-[10px] md:text-xs font-black uppercase tracking-widest transition-all duration-500 w-32 sm:w-40 md:w-48 text-center text-white/60 hover:text-white"> Credit Force </span>
               </button>
             </div>
           </div>
@@ -589,6 +592,57 @@
           <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none"></div>
           
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out relative opacity-100 translate-x-0">
+            <div class="software-text-col w-full lg:w-[55%]">
+              <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Compensación Electrónica</span>
+              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">IDocx</span>
+              </h3>
+              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> IDocx automatiza la lectura de expedientes digitalizados. </p>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Identificación Documental</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Extracción de Datos</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Validación Cruzada.</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Integración de Datos.</span>
+                </li>
+              </ul>
+              <a href="<?php echo home_url('/productos/idocx'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
+              <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+            </div>
+          </div>
+
+          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Compensación Electrónica</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">DbCheck</span>
@@ -685,9 +739,9 @@
           <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Optimización de Vales</span>
-              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">TransvalNet</span>
+              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Ecosistema <span class="text-cyan-400">Transval</span>
               </h3>
-              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> Ecosistema diseñado para maximizar la eficiencia en el reembolso de vales físicos mediante hardware especializado. </p>
+              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> Unimos hardware de alta precisión y software avanzado para mejorar la trazabilidad total de reembolsos, garantizando el éxito absoluto de cada proyecto. </p>
               <ul class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
                 <li class="flex items-center text-slate-200 font-medium text-sm">
                   <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
@@ -713,25 +767,6 @@
                   </div>
                   <span>Reportes financieros en tiempo real</span>
                 </li>
-              </ul>
-              <a href="<?php echo home_url('/productos/transvalnet'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-                </svg>
-              </a>
-            </div>
-            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
-              <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
-            </div>
-          </div>
-          
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
-            <div class="software-text-col w-full lg:w-[55%]">
-              <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Control Logístico</span>
-              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">TransvalArribos</span>
-              </h3>
-              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> Módulo especializado en la recepción y registro de folios de reembolso para una trazabilidad total. </p>
-              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
                 <li class="flex items-center text-slate-200 font-medium text-sm">
                   <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
                     <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -757,14 +792,15 @@
                   <span>Dashboard de estatus logístico</span>
                 </li>
               </ul>
-              <a href="<?php echo home_url('/productos/transvalarribos'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              </ul>
+              <a href="<?php echo home_url('/productos/transval'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
               </a>
             </div>
             <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVA.png" alt="TransvalArribos" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
           
@@ -810,6 +846,73 @@
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/Toka.png" alt="Toka" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
+
+          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
+            <div class="software-text-col w-full lg:w-[55%]">
+              <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Credito y Cobranza</span>
+              <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Ecosistema <span class="text-cyan-400">Credit Force</span>
+              </h3>
+              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90">Productos totalmente integrados para cubrir cada etapa del ciclo de vida del crédito, asegurando una gestión eficiente, menor riesgo y mayor rentabilidad. </p>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Evaluacion y aprobacion de creditos</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Originacion de credito</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Administracion de cartera de credito</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Gestión de cobranza</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Gestión del cobro judicial</span>
+                </li>
+                <li class="flex items-center text-slate-200 font-medium text-sm">
+                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
+                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                  </div>
+                  <span>Verificación de antecedentes e identidades</span>
+                </li>
+              </ul>
+              <a href="<?php echo home_url('/productos/creditforce'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
+              <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CreditForce.png" alt="CreditForce" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -849,7 +952,6 @@
             });
 
             const scrollContainer = tab.closest('.overflow-x-auto');
-            if (scrollContainer && window.innerWidth <= 600) {
                 const containerRect = scrollContainer.getBoundingClientRect();
                 const tabRect = tab.getBoundingClientRect();
                 const scrollTarget = scrollContainer.scrollLeft + (tabRect.left - containerRect.left) - (containerRect.width / 2) + (tabRect.width / 2);
@@ -858,7 +960,6 @@
                     left: scrollTarget,
                     behavior: 'smooth'
                 });
-            }
             
           });
         });
