@@ -492,33 +492,20 @@
       });
     </script>
   </div>
-  <div class="relative"><!--SOLUCIONES-->
+  <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="soluciones" class="py-24 relative overflow-hidden bg-[#002129]">
       
       <style>
         @media screen and (max-width: 600px) {
-          /* 1. Transformamos el contenedor in Grid to apilar sin usar absolutos */
+          /* Eliminamos el grid hack for que el JS dinámico tome el control total de la altura */
           .software-main-container {
-            display: grid !important;
-            padding: 1.5rem !important;
-            padding-bottom: 2rem !important;
-            min-height: auto !important; 
             border-radius: 2rem !important;
           }
-          
-          /* 2. Todos los paneles comparten la misma celda and respetan su propio tamaño */
           .software-panel {
-            grid-area: 1 / 1 !important;
-            position: relative !important; /* Matamos el absolute que rompía la caja */
-            inset: auto !important;
-            padding: 0 !important; /* Limpiamos el padding sobrante de escritorio */
             flex-direction: column-reverse !important;
             gap: 1rem !important;
-            align-self: start !important; /* Alineamos arriba to evitar estiramientos feos */
           }
-          
-          /* 3. Reducimos el contenedor of la imagen and la volvemos miniatura cuadrada */
           .software-img-col {
             margin-bottom: 0.5rem !important;
           }
@@ -532,13 +519,9 @@
             margin: 0 auto !important; 
             border-radius: 1.25rem !important;
           }
-          
-          /* 4. Compactamos los textos and títulos */
           .software-text-col > span { margin-bottom: 0.5rem !important; }
           .software-text-col h3 { font-size: 1.875rem !important; margin-bottom: 0.75rem !important; }
           .software-text-col p { font-size: 0.9rem !important; line-height: 1.4 !important; margin-bottom: 1.25rem !important; }
-          
-          /* 5. Compactamos la lista and el botón */
           .software-text-col ul { gap: 0.75rem !important; margin-bottom: 1.5rem !important; }
           .software-text-col ul li span { font-size: 0.8rem !important; line-height: 1.2 !important; }
           .software-text-col a {
@@ -588,15 +571,15 @@
           </div>
         </div>
         
-        <div class="software-main-container relative z-10 bg-[#002436] border border-white/5 rounded-[2.5rem] p-8 lg:p-14 pt-20 lg:pt-24 shadow-2xl overflow-hidden min-h-[550px] lg:min-h-[500px]">
-          <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+        <div class="software-main-container relative z-10 bg-[#002436] border border-white/5 rounded-[2.5rem] shadow-2xl overflow-hidden min-h-[650px] lg:min-h-[600px] transition-all duration-500">
+          <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-500/5 rounded-full blur-[100px] pointer-events-none z-0"></div>
           
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out relative opacity-100 translate-x-0">
+          <div class="software-panel w-full p-6 pt-16 md:p-8 md:pt-20 lg:p-14 lg:pt-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out relative z-10 opacity-100 translate-x-0 pointer-events-auto">
             <div class="software-text-col w-full lg:w-[55%]">
-              <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Compensación Electrónica</span>
+              <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Automaticación de Expedientes</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">IDocx</span>
               </h3>
-              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> IDocx automatiza la lectura de expedientes digitalizados. </p>
+              <p class="text-lg text-slate-300 leading-relaxed mb-8 font-medium italic opacity-90"> Sistema avanzado para la digitalización, extracción inteligente y validación cruzada, garantizando la absoluta integridad de su informacion documental. </p>
               <ul class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
                 <li class="flex items-center text-slate-200 font-medium text-sm">
                   <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
@@ -604,7 +587,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
                     </svg>
                   </div>
-                  <span>Identificación Documental</span>
+                  <span>Identificación y extracción mediante IA, OCR e ICR</span>
                 </li>
                 <li class="flex items-center text-slate-200 font-medium text-sm">
                   <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
@@ -612,7 +595,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
                     </svg>
                   </div>
-                  <span>Extracción de Datos</span>
+                  <span>Integración de datos estructurados a sistemas corporativos</span>
                 </li>
                 <li class="flex items-center text-slate-200 font-medium text-sm">
                   <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
@@ -620,15 +603,7 @@
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
                     </svg>
                   </div>
-                  <span>Validación Cruzada.</span>
-                </li>
-                <li class="flex items-center text-slate-200 font-medium text-sm">
-                  <div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0">
-                    <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path>
-                    </svg>
-                  </div>
-                  <span>Integración de Datos.</span>
+                  <span>Validación cruzada automática entre documentos.</span>
                 </li>
               </ul>
               <a href="<?php echo home_url('/productos/idocx'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -638,11 +613,11 @@
             </div>
             <div class="software-img-col w-full lg:w-[45%] relative flex justify-center items-center">
               <div class="absolute inset-0 bg-cyan-500/10 blur-[120px] rounded-full"></div>
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CW.png" alt="DbCheck" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/idocx.png" alt="IDocx" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
 
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
+          <div class="software-panel w-full p-6 pt-16 md:p-8 md:pt-20 lg:p-14 lg:pt-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute top-0 left-0 z-10 opacity-0 translate-x-4 pointer-events-none">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Compensación Electrónica</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">DbCheck</span>
@@ -685,7 +660,7 @@
             </div>
           </div>
           
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
+          <div class="software-panel w-full p-6 pt-16 md:p-8 md:pt-20 lg:p-14 lg:pt-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute top-0 left-0 z-10 opacity-0 translate-x-4 pointer-events-none">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Gestión Documental Pro</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">DigiDoc</span>
@@ -736,7 +711,7 @@
             </div>
           </div>
           
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
+          <div class="software-panel w-full p-6 pt-16 md:p-8 md:pt-20 lg:p-14 lg:pt-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute top-0 left-0 z-10 opacity-0 translate-x-4 pointer-events-none">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Optimización de Vales</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Ecosistema <span class="text-cyan-400">Transval</span>
@@ -792,7 +767,6 @@
                   <span>Dashboard de estatus logístico</span>
                 </li>
               </ul>
-              </ul>
               <a href="<?php echo home_url('/productos/transval'); ?>" class="inline-flex items-center px-10 py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-[11px] font-black uppercase tracking-widest rounded-full shadow-lg shadow-cyan-900/40 hover:-translate-y-1 transition-all group"> Explorar Solución <svg class="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                 </svg>
@@ -803,8 +777,8 @@
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVN.png" alt="TransvalNet" class="relative z-10 w-full min-h-[350px] h-auto max-h-[350px] lg:max-h-[450px] aspect-[4/3] object-contain rounded-[2.5rem] overflow-hidden bg-white p-12 lg:p-16 shadow-2xl drop-shadow-[0_0_50px_rgba(38,182,212,0.2)] transform hover:scale-105 transition-all duration-700">
             </div>
           </div>
-          
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
+
+          <div class="software-panel w-full p-6 pt-16 md:p-8 md:pt-20 lg:p-14 lg:pt-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute top-0 left-0 z-10 opacity-0 translate-x-4 pointer-events-none">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Reembolso e Inventario</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Plataforma <span class="text-cyan-400">Administración Vale Papel</span>
@@ -847,7 +821,7 @@
             </div>
           </div>
 
-          <div class="software-panel flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute inset-0 opacity-0 translate-x-4 pointer-events-none p-8 lg:p-14 pt-20 lg:pt-24">
+          <div class="software-panel w-full p-6 pt-16 md:p-8 md:pt-20 lg:p-14 lg:pt-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20 transition-all duration-400 ease-out absolute top-0 left-0 z-10 opacity-0 translate-x-4 pointer-events-none">
             <div class="software-text-col w-full lg:w-[55%]">
               <span class="text-cyan-400 font-black uppercase tracking-[0.2em] text-[10px] mb-4 block">Credito y Cobranza</span>
               <h3 class="text-3xl lg:text-5xl font-black font-['Outfit'] text-white mb-6 leading-tight uppercase tracking-tighter"> Ecosistema <span class="text-cyan-400">Credit Force</span>
@@ -941,16 +915,18 @@
               currentInner.classList.add(...activeClasses);
             }
             
+            // FIX: El panel seleccionado es relative para dictar la altura; los demás son absolute
             panels.forEach((panel, pIndex) => {
               if (pIndex.toString() === index) {
-                panel.classList.remove("opacity-0", "translate-x-4", "pointer-events-none");
-                panel.classList.add("opacity-100", "translate-x-0", "pointer-events-auto");
+                panel.classList.remove("absolute", "top-0", "left-0", "opacity-0", "translate-x-4", "pointer-events-none");
+                panel.classList.add("relative", "opacity-100", "translate-x-0", "pointer-events-auto");
               } else {
-                panel.classList.remove("opacity-100", "translate-x-0", "pointer-events-auto");
-                panel.classList.add("opacity-0", "translate-x-4", "pointer-events-none");
+                panel.classList.remove("relative", "opacity-100", "translate-x-0", "pointer-events-auto");
+                panel.classList.add("absolute", "top-0", "left-0", "opacity-0", "translate-x-4", "pointer-events-none");
               }
             });
 
+            // TU CÁLCULO ORIGINAL EXACTO para centrar botones, modificado solo a 1024px
             const scrollContainer = tab.closest('.overflow-x-auto');
                 const containerRect = scrollContainer.getBoundingClientRect();
                 const tabRect = tab.getBoundingClientRect();
@@ -1485,7 +1461,7 @@
         </script>
     </section>
   </div>
-  <div class="relative"><!--SOCIOS-->
+  <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="socios" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
@@ -1499,7 +1475,8 @@
           </h2>
           <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic"> Mantenemos alianzas sólidas con marcas líderes a nivel nacional e internacional para garantizar implementaciones de primer nivel en cada proyecto. </p>
         </div>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto font-['Inter']">
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto font-['Inter']">
           <a href="https://www.digitalcheck.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-100 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
@@ -1535,10 +1512,10 @@
           </a>
           <a href="https://www.credit-force.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
             <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member11.png" alt="Vertiv" class="max-w-full max-h-full object-contain">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member11.png" alt="Credit Force" class="max-w-full max-h-full object-contain">
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Credit Force </h3>
-            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6">Líderes en soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza en bancos, financieras, retail, telcos, cableras, cooperativas y cualquier otro tipo de institución que otorgue crédito.</p>
+            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6">Líderes en soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza en bancos y financieras.</p>
             <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
               </svg>
