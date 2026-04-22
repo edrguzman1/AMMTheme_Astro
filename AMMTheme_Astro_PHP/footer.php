@@ -58,13 +58,17 @@
             </div>
             <div class="flex flex-col md:flex-row justify-between items-center gap-6">
                 <div class="flex items-center gap-6">
-                    <p class="text-slate-700 font-bold text-[10px] uppercase tracking-widest"> © 2026 AMM S.A. DE C.V. </p>
+                    <p class="text-slate-700 font-bold text-[10px] uppercase tracking-widest"> © 2026 AM&amp;M S.A. DE C.V. </p>
                     <div class="w-1 h-1 rounded-full bg-slate-900 hidden md:block"></div>
-                    <p class="text-slate-800 font-black text-[9px] uppercase tracking-tight opacity-70 italic">Hecho con excelencia por AMM Engineering</p>
+                    <p class="text-slate-800 font-black text-[9px] uppercase tracking-tight opacity-140 italic">Hecho con excelencia por AM&amp;M Engineering</p>
                 </div>
                 <a href="#top" class="group flex items-center gap-3 text-slate-600 hover:text-cyan-400 transition-all font-black text-xs uppercase tracking-widest">
                     Regresar al origen
-                    <div class="w-8 h-8 rounded-full border border-slate-900 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500/10 transition-all"> <svg class="w-3 h-3 transform group-hover:-translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg> </div>
+                    <div class="w-8 h-8 rounded-full border border-slate-900 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500/10 transition-all"> 
+                        <svg class="w-3 h-3 transform group-hover:-translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path>
+                        </svg> 
+                    </div>
                 </a>
             </div>
         </div>
