@@ -258,23 +258,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const noResults = document.getElementById('no-results');
     const resultsCountEl = document.getElementById('results-count'); 
 
-    // --- LÓGICA DE APILAMIENTO DINÁMICO (CONTADOR DEBAJO DEL FILTRO) ---
+    // NUEVO UPDATE: Creamos un ancla invisible for tener una coordenada perfecta
+    const filterBar = document.getElementById('main-filter-bar');
+    if (filterBar && !document.getElementById('filter-anchor')) {
+        const anchor = document.createElement('div');
+        anchor.id = 'filter-anchor';
+        // Lo hacemos invisible without afectar el diseño
+        anchor.style.height = '0px';
+        anchor.style.width = '0px';
+        anchor.style.overflow = 'hidden';
+        filterBar.parentNode.insertBefore(anchor, filterBar);
+    }
+
     const syncStickyCounter = () => {
-        const filterBar = document.getElementById('main-filter-bar');
         const counterBar = document.getElementById('counter-bar');
         if (filterBar && counterBar) {
-            // Obtenemos la posición 'top' dinámica de la barra de filtros (incluyendo margen de WordPress si existe)
             const filterTop = parseInt(window.getComputedStyle(filterBar).top, 10) || 0;
-            // Sumamos la altura de la barra para que el contador quede exactamente debajo
             counterBar.style.top = (filterTop + filterBar.offsetHeight - 1) + 'px';
         }
     };
     window.addEventListener('resize', syncStickyCounter);
     
-    // Verificamos cambios de tamaño durante el scroll (por barras de navegadores móviles)
     let lastFilterHeight = 0;
     window.addEventListener('scroll', () => {
-        const filterBar = document.getElementById('main-filter-bar');
         if(filterBar && filterBar.offsetHeight !== lastFilterHeight) {
             syncStickyCounter();
             lastFilterHeight = filterBar.offsetHeight;
@@ -295,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const matchBrand = activeBrand === '*' || activeBrand === productBrand;
             const matchCategory = activeCategory === '*' || activeCategory === productCategory;
-            const matchSearch = searchQuery === '' || productText?.includes(searchQuery);
+            const matchSearch = searchQuery === '' || (productText && productText.includes(searchQuery));
 
             if (matchBrand && matchCategory && matchSearch) {
                 product.style.display = 'block';
@@ -310,9 +316,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (visibleCount === 0) {
-            noResults?.classList.remove('hidden');
+            if(noResults) noResults.classList.remove('hidden');
         } else {
-            noResults?.classList.add('hidden');
+            if(noResults) noResults.classList.add('hidden');
+        }
+    };
+
+    // NUEVO UPDATE: Scroll hacia el ancla estática instead of la barra móvil
+    const scrollToFilterBar = () => {
+        const anchor = document.getElementById('filter-anchor');
+        if (anchor) {
+            let headerOffset = 100; 
+            if (document.body && document.body.classList.contains('admin-bar')) {
+                headerOffset = 132;
+            }
+            const absolutePosition = anchor.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+                top: absolutePosition - headerOffset,
+                behavior: 'smooth'
+            });
         }
     };
 
@@ -326,6 +348,7 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.classList.add('active-pill');
             btn.classList.remove('text-slate-500', 'border-slate-100');
             filterProducts();
+            scrollToFilterBar(); 
         });
     });
 
@@ -333,6 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
         categorySelect.addEventListener('change', (e) => {
             activeCategory = e.target.value;
             filterProducts();
+            scrollToFilterBar(); 
         });
     }
 
@@ -340,6 +364,7 @@ document.addEventListener("DOMContentLoaded", () => {
         searchInput.addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase();
             filterProducts();
+            // sin scroll aquí para no molestar la escritura
         });
     }
 
@@ -352,8 +377,7 @@ document.addEventListener("DOMContentLoaded", () => {
             );
 
             if (targetPill) {
-                targetPill.click();
-                document.getElementById('product-grid')?.scrollIntoView({ behavior: 'smooth' });
+                targetPill.click(); 
             } else {
                 filterProducts();
             }
@@ -395,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         handleUrlHash();
         initTitleScroll(); 
-        syncStickyCounter(); // Aseguramos el cálculo inicial del apilamiento
+        syncStickyCounter(); 
     }, 300);
 
 });
