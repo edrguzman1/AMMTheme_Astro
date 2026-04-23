@@ -7,3 +7,18 @@ Description: Tema corporativo oficial basado in Astro.
 Version: 1.0
 Text Domain: ammtheme
 */
+
+.font-\[\'Outfit\'\] {
+    font-family: 'Oswald', sans-serif !important;
+}
+.font-\[\'Outfit\'\]\, * {
+    --tw-font-family: 'Oswald', sans-serif !important;
+}
+
+/* Cuerpo: Cambia Inter por Lato */
+.font-\[\'Inter\'\] {
+    font-family: 'Lato', sans-serif !important;
+}
+.font-\[\'Inter\'\]\, * {
+    --tw-font-family: 'Lato', sans-serif !important;
+}

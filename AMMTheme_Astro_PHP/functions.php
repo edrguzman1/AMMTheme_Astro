@@ -22,8 +22,8 @@ function ammtheme_scripts() {
         }
     }
 
-    // NUEVO UPDATE: Cargar Google Fonts directamente desde CDN for evitar bloqueos
-    wp_enqueue_style('amm-google-fonts', 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap', array(), null);
+    // NUEVO UPDATE: Cargar Google Fonts de Lato y Oswald directamente desde CDN
+    wp_enqueue_style('amm-google-fonts', 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Oswald:wght@400;600;700&display=swap', array(), null);
     
     // Cargar SweetAlert2 (desde CDN for garantizar that cargue without conflictos locales)
     wp_enqueue_style('amm-sweetalert-style', 'https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css', array(), null);
@@ -44,19 +44,23 @@ function ammtheme_scripts() {
 }
 add_action('wp_enqueue_scripts', 'ammtheme_scripts');
 
-// NUEVO UPDATE: Forzar tipografía in producción (Bypass de archivos locales)
+// NUEVO UPDATE: Forzar tipografía Lato y Oswald in producción (Bypass de archivos locales)
 function ammtheme_fix_production_typography() {
     $override_css = "
-        body, p, span, a, li, .font-\\[\\'Inter\\'\\] {
-            font-family: 'Inter', sans-serif !important;
+        /* Cuerpo: Párrafos y elementos de lista en Lato */
+        body, p, a, li, .font-\\[\\'Inter\\'\\] {
+            font-family: 'Lato', sans-serif !important;
         }
-        h1, h2, h3, h4, h5, h6, .font-\\[\\'Outfit\\'\\] {
-            font-family: 'Outfit', sans-serif !important;
+        
+        /* Títulos: H1-H6 y cualquier span dentro de ellos en Oswald */
+        h1, h2, h3, h4, h5, h6, 
+        h1 span, h2 span, h3 span, h4 span, h5 span, h6 span,
+        .font-\\[\\'Outfit\\'\\] {
+            font-family: 'Oswald', sans-serif !important;
         }
     ";
     wp_add_inline_style('amm-google-fonts', $override_css);
 }
-// El número 99 asegura that este fix cargue al final
 add_action('wp_enqueue_scripts', 'ammtheme_fix_production_typography', 99);
 
 // -----------------------------------------------------------------------------
@@ -143,19 +147,19 @@ function amm_estilos_alerta_contacto() {
             padding: 2.5rem 2rem !important;
             border: 1px solid #e2e8f0 !important; /* slate-200 */
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
-            font-family: "Inter", sans-serif !important;
+            font-family: "Lato", sans-serif !important; /* Actualizado a Lato */
             background-color: #ffffff !important;
         }
-        /* Title styling with Outfit font */
+        /* Title styling with Oswald font */
         div:where(.swal2-container) h2:where(.swal2-title) {
-            font-family: "Outfit", sans-serif !important;
-            font-weight: 900 !important;
+            font-family: "Oswald", sans-serif !important; /* Actualizado a Oswald */
+            font-weight: 700 !important; /* Ajustado para Oswald */
             color: #0f172a !important; /* slate-900 */
             font-size: 2rem !important;
             margin-top: 1rem !important;
             line-height: 1.2 !important;
         }
-        /* Text styling with Inter font */
+        /* Text styling with Lato font */
         div:where(.swal2-container) div:where(.swal2-html-container) {
             color: #475569 !important; /* slate-600 */
             font-size: 1.125rem !important;
@@ -170,7 +174,7 @@ function amm_estilos_alerta_contacto() {
             padding: 1rem !important;
             font-weight: 700 !important;
             border-radius: 0.75rem !important;
-            font-family: "Outfit", sans-serif !important;
+            font-family: "Oswald", sans-serif !important; /* Actualizado a Oswald */
             font-size: 1.125rem !important;
             letter-spacing: 0.025em !important;
             transition: all 0.3s ease !important;
