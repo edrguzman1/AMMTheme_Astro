@@ -1525,23 +1525,50 @@
       </div>
     </section>
   </div>
-  <div class="relative"><!--NOTICIAS-->
-    <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
+  <div class="relative"><div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="noticias" class="py-12 lg:py-16 border-t border-slate-200 bg-white relative overflow-hidden">
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
       
       <style>
+        /* CSS Puro for los botones del carrusel */
+        .btn-carrusel {
+            display: none; /* Ocultos por defecto in escritorio grande */
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 20;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 9999px;
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            color: #475569;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .btn-carrusel:hover {
+            color: #0284c7;
+            border-color: #67e8f9;
+        }
+        .btn-carrusel.left { left: 0px; }
+        .btn-carrusel.right { right: 0px; }
+
         @media screen and (max-width: 1023px) {
+          .btn-carrusel {
+              display: flex !important; /* Mostrar solo in pantallas < 1024px */
+          }
           .news-carousel {
             display: flex !important;
             flex-wrap: nowrap !important;
             overflow-x: auto !important;
             overflow-y: hidden !important;
             scroll-snap-type: x mandatory !important;
-            padding-bottom: 2rem !important; /* Espacio for la sombra */
+            scroll-behavior: smooth !important;
+            padding-bottom: 2rem !important; 
             gap: 1.5rem !important;
-            
-            /* Ocultar barra de desplazamiento */
             scrollbar-width: none !important; 
             -ms-overflow-style: none !important; 
           }
@@ -1549,7 +1576,7 @@
             display: none !important; 
           }
           .news-carousel > a {
-            flex: 0 0 85% !important; /* Cada tarjeta ocupa el 85% de la pantalla */
+            flex: 0 0 85% !important; 
             scroll-snap-align: center !important;
             max-width: 400px !important;
           }
@@ -1565,61 +1592,70 @@
           <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-['Outfit'] text-slate-900 tracking-tight leading-tight sm:leading-none mb-6">
             Últimas <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-500">Noticias</span>
           </h2>
-          <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic">
+          <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic font-['Lato']">
             Mantente informado con nuestros artículos más recientes sobre tecnología, hardware bancario y el mundo financiero.
           </p>
         </div>
 
-        <div class="news-carousel grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto font-['Inter']">
-            <?php
-            // Consulta WP_Query to extraer solo los 3 posts más recientes
-            $args_noticias = array(
-                'post_type'      => 'post',
-                'posts_per_page' => 3,
-                'post_status'    => 'publish'
-            );
-            $query_noticias = new WP_Query($args_noticias);
-
-            if ( $query_noticias->have_posts() ) :
-                while ( $query_noticias->have_posts() ) : $query_noticias->the_post();
-                    
-                    // Extraer la imagen destacada or poner una por defecto
-                    $img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
-                    if(!$img_url) $img_url = get_template_directory_uri() . '/images/default-news.jpg';
-                    
-                    // Categoría
-                    $cats = get_the_category();
-                    $cat_name = !empty($cats) ? $cats[0]->name : 'Actualidad';
-            ?>
+        <div class="relative max-w-6xl mx-auto">
             
-          <a href="<?php the_permalink(); ?>" class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col overflow-hidden animate-on-scroll group block">
-            <div class="w-full h-48 sm:h-56 relative overflow-hidden bg-slate-100 flex-shrink-0">
-              <img src="<?php echo esc_url($img_url); ?>" alt="<?php the_title_attribute(); ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
-              <div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-[10px] font-bold text-sky-600 uppercase tracking-widest font-['Outfit'] shadow-sm">
-                <?php echo esc_html($cat_name); ?>
-              </div>
-            </div>
-            <div class="p-8 flex flex-col flex-1 mt-2">
-              <div class="flex items-center text-slate-400 text-xs font-bold uppercase tracking-widest mb-3 space-x-2 font-['Outfit']">
-                <i class="far fa-calendar-alt"></i>
-                <span><?php echo get_the_date(); ?></span>
-              </div>
-              <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 line-clamp-2 leading-tight group-hover:text-cyan-600 transition-colors uppercase">
-                <?php the_title(); ?>
-              </h3>
-              <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-80 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
-                Leer artículo <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-              </div>
-            </div>
-          </a>
+          <button id="btn-prev-news" class="btn-carrusel left" aria-label="Noticia anterior">
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+          </button>
 
-            <?php
-                endwhile;
-                wp_reset_postdata();
-            else :
-                echo '<p class="text-slate-500 text-center col-span-full font-[\'Inter\']">Aún no hay noticias publicadas en el sistema.</p>';
-            endif;
-            ?>
+          <div id="carousel-news-container" class="news-carousel grid lg:grid-cols-3 gap-8">
+              <?php
+              $args_noticias = array(
+                  'post_type'      => 'post',
+                  'posts_per_page' => 3,
+                  'post_status'    => 'publish'
+              );
+              $query_noticias = new WP_Query($args_noticias);
+
+              if ( $query_noticias->have_posts() ) :
+                  while ( $query_noticias->have_posts() ) : $query_noticias->the_post();
+                      
+                      $img_url = get_the_post_thumbnail_url(get_the_ID(), 'large');
+                      if(!$img_url) $img_url = get_template_directory_uri() . '/images/default-news.jpg';
+                      
+                      $cats = get_the_category();
+                      $cat_name = !empty($cats) ? $cats[0]->name : 'Actualidad';
+              ?>
+              
+            <a href="<?php the_permalink(); ?>" class="glass-panel rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl hover:border-cyan-200 transition-all duration-500 flex flex-col overflow-hidden animate-on-scroll group block">
+              <div class="w-full h-48 sm:h-56 relative overflow-hidden bg-slate-100 flex-shrink-0">
+                <img src="<?php echo esc_url($img_url); ?>" alt="<?php the_title_attribute(); ?>" class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                <div class="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur rounded-full text-[10px] font-bold text-sky-600 uppercase tracking-widest font-['Outfit'] shadow-sm">
+                  <?php echo esc_html($cat_name); ?>
+                </div>
+              </div>
+              <div class="p-8 flex flex-col flex-1 mt-2">
+                <div class="flex items-center text-slate-400 text-xs font-bold uppercase tracking-widest mb-3 space-x-2 font-['Outfit']">
+                  <i class="far fa-calendar-alt"></i>
+                  <span><?php echo get_the_date(); ?></span>
+                </div>
+                <h3 class="text-xl font-black font-['Outfit'] text-slate-900 mb-4 line-clamp-2 leading-tight group-hover:text-cyan-600 transition-colors uppercase">
+                  <?php the_title(); ?>
+                </h3>
+                <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-80 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+                  Leer artículo <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                </div>
+              </div>
+            </a>
+
+              <?php
+                  endwhile;
+                  wp_reset_postdata();
+              else :
+                  echo '<p class="text-slate-500 text-center col-span-full font-[\'Inter\']">Aún no hay noticias publicadas en el sistema.</p>';
+              endif;
+              ?>
+          </div>
+
+          <button id="btn-next-news" class="btn-carrusel right" aria-label="Siguiente noticia">
+            <svg style="width: 1.25rem; height: 1.25rem;" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+          </button>
+          
         </div>
 
         <div class="text-center animate-on-scroll" style="margin-top: 3rem; padding-top: 1rem;">
@@ -1634,6 +1670,27 @@
       </div>
     </section>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const carousel = document.getElementById("carousel-news-container");
+      const btnPrev = document.getElementById("btn-prev-news");
+      const btnNext = document.getElementById("btn-next-news");
+
+      if(carousel && btnPrev && btnNext) {
+          // Desplazamiento de aproximadamente una tarjeta
+          const scrollAmount = 320; 
+
+          btnPrev.addEventListener("click", () => {
+              carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+          });
+
+          btnNext.addEventListener("click", () => {
+              carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          });
+      }
+    });
+  </script>
   <div class="relative"><!--CONTACTO-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="contacto" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
