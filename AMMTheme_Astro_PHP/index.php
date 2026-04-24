@@ -1,68 +1,14 @@
 <?php get_header(); ?> <div class="relative z-10 w-full transition-all duration-300">
   <section class="relative w-full h-[75vh] lg:h-[90vh] min-h-[500px] lg:min-h-[600px] bg-slate-900 overflow-hidden" id="hero-slider" data-astro-cid-txmsbymr>
+    
+    <!--Banner Logo-->
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-100 z-10" data-index="0" data-astro-cid-txmsbymr>
-      <img src="
-				<?php echo get_template_directory_uri(); ?>/template/images/slide-tienda.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Hardware para tu empresa, al instante. </h1>
-          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Conoce la tienda en línea de AM&M. El catálogo más completo de cómputo, componentes, impresión y seguridad para tu negocio. </p>
-          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="https://ammstore.com.mx" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Visitar tienda en línea </a>
-          </div>
-        </div>
-      </div>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-logo.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
     </div>
+
+    <!--Banner Digital Check-->
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="1" data-astro-cid-txmsbymr>
-      <img src="
-					<?php echo get_template_directory_uri(); ?>/template/images/slide-documentos.jpg" alt="Documentos con valor." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Documentos con valor. </h1>
-          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> AM&M es una compañía mexicana especializada en la integración e innovación de soluciones para procesamiento y digitalización de Documentos e Imágenes con valor. </p>
-          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Ver soluciones </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="2" data-astro-cid-txmsbymr>
-      <img src="
-						<?php echo get_template_directory_uri(); ?>/template/images/slide-consultoria.jpg" alt="Asesoría y Consultoría." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Asesoría y Consultoría. </h1>
-          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Contamos con un equipo de consultores altamente especializado para diferentes servicios en tecnologías de información y transformación digital. </p>
-          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="#contacto" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Contáctanos </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="3" data-astro-cid-txmsbymr>
-      <img src="
-							<?php echo get_template_directory_uri(); ?>/template/images/slide-vertiv.jpg" alt="Infraestructura Crítica y Energía." class="absolute inset-0 w-full h-full object-cover zoom-bg object-top" data-astro-cid-txmsbymr>
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
-      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
-          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Infraestructura Crítica y Energía. </h1>
-          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Asegura la continuidad de tus centros de datos con soluciones Vertiv líderes a nivel global, diseñadas para entornos empresariales. </p>
-          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
-            <a href="#productos" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Conocer más </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="4" data-astro-cid-txmsbymr>
-      <img src="
-								<?php echo get_template_directory_uri(); ?>/template/images/slide-ddc.jpg" alt="Digitalizadores Digital Check." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-ddc.jpg" alt="Digitalizadores Digital Check." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
@@ -75,7 +21,40 @@
         </div>
       </div>
     </div>
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
+    <!--Banner Documentos con valor-->
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="2" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-documentos.jpg" alt="Documentos con valor." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
+        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Documentos con valor. </h1>
+          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> AM&M es una compañía mexicana especializada en la integración e innovación de soluciones para procesamiento y digitalización de Documentos e Imágenes con valor. </p>
+          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
+            <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Ver soluciones </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Banner Vertiv-->
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="3" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-vertiv.jpg" alt="Infraestructura Crítica y Energía." class="absolute inset-0 w-full h-full object-cover zoom-bg object-top" data-astro-cid-txmsbymr>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
+        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Infraestructura Crítica y Energía. </h1>
+          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Asegura la continuidad de tus centros de datos con soluciones Vertiv líderes a nivel global, diseñadas para entornos empresariales. </p>
+          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
+            <a href="#productos" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Conocer más </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Banner Kodak Alaris-->
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="4" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Kodak Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
@@ -89,6 +68,55 @@
         </div>
       </div>
     </div>
+
+    <!--Banner Credit Force-->
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="4" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/CreditForce.png" alt="Credit Force." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
+        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Credit Force. </h1>
+          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza. </p>
+          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
+            <a href="#soluciones" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Ver soluciones </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Banner Asesoria y consultoria-->
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-consultoria.jpg" alt="Asesoría y Consultoría." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
+        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Asesoría y Consultoría. </h1>
+          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Contamos con un equipo de consultores altamente especializado para diferentes servicios en tecnologías de información y transformación digital. </p>
+          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
+            <a href="#contacto" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Contáctanos </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Banner AMMStore-->
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="6" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-tienda.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
+      <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
+        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Hardware para tu empresa, al instante. </h1>
+          <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Conoce la tienda en línea de AM&M. El catálogo más completo de cómputo, componentes, impresión y seguridad para tu negocio. </p>
+          <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
+            <a href="https://ammstore.com.mx" class="inline-block px-6 sm:px-8 py-3 sm:py-3.5 bg-sky-500 text-white font-bold rounded-xl shadow-lg hover:bg-cyan-500 hover:-translate-y-1 transition-all text-sm sm:text-base" data-astro-cid-txmsbymr> Visitar tienda en línea </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-3" data-astro-cid-txmsbymr>
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-cyan-400 w-10" data-target="0" aria-label="Ir al slide 1" data-astro-cid-txmsbymr></button>
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="1" aria-label="Ir al slide 2" data-astro-cid-txmsbymr></button>
@@ -96,7 +124,10 @@
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="3" aria-label="Ir al slide 4" data-astro-cid-txmsbymr></button>
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="4" aria-label="Ir al slide 5" data-astro-cid-txmsbymr></button>
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="5" aria-label="Ir al slide 6" data-astro-cid-txmsbymr></button>
+      <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="6" aria-label="Ir al slide 7" data-astro-cid-txmsbymr></button>
+      <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="7" aria-label="Ir al slide 7" data-astro-cid-txmsbymr></button>
     </div>
+
     <button id="slider-prev" class="absolute left-2 lg:left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur border border-white/10 hover:bg-sky-500 hover:text-white transition-all" data-astro-cid-txmsbymr>
       <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-txmsbymr>
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" data-astro-cid-txmsbymr></path>
@@ -107,7 +138,7 @@
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-txmsbymr></path>
       </svg>
     </button>
-  </section>
+</section>
   <script>
     function initHeroSlider() {
       const slides = document.querySelectorAll('.slide-item');
@@ -323,9 +354,73 @@
       });
     </script>
   </div>
-  <div class="relative"><!--CLIENTES-->
+  <div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="clientes" class="py-12 lg:py-16 border-y border-slate-100 bg-slate-50 overflow-hidden relative" data-astro-cid-cktvhckl>
+    <section id="socios" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-4xl mx-auto mb-16 sm:mb-20 animate-on-scroll">
+          <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6 group">
+            <span class="w-2 h-2 rounded-full bg-cyan-500 mr-2.5 animate-pulse"></span>
+            <span class="text-[11px] font-black font-['Outfit'] text-cyan-900 tracking-widest uppercase">Alianzas Estratégicas</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-['Outfit'] text-slate-900 tracking-tight leading-tight sm:leading-none mb-6"> Nuestros Socios <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-500">Tecnológicos</span>
+          </h2>
+          <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic"> Mantenemos alianzas sólidas con marcas líderes a nivel nacional e internacional para garantizar implementaciones de primer nivel en cada proyecto. </p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto font-['Inter']">
+          <a href="https://www.digitalcheck.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-100 group block">
+            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Digital Check </h3>
+            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Líder mundial en diseño y fabricación de digitalizadores de cheques, con presencia en instituciones financieras de todo el globo. </p>
+            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.teamnet.com.mx/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-200 group block">
+            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member4.jpg" alt="TEAM" class="max-w-full max-h-full object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> TEAM </h3>
+            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Especialista mayorista de valor agregado en la industria de soluciones TI, integrando marcas de clase mundial. </p>
+            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.vertiv.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
+            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member10.jpg" alt="Vertiv" class="max-w-full max-h-full object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Vertiv </h3>
+            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Proveedor líder global de infraestructura crítica y soluciones de continuidad para sistemas de comunicaciones y centros de datos. </p>
+            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+          </a>
+          <a href="https://www.credit-force.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
+            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
+              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member11.png" alt="Credit Force" class="max-w-full max-h-full object-contain">
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Credit Force </h3>
+            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6">Líderes en soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza en bancos y financieras.</p>
+            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="relative"><!--Clientes-->
+    <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
+    <section id="clientes" class="py-12 lg:py-16 border-y border-slate-100 bg-white overflow-hidden relative" data-astro-cid-cktvhckl>
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-slate-400/5 blur-[150px] pointer-events-none" data-astro-cid-cktvhckl></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center relative z-10 animate-on-scroll" data-astro-cid-cktvhckl>
         <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-slate-200 bg-white/80 mb-6 group" data-astro-cid-cktvhckl>
@@ -337,56 +432,38 @@
         <p class="text-base sm:text-lg text-slate-500 font-medium leading-relaxed max-w-3xl mx-auto" data-astro-cid-cktvhckl> Más de 10,000 instalaciones exitosas en las instituciones más importantes del país respaldan nuestra trayectoria. </p>
       </div>
       <div class="relative w-full overflow-hidden flex whitespace-nowrap py-4" data-astro-cid-cktvhckl>
-        <div class="absolute top-0 bottom-0 left-0 w-32 md:w-64 bg-gradient-to-r from-slate-50 via-slate-50/95 to-transparent z-20 pointer-events-none" data-astro-cid-cktvhckl></div>
-        <div class="absolute top-0 bottom-0 right-0 w-32 md:w-64 bg-gradient-to-l from-slate-50 via-slate-50/95 to-transparent z-20 pointer-events-none" data-astro-cid-cktvhckl></div>
+        <div class="absolute top-0 bottom-0 left-0 w-32 md:w-64 bg-gradient-to-r from-white via-white/95 to-transparent z-20 pointer-events-none" data-astro-cid-cktvhckl></div>
+        <div class="absolute top-0 bottom-0 right-0 w-32 md:w-64 bg-gradient-to-l from-white via-white/95 to-transparent z-20 pointer-events-none" data-astro-cid-cktvhckl></div>
         <div class="clients-simple-marquee py-6 relative z-10 flex flex-row items-center" data-astro-cid-cktvhckl>
-          <img src="
-																<?php echo get_template_directory_uri(); ?>/template/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
-          <img src="
-																	<?php echo get_template_directory_uri(); ?>/template/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
-          <img src="
-																		<?php echo get_template_directory_uri(); ?>/template/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
-          <img src="
-																			<?php echo get_template_directory_uri(); ?>/template/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
-          <img src="
-																				<?php echo get_template_directory_uri(); ?>/template/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
-          <img src="
-																					<?php echo get_template_directory_uri(); ?>/template/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
-          <img src="
-																						<?php echo get_template_directory_uri(); ?>/template/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
-          <img src="
-																							<?php echo get_template_directory_uri(); ?>/template/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
-          <img src="
-																								<?php echo get_template_directory_uri(); ?>/template/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
-          <img src="
-																									<?php echo get_template_directory_uri(); ?>/template/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
-          <img src="
-																										<?php echo get_template_directory_uri(); ?>/template/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
-          <img src="
-																											<?php echo get_template_directory_uri(); ?>/template/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
-          <img src="
-																												<?php echo get_template_directory_uri(); ?>/template/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
-          <img src="
-																													<?php echo get_template_directory_uri(); ?>/template/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
-          <img src="
-																														<?php echo get_template_directory_uri(); ?>/template/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
-          <img src="
-																															<?php echo get_template_directory_uri(); ?>/template/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
-          <img src="
-																																<?php echo get_template_directory_uri(); ?>/template/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
-          <img src="
-																																	<?php echo get_template_directory_uri(); ?>/template/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
-          <img src="
-																																		<?php echo get_template_directory_uri(); ?>/template/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
-          <img src="
-																																			<?php echo get_template_directory_uri(); ?>/template/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Cecoban" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="BBVA" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banamex" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Santander" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Inbursa" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banco del Bajío" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banregio" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Banorte" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Toka" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:grayscale-0 hover:opacity-100 hover:scale-115" alt="Scotiabank" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/cecoban.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Cecoban" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/bbva.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="BBVA" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/banamex.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Banamex" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/santander.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Santander" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/inbursa.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Inbursa" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/bajio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Banco del Bajío" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/banregio.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Banregio" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/banorte.png" class="h-8 md:h-10 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Banorte" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/toka.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Toka" data-astro-cid-cktvhckl>
+          <img src="<?php echo get_template_directory_uri(); ?>/template/images/Clients/scotiabank.png" class="h-6 md:h-8 w-auto grayscale opacity-40 mx-8 md:mx-16 shrink-0 transition-all duration-500 hover:scale-115 hover:grayscale-0 hover:opacity-100" alt="Scotiabank" data-astro-cid-cktvhckl>
         </div>
       </div>
     </section>
   </div>
-  <div class="relative"> <!--PRODUCTOS-->
-    <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="productos" class="py-12 lg:py-16 relative border-t border-slate-200 bg-white">
+  <div class="relative"><!--Productos-->
+     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
+    <section id="productos" class="py-12 lg:py-16 relative border-y border-slate-100 bg-slate-50 overflow-hidden">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-slate-400/5 blur-[150px] pointer-events-none"></div>
+      
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="text-center max-w-4xl mx-auto mb-16 animate-on-scroll">
           <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6 group">
@@ -426,8 +503,7 @@
             </div>
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="1">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
-                <img src="
-																																											<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain">
+                <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalKodak.jpg" alt="Kodak Alaris" class="w-full h-full object-contain">
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Kodak Alaris</h3>
@@ -441,8 +517,7 @@
             </div>
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="2">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
-                <img src="
-																																												<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain">
+                <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain">
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware / Infra</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Vertiv</h3>
@@ -1461,72 +1536,12 @@
         </script>
     </section>
   </div>
-  <div class="relative">
+  <div class="relative"><!--Noticias-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="socios" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
-      <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div class="text-center max-w-4xl mx-auto mb-16 sm:mb-20 animate-on-scroll">
-          <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-100 bg-cyan-50/50 mb-6 group">
-            <span class="w-2 h-2 rounded-full bg-cyan-500 mr-2.5 animate-pulse"></span>
-            <span class="text-[11px] font-black font-['Outfit'] text-cyan-900 tracking-widest uppercase">Alianzas Estratégicas</span>
-          </div>
-          <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-['Outfit'] text-slate-900 tracking-tight leading-tight sm:leading-none mb-6"> Nuestros Socios <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-cyan-500">Tecnológicos</span>
-          </h2>
-          <p class="text-base sm:text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto italic"> Mantenemos alianzas sólidas con marcas líderes a nivel nacional e internacional para garantizar implementaciones de primer nivel en cada proyecto. </p>
-        </div>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto font-['Inter']">
-          <a href="https://www.digitalcheck.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-100 group block">
-            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member3.jpg" alt="Digital Check" class="max-w-full max-h-full object-contain">
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Digital Check </h3>
-            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Líder mundial en diseño y fabricación de digitalizadores de cheques, con presencia en instituciones financieras de todo el globo. </p>
-            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-              </svg>
-            </div>
-          </a>
-          <a href="https://www.teamnet.com.mx/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-200 group block">
-            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member4.jpg" alt="TEAM" class="max-w-full max-h-full object-contain">
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> TEAM </h3>
-            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Especialista mayorista de valor agregado en la industria de soluciones TI, integrando marcas de clase mundial. </p>
-            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-              </svg>
-            </div>
-          </a>
-          <a href="https://www.vertiv.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
-            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member10.jpg" alt="Vertiv" class="max-w-full max-h-full object-contain">
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Vertiv </h3>
-            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6"> Proveedor líder global de infraestructura crítica y soluciones de continuidad para sistemas de comunicaciones y centros de datos. </p>
-            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-              </svg>
-            </div>
-          </a>
-          <a href="https://www.credit-force.com/" target="_blank" rel="noopener noreferrer" class="glass-panel p-8 rounded-3xl bg-white border border-slate-100 shadow-xl hover:-translate-y-2 hover:shadow-2xl transition-all duration-500 flex flex-col items-center text-center animate-on-scroll delay-300 group block">
-            <div class="w-24 h-24 mb-6 relative flex items-center justify-center grayscale group-hover:grayscale-0 transition-all duration-500">
-              <img src="<?php echo get_template_directory_uri(); ?>/template/images/member11.png" alt="Credit Force" class="max-w-full max-h-full object-contain">
-            </div>
-            <h3 class="text-xl font-bold text-slate-900 mb-4 uppercase tracking-tight group-hover:text-sky-600 transition-colors"> Credit Force </h3>
-            <p class="text-slate-500 text-sm font-medium leading-relaxed mb-6">Líderes en soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza en bancos y financieras.</p>
-            <div class="mt-auto flex items-center text-sky-600 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0"> Visitar Sitio <svg class="w-4 h-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-              </svg>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-  </div>
-  <div class="relative"><div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="noticias" class="py-12 lg:py-16 border-t border-slate-200 bg-white relative overflow-hidden">
+    
+    <section id="noticias" class="py-12 lg:py-16 border-y border-slate-100 bg-slate-50 relative overflow-hidden">
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-slate-400/5 blur-[150px] pointer-events-none"></div>
+      
       <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-100/30 rounded-full blur-[120px] pointer-events-none"></div>
       
       <style>
@@ -1669,31 +1684,30 @@
         
       </div>
     </section>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const carousel = document.getElementById("carousel-news-container");
+        const btnPrev = document.getElementById("btn-prev-news");
+        const btnNext = document.getElementById("btn-next-news");
+
+        if(carousel && btnPrev && btnNext) {
+            // Desplazamiento de aproximadamente una tarjeta
+            const scrollAmount = 320; 
+
+            btnPrev.addEventListener("click", () => {
+                carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            });
+
+            btnNext.addEventListener("click", () => {
+                carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            });
+        }
+      });
+    </script>
   </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const carousel = document.getElementById("carousel-news-container");
-      const btnPrev = document.getElementById("btn-prev-news");
-      const btnNext = document.getElementById("btn-next-news");
-
-      if(carousel && btnPrev && btnNext) {
-          // Desplazamiento de aproximadamente una tarjeta
-          const scrollAmount = 320; 
-
-          btnPrev.addEventListener("click", () => {
-              carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-          });
-
-          btnNext.addEventListener("click", () => {
-              carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-          });
-      }
-    });
-  </script>
-  <div class="relative"><!--CONTACTO-->
+  <div class="relative"><!--Contacto-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="contacto" class="py-12 lg:py-16 bg-slate-50 relative overflow-hidden">
+    <section id="contacto" class="py-12 lg:py-16 bg-white relative overflow-hidden">
       <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-100/20 via-white to-white pointer-events-none"></div>
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-stretch">

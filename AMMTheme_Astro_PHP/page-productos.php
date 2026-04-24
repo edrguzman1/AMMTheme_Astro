@@ -203,7 +203,13 @@ get_header();
                                         </div>
                                         <div class="relative flex-1 flex items-center justify-center p-8 pt-4 overflow-hidden min-h-[220px]" data-astro-cid-tjdfhdqb>
                                             <div class="absolute inset-0 bg-gradient-to-br from-sky-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" data-astro-cid-tjdfhdqb></div>
-                                            <img src="<?php echo esc_url($img_src); ?>" alt="<?php echo esc_attr($titulo); ?>" class="max-w-full max-h-48 object-contain transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 drop-shadow-xl p-4" data-astro-cid-tjdfhdqb>
+                                            <?php if($has_link): ?>
+                                                <a href="<?php echo esc_url($link); ?>" class="block w-full h-full flex items-center justify-center">
+                                                    <img src="<?php echo esc_url($img_src); ?>" alt="<?php echo esc_attr($titulo); ?>" class="max-w-full max-h-48 object-contain transform group-hover:scale-110 group-hover:-rotate-2 transition-transform duration-700 drop-shadow-xl p-4" data-astro-cid-tjdfhdqb>
+                                                </a>
+                                            <?php else: ?>
+                                                <img src="<?php echo esc_url($img_src); ?>" alt="<?php echo esc_attr($titulo); ?>" class="max-w-full max-h-48 object-contain transform group-hover:scale-110 transition-transform duration-700 drop-shadow-xl p-4" data-astro-cid-tjdfhdqb>
+                                            <?php endif; ?>
                                         </div>
                                         <div class="p-6 pt-0 bg-gradient-to-t from-slate-50/80 to-transparent" data-astro-cid-tjdfhdqb>
                                             
