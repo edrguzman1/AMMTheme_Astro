@@ -487,7 +487,8 @@
       </div>
     </section>
   </div>
-  <div class="relative"><div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
+  <div class="relative">
+    <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="productos" class="py-12 lg:py-16 relative border-y border-slate-100 bg-slate-50 overflow-clip" style="overflow: clip;">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-slate-400/5 blur-[150px] pointer-events-none"></div>
       
@@ -538,7 +539,7 @@
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Kodak Alaris</h3>
               <p class="text-lg text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">Sistemas de digitalización inteligente con procesamiento de imagen perfecto. Diseñados para integrarse nativamente en entornos enterprise, automatizando y optimizando los flujos de trabajo documentales más exigentes.</p>
-			  <p class="text-lg text-slate-500 font-medium leading-relaxed mb-6 max-w-2xl border-l-2 border-slate-200 pl-4">Nuestra oferta abarca desde soluciones departamentales como <span class="text-slate-700 font-bold">ScanMate, Scan Station y la Serie S2000</span>, hasta robustos escáneres de producción masiva de las familias <span class="text-slate-700 font-bold">S3000, i4000, S5000 e i5000</span>.</p>
+        <p class="text-lg text-slate-500 font-medium leading-relaxed mb-6 max-w-2xl border-l-2 border-slate-200 pl-4">Nuestra oferta abarca desde soluciones departamentales como <span class="text-slate-700 font-bold">ScanMate, Scan Station y la Serie S2000</span>, hasta robustos escáneres de producción masiva de las familias <span class="text-slate-700 font-bold">S3000, i4000, S5000 e i5000</span>.</p>
               <a href="<?php echo home_url('/productos/#Alaris'); ?>" class="text-sky-600 font-bold inline-flex items-center group text-base w-fit hover:text-cyan-500 transition-colors"> Explorar Catálogo <span class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center ml-3 group-hover:bg-cyan-100 transition-colors">
                   <svg class="w-4 h-4 text-sky-600 group-hover:text-cyan-600 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -592,7 +593,8 @@
               }
             });
           }, {
-            rootMargin: '-10% 0px -50% 0px'
+            /* FIX: Reduce el margen para que intercepte exactamente en el medio de la pantalla */
+            rootMargin: '-50% 0px -49% 0px'
           });
           blocks.forEach(block => observer.observe(block));
         }
