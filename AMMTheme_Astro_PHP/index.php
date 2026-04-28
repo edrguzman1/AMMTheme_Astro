@@ -1,18 +1,51 @@
 <?php get_header(); ?> <div class="relative z-10 w-full transition-all duration-300">
   <section class="relative w-full h-[75vh] lg:h-[90vh] min-h-[500px] lg:min-h-[600px] bg-slate-900 overflow-hidden" id="hero-slider" data-astro-cid-txmsbymr>
     
-    <!--Banner Logo-->
+    <style>
+      /* FIX RESPONSIVO: Crea una zona segura for los textos in TODAS las pantallas */
+      /* Esto garantiza que el texto nunca toque los botones laterales */
+      .hero-safe-zone {
+          padding-left: 3.5rem !important; /* Espacio for el botón Izquierdo */
+          padding-right: 3.5rem !important; /* Espacio for el botón Derecho */
+      }
+      
+      @media screen and (min-width: 640px) {
+          .hero-safe-zone {
+              padding-left: 4.5rem !important;
+              padding-right: 4.5rem !important;
+          }
+      }
+      
+      @media screen and (min-width: 1024px) {
+          .hero-safe-zone {
+              padding-left: 5rem !important;
+              padding-right: 5rem !important;
+          }
+      }
+      
+      /* Botones un poco más compactos in móvil para ganar espacio */
+      @media screen and (max-width: 600px) {
+          .hero-nav-btn {
+              width: 2.5rem !important;
+              height: 2.5rem !important;
+          }
+          .hero-nav-btn svg {
+              width: 1.25rem !important;
+              height: 1.25rem !important;
+          }
+      }
+    </style>
+
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-100 z-10" data-index="0" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-logo.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
     </div>
 
-    <!--Banner Digital Check-->
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="1" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-ddc.jpg" alt="Digitalizadores Digital Check." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Digitalizadores <br>Digital Check. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Velocidad y precisión para tu flujo financiero con la compañía No. 1 en el mundo en diseño y fabricación de escáneres de cheques. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -21,13 +54,13 @@
         </div>
       </div>
     </div>
-    <!--Banner Documentos con valor-->
+    
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="2" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-documentos.jpg" alt="Documentos con valor." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Documentos con valor. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> AM&M es una compañía mexicana especializada en la integración e innovación de soluciones para procesamiento y digitalización de Documentos e Imágenes con valor. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -37,13 +70,12 @@
       </div>
     </div>
 
-    <!--Banner Vertiv-->
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="3" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-vertiv.jpg" alt="Infraestructura Crítica y Energía." class="absolute inset-0 w-full h-full object-cover zoom-bg object-top" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Infraestructura Crítica y Energía. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Asegura la continuidad de tus centros de datos con soluciones Vertiv líderes a nivel global, diseñadas para entornos empresariales. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -53,13 +85,12 @@
       </div>
     </div>
 
-    <!--Banner Kodak Alaris-->
     <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="4" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-alaris.jpg" alt="Escáneres Kodak Alaris." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Escáneres Kodak Alaris. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Captura de información inteligente y digitalización de documentos a gran escala con la mejor calidad de imagen del mercado. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -69,13 +100,12 @@
       </div>
     </div>
 
-    <!--Banner Credit Force-->
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="4" data-astro-cid-txmsbymr>
-      <img src="<?php echo get_template_directory_uri(); ?>/template/images/CreditForce.png" alt="Credit Force." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
+      <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-credit.jpg" alt="Credit Force." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Credit Force. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Soluciones tecnológicas diseñadas para transformar la gestión del crédito y la cobranza. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -85,13 +115,12 @@
       </div>
     </div>
 
-    <!--Banner Asesoria y consultoria-->
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="5" data-astro-cid-txmsbymr>
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="6" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-consultoria.jpg" alt="Asesoría y Consultoría." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Asesoría y Consultoría. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Contamos con un equipo de consultores altamente especializado para diferentes servicios en tecnologías de información y transformación digital. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -101,13 +130,12 @@
       </div>
     </div>
 
-    <!--Banner AMMStore-->
-    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="6" data-astro-cid-txmsbymr>
+    <div class="absolute inset-0 transition-opacity duration-1000 ease-in-out slide-item opacity-0 z-0" data-index="7" data-astro-cid-txmsbymr>
       <img src="<?php echo get_template_directory_uri(); ?>/template/images/slide-tienda.png" alt="Hardware para tu empresa, al instante." class="absolute inset-0 w-full h-full object-cover zoom-bg object-center" data-astro-cid-txmsbymr>
       <div class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/70 lg:via-slate-900/40 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 lg:from-slate-900/50 to-transparent" data-astro-cid-txmsbymr></div>
       <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col justify-center" data-astro-cid-txmsbymr>
-        <div class="max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 px-2 sm:px-8 lg:px-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
+        <div class="hero-safe-zone max-w-3xl w-full text-center lg:text-left mx-auto lg:mx-0 mt-8 lg:mt-0" data-astro-cid-txmsbymr>
           <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-['Outfit'] text-white leading-tight mb-4 sm:mb-6 transform transition-transform duration-700 translate-y-4 slide-text opacity-0" data-astro-cid-txmsbymr> Hardware para tu empresa, al instante. </h1>
           <p class="text-base sm:text-lg md:text-xl text-slate-200 mb-8 sm:mb-10 leading-relaxed font-medium transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 100ms;" data-astro-cid-txmsbymr> Conoce la tienda en línea de AM&M. El catálogo más completo de cómputo, componentes, impresión y seguridad para tu negocio. </p>
           <div class="transform transition-transform duration-700 translate-y-4 slide-text opacity-0" style="transition-delay: 200ms;" data-astro-cid-txmsbymr>
@@ -125,15 +153,15 @@
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="4" aria-label="Ir al slide 5" data-astro-cid-txmsbymr></button>
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="5" aria-label="Ir al slide 6" data-astro-cid-txmsbymr></button>
       <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="6" aria-label="Ir al slide 7" data-astro-cid-txmsbymr></button>
-      <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="7" aria-label="Ir al slide 7" data-astro-cid-txmsbymr></button>
+      <button class="w-3 h-3 rounded-full transition-all duration-300 shadow-sm border border-white/20 dot-btn bg-white/60 hover:bg-white" data-target="7" aria-label="Ir al slide 8" data-astro-cid-txmsbymr></button>
     </div>
 
-    <button id="slider-prev" class="absolute left-2 lg:left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur border border-white/10 hover:bg-sky-500 hover:text-white transition-all" data-astro-cid-txmsbymr>
+    <button id="slider-prev" class="hero-nav-btn absolute left-2 lg:left-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur border border-white/10 hover:bg-sky-500 hover:text-white transition-all" data-astro-cid-txmsbymr>
       <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-txmsbymr>
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" data-astro-cid-txmsbymr></path>
       </svg>
     </button>
-    <button id="slider-next" class="absolute right-2 lg:right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur border border-white/10 hover:bg-sky-500 hover:text-white transition-all" data-astro-cid-txmsbymr>
+    <button id="slider-next" class="hero-nav-btn absolute right-2 lg:right-6 top-1/2 -translate-y-1/2 z-30 w-12 h-12 flex items-center justify-center rounded-full bg-black/30 text-white backdrop-blur border border-white/10 hover:bg-sky-500 hover:text-white transition-all" data-astro-cid-txmsbymr>
       <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" data-astro-cid-txmsbymr>
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-txmsbymr></path>
       </svg>
@@ -459,9 +487,8 @@
       </div>
     </section>
   </div>
-  <div class="relative"><!--Productos-->
-     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
-    <section id="productos" class="py-12 lg:py-16 relative border-y border-slate-100 bg-slate-50 overflow-hidden">
+  <div class="relative"><div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
+    <section id="productos" class="py-12 lg:py-16 relative border-y border-slate-100 bg-slate-50 overflow-clip" style="overflow: clip;">
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[300px] bg-slate-400/5 blur-[150px] pointer-events-none"></div>
       
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -475,7 +502,8 @@
           <p class="text-lg text-slate-600 font-medium leading-relaxed max-w-3xl mx-auto"> Contamos con las mejores marcas y equipos especializados para asegurar la continuidad y éxito operativo de su negocio. </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-[4fr_6fr] gap-12 lg:gap-20 relative">
-          <div class="hidden lg:block relative h-[350px] w-full max-w-md mx-auto sticky top-40">
+          
+          <div class="hidden lg:block h-[350px] w-full max-w-md mx-auto sticky top-40 self-start" style="position: sticky; top: 10rem; align-self: flex-start;">
             <div id="product-img-0" class="absolute inset-0 transition-opacity duration-700 ease-in-out bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 opacity-100">
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalDC.jpg" alt="Digital Check" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
@@ -486,6 +514,7 @@
               <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain p-6 hover:scale-105 transition-transform duration-700">
             </div>
           </div>
+          
           <div class="space-y-16 lg:pb-20">
             <div class="product-text-block min-h-[250px] flex flex-col justify-center animate-on-scroll" data-index="0">
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
@@ -493,7 +522,8 @@
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Digital Check</h3>
-              <p class="text-lg text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">Escáneres corporativos para procesamiento masivo de documentos financieros, diseñados para trabajo continuo sin margen de fallo.</p>
+              <p class="text-lg text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">Escáneres corporativos para procesamiento masivo de cheques, diseñados para un trabajo continuo y de alta disponibilidad. Nuestra tecnología garantiza un rendimiento óptimo sin margen de fallo en entornos de alta demanda.</p>
+              <p class="text-lg text-slate-500 font-medium leading-relaxed mb-6 max-w-2xl border-l-2 border-slate-200 pl-4">Contamos con presencia global a través de las series <span class="text-slate-700 font-bold">TellerScan y CheXpress</span>, así como la familia <span class="text-slate-700 font-bold">SmartSource</span>, referentes de fiabilidad y versatilidad en el sector financiero internacional.</p>
               <a href="<?php echo home_url('/productos/#Digital-Check'); ?>" class="text-sky-600 font-bold inline-flex items-center group text-base w-fit hover:text-cyan-500 transition-colors"> Explorar Catálogo <span class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center ml-3 group-hover:bg-cyan-100 transition-colors">
                   <svg class="w-4 h-4 text-sky-600 group-hover:text-cyan-600 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -507,7 +537,8 @@
               </div>
               <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Kodak Alaris</h3>
-              <p class="text-lg text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">Sistemas de digitalización inteligente con procesamiento de imagen perfecto, integrados nativamente en entornos enterprise.</p>
+              <p class="text-lg text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">Sistemas de digitalización inteligente con procesamiento de imagen perfecto. Diseñados para integrarse nativamente en entornos enterprise, automatizando y optimizando los flujos de trabajo documentales más exigentes.</p>
+			  <p class="text-lg text-slate-500 font-medium leading-relaxed mb-6 max-w-2xl border-l-2 border-slate-200 pl-4">Nuestra oferta abarca desde soluciones departamentales como <span class="text-slate-700 font-bold">ScanMate, Scan Station y la Serie S2000</span>, hasta robustos escáneres de producción masiva de las familias <span class="text-slate-700 font-bold">S3000, i4000, S5000 e i5000</span>.</p>
               <a href="<?php echo home_url('/productos/#Alaris'); ?>" class="text-sky-600 font-bold inline-flex items-center group text-base w-fit hover:text-cyan-500 transition-colors"> Explorar Catálogo <span class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center ml-3 group-hover:bg-cyan-100 transition-colors">
                   <svg class="w-4 h-4 text-sky-600 group-hover:text-cyan-600 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -519,9 +550,10 @@
               <div class="lg:hidden w-full h-56 mb-8 bg-white rounded-2xl overflow-hidden relative shadow-md border border-slate-100 p-4">
                 <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/PrincipalVertiv.jpg" alt="Vertiv" class="w-full h-full object-contain">
               </div>
-              <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware / Infra</span>
+              <span class="text-sky-600 font-bold tracking-widest uppercase text-xs mb-3 block w-fit border-b border-sky-200 pb-1">Hardware / Infraestructura</span>
               <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-slate-900 mb-5 leading-tight">Vertiv</h3>
-              <p class="text-lg text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">Infraestructura crítica y administración térmica para proteger el hardware clave de tu corporativo.</p>
+              <p class="text-lg text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">Infraestructura crítica y administración térmica para proteger el hardware clave de tu corporativo, garantizando la estabilidad y el rendimiento continuo de tus centros de datos.</p>
+              <p class="text-lg text-slate-500 font-medium leading-relaxed mb-6 max-w-2xl border-l-2 border-slate-200 pl-4">Proporcionamos soluciones de <span class="text-slate-700 font-bold">Alimentación crítica</span> para un respaldo energético ininterrumpido, además de <span class="text-slate-700 font-bold">Racks y gabinetes</span> diseñados para la organización eficiente y seguridad física de tus sistemas.</p>
               <a href="<?php echo home_url('/productos/#Vertiv'); ?>" class="text-sky-600 font-bold inline-flex items-center group text-base w-fit hover:text-cyan-500 transition-colors"> Explorar Catálogo <span class="w-8 h-8 rounded-full bg-sky-100 flex items-center justify-center ml-3 group-hover:bg-cyan-100 transition-colors">
                   <svg class="w-4 h-4 text-sky-600 group-hover:text-cyan-600 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -567,7 +599,7 @@
       });
     </script>
   </div>
-  <div class="relative">
+  <!--<div class="relative">
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
     <section id="soluciones" class="py-24 relative overflow-hidden bg-[#002129]">
       
@@ -1017,6 +1049,419 @@
       }
       document.addEventListener("DOMContentLoaded", initSoftwareTabs);
     </script>
+  </div>-->
+  <div class="relative"><!--sotware2-->
+    <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-800"></div>
+    <section id="soluciones" class="py-20 lg:py-32 relative overflow-hidden bg-[#002129] font-['Inter']">
+      
+      <style>
+        /* CSS PURO: Garantiza el diseño without depender de Tailwind compilado */
+        .sw-panel-layout {
+            display: flex !important;
+            align-items: flex-start !important; 
+            justify-content: center !important;
+            width: 100% !important;
+            /* UPDATE: Se eliminó position: absolute y height: 100% para permitir altura dinámica */
+        }
+        .sw-logo-container {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: flex-start !important; 
+            width: 100% !important;
+        }
+        .sw-logo-img {
+            height: auto !important;
+            object-fit: contain !important;
+            background-color: #ffffff !important;
+            border-radius: 1.5rem !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 30px rgba(38, 182, 212, 0.15) !important;
+            transition: transform 0.5s ease !important;
+        }
+        .sw-logo-img:hover {
+            transform: scale(1.05) !important;
+        }
+
+        /* --- LAYOUT PARA ESCRITORIO (>= 1024px) --- */
+        @media screen and (min-width: 1024px) {
+            .sw-wrapper { 
+                flex-direction: row !important; 
+                align-items: stretch !important;
+            }
+            .sw-sidebar { 
+                width: 320px !important; 
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            .sw-sidebar-inner {
+                border-radius: 2.5rem 0 0 2.5rem !important;
+                flex: 1 !important;
+            }
+            .sw-nav {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+            }
+            .sw-nav span { 
+                display: block !important; 
+            }
+            
+            .sw-panel-layout {
+                flex-direction: row !important;
+                padding: 4rem !important;
+                gap: 4rem !important;
+            }
+            .sw-text-container { width: 55% !important; }
+            .sw-logo-container { width: 45% !important; padding-top: 1rem !important; }
+            .sw-logo-img {
+                width: 320px !important; 
+                padding: 1.5rem !important;
+            }
+            .sw-content-inner { height: auto !important; } /* UPDATE: Altura dinámica */
+        }
+
+        /* --- AJUSTE ESPECÍFICO PARA TABLET (720px - 1023px) --- */
+        @media screen and (min-width: 720px) and (max-width: 1023px) {
+            .sw-wrapper { 
+                flex-direction: row !important; 
+                align-items: stretch !important;
+            }
+            .sw-sidebar { 
+                width: 280px !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            .sw-sidebar-inner {
+                border-radius: 2rem 0 0 2rem !important;
+                flex: 1 !important;
+            }
+            .sw-nav {
+                flex-direction: column !important;
+                gap: 0.5rem !important;
+            }
+            .sw-nav span { 
+                display: block !important; 
+            }
+
+            .sw-panel-layout {
+                padding: 3rem 2.5rem !important;
+                gap: 2rem !important;
+                flex-direction: column-reverse !important;
+                justify-content: flex-end !important; 
+            }
+            .sw-text-container, .sw-logo-container { width: 100% !important; }
+            .sw-logo-container { margin-bottom: 1rem !important; align-items: center !important; }
+            .sw-logo-img { width: 220px !important; }
+            .sw-content-inner { height: auto !important; border-radius: 0 2rem 2rem 0 !important; } /* UPDATE: Altura dinámica */
+            .sw-text-container h3 { font-size: 2.25rem !important; margin-bottom: 1.25rem !important; text-align: center !important; }
+            .sw-text-container > span { text-align: center !important; }
+            .sw-text-container > p { text-align: center !important; }
+            .sw-action-btn { margin-top: 1.5rem !important; width: 100% !important; justify-content: center !important; }
+        }
+
+        /* --- MÓVIL (< 720px) --- */
+        @media screen and (max-width: 719px) {
+          .sw-header-area { margin-bottom: 2rem !important; }
+          .sw-wrapper { flex-direction: column !important; gap: 0 !important; }
+          .sw-sidebar { width: 100% !important; }
+          
+          .sw-sidebar-inner {
+            border-radius: 2rem 2rem 0 0 !important;
+            background-color: rgba(255,255,255,0.03) !important; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            border-bottom: none !important; 
+          }
+          
+          .sw-nav {
+            flex-direction: row !important;
+            overflow-x: auto !important;
+            scrollbar-width: none !important; 
+            padding-bottom: 0.5rem !important; 
+          }
+          
+          .sw-nav > button {
+            width: auto !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            margin-right: 0.75rem !important;
+            padding: 0.75rem !important;
+            flex-shrink: 0 !important;
+            flex-direction: column !important; 
+            gap: 0.5rem !important; 
+            min-width: 90px !important;
+          }
+          
+          .sw-nav span { 
+              display: block !important; 
+              font-size: 0.65rem !important; 
+              text-align: center !important;
+              white-space: normal !important; 
+              line-height: 1.1 !important;
+          }
+          
+          .sw-content-wrapper {
+            margin-top: -1.25rem !important; 
+            position: relative !important;
+            z-index: 10 !important; 
+          }
+          
+          .sw-content-inner {
+            border-radius: 0 0 2rem 2rem !important;
+            padding: 2.5rem 1rem 2rem !important;
+            height: auto !important; /* UPDATE: Altura dinámica */
+            background-color: rgba(255,255,255,0.03) !important; 
+            border: 1px solid rgba(255,255,255,0.1) !important; 
+            border-top: none !important;
+          }
+          
+          .sw-panel-layout { 
+            flex-direction: column-reverse !important; 
+            padding: 1rem !important; 
+            gap: 1.5rem !important;
+            justify-content: flex-end !important; 
+          }
+          
+          .sw-text-container { width: 100% !important; }
+          .sw-logo-container { width: 100% !important; margin-bottom: 0.5rem !important; align-items: center !important; }
+          .sw-logo-img {
+            width: 180px !important; 
+            padding: 1rem !important;
+          }
+          .sw-text-container h3 { font-size: 1.75rem !important; text-align: center !important;}
+          .sw-text-container > span { text-align: center !important; }
+          .sw-text-container > p { text-align: center !important; }
+          .sw-action-btn { width: 100% !important; display: flex !important; justify-content: center !important; margin-top: 1.5rem !important; }
+        }
+
+        @keyframes doubleJump {
+          0%, 20%, 100% { transform: translateY(0); }
+          5% { transform: translateY(-8px); }
+          10% { transform: translateY(0); }
+          15% { transform: translateY(-4px); }
+        }
+        .sw-nav .active-sw-tab .sw-icon {
+          animation: doubleJump 3s infinite ease-in-out !important;
+        }
+      </style>
+
+      <div class="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-sky-500/20 rounded-full blur-[150px] pointer-events-none mix-blend-screen"></div>
+      <div class="absolute top-[55%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyan-400/30 rounded-full blur-[100px] pointer-events-none mix-blend-screen"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        
+        <div class="text-center max-w-4xl mx-auto mb-12 lg:mb-16 animate-on-scroll sw-header-area">
+          <div class="inline-flex items-center px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 mb-6 backdrop-blur-md">
+            <span class="w-2 h-2 rounded-full bg-cyan-400 mr-2.5 animate-pulse"></span>
+            <span class="text-[11px] font-black font-['Outfit'] text-cyan-100 tracking-widest uppercase">Ecosistema Software By AM&M</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-['Outfit'] text-white tracking-tight leading-tight mb-6 uppercase"> Potencia <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-cyan-400">Digital</span>
+          </h2>
+        </div>
+        
+        <div class="flex flex-row items-stretch w-full h-auto sw-wrapper">
+          
+          <div class="w-[96px] sm:w-[112px] lg:w-[320px] flex-shrink-0 relative z-20 flex flex-col sw-sidebar">
+            <div class="flex flex-col gap-2 p-3 bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-l-[2rem] lg:rounded-l-[2.5rem] flex-1 sw-sidebar-inner">
+              <div class="hidden lg:block px-6 py-4 mb-2 border-b border-white/10">
+                <span class="text-[10px] font-black text-cyan-400 uppercase tracking-[0.3em]">Nuestra Suite</span>
+              </div>
+              <div class="flex flex-col space-y-2 sw-nav">
+                <button data-target="idocx" class="sw-tab-btn w-full group text-left transition-all duration-500 rounded-2xl py-3 px-3 lg:py-4 lg:px-6 flex items-center gap-2 lg:gap-4 border active-sw-tab bg-white/10 border-cyan-500/30 shadow-lg">
+                  <div class="sw-icon w-10 h-10 rounded-xl flex items-center justify-center bg-cyan-500 text-white shadow-cyan-500/30 shrink-0"><i class="fa-solid fa-file-shield"></i></div>
+                  <span class="hidden sm:block text-sm font-bold font-['Outfit'] text-white">IDocx</span>
+                </button>
+                <button data-target="dbcheck" class="sw-tab-btn w-full group text-left transition-all duration-500 rounded-2xl py-3 px-3 lg:py-4 lg:px-6 flex items-center gap-2 lg:gap-4 border bg-transparent border-transparent hover:bg-white/5">
+                  <div class="sw-icon w-10 h-10 rounded-xl flex items-center justify-center bg-slate-800 text-slate-400 group-hover:text-cyan-400 shrink-0"><i class="fa-solid fa-money-check-dollar"></i></div>
+                  <span class="hidden sm:block text-sm font-bold font-['Outfit'] text-slate-400 group-hover:text-white">DbCheck</span>
+                </button>
+                <button data-target="digidoc" class="sw-tab-btn w-full group text-left transition-all duration-500 rounded-2xl py-3 px-3 lg:py-4 lg:px-6 flex items-center gap-2 lg:gap-4 border bg-transparent border-transparent hover:bg-white/5">
+                  <div class="sw-icon w-10 h-10 rounded-xl flex items-center justify-center bg-slate-800 text-slate-400 group-hover:text-cyan-400 shrink-0"><i class="fa-solid fa-folder-tree"></i></div>
+                  <span class="hidden sm:block text-sm font-bold font-['Outfit'] text-slate-400 group-hover:text-white">DigiDoc</span>
+                </button>
+                <button data-target="vales" class="sw-tab-btn w-full group text-left transition-all duration-500 rounded-2xl py-3 px-3 lg:py-4 lg:px-6 flex items-center gap-2 lg:gap-4 border bg-transparent border-transparent hover:bg-white/5">
+                  <div class="sw-icon w-10 h-10 rounded-xl flex items-center justify-center bg-slate-800 text-slate-400 group-hover:text-cyan-400 shrink-0"><i class="fa-solid fa-ticket"></i></div>
+                  <span class="hidden sm:block text-sm font-bold font-['Outfit'] text-slate-400 group-hover:text-white">Control Vales</span>
+                </button>
+                <button data-target="transval" class="sw-tab-btn w-full group text-left transition-all duration-500 rounded-2xl py-3 px-3 lg:py-4 lg:px-6 flex items-center gap-2 lg:gap-4 border bg-transparent border-transparent hover:bg-white/5">
+                  <div class="sw-icon w-10 h-10 rounded-xl flex items-center justify-center bg-slate-800 text-slate-400 group-hover:text-cyan-400 shrink-0"><i class="fa-solid fa-sync-alt"></i></div>
+                  <span class="hidden sm:block text-sm font-bold font-['Outfit'] text-slate-400 group-hover:text-white">Transval</span>
+                </button>
+                <button data-target="credit" class="sw-tab-btn w-full group text-left transition-all duration-500 rounded-2xl py-3 px-3 lg:py-4 lg:px-6 flex items-center gap-2 lg:gap-4 border bg-transparent border-transparent hover:bg-white/5">
+                  <div class="sw-icon w-10 h-10 rounded-xl flex items-center justify-center bg-slate-800 text-slate-400 group-hover:text-cyan-400 shrink-0"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                  <span class="hidden sm:block text-sm font-bold font-['Outfit'] text-slate-400 group-hover:text-white">Credit Force</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="flex-1 min-w-0 relative flex flex-col lg:-ml-1 sw-content-wrapper">
+            <div class="bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl rounded-r-[2rem] lg:rounded-r-[2.5rem] overflow-hidden relative w-full h-auto flex-1 sw-content-inner">
+              
+              <div id="sw-idocx" class="sw-panel-item sw-panel-layout transition-all duration-700 relative opacity-100 translate-x-0 pointer-events-auto">
+                <div class="sw-text-container">
+                  <span class="text-cyan-400 font-black uppercase tracking-widest text-[10px] mb-3 block">Automaticación de Expedientes</span>
+                  <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-white mb-4 uppercase"> Plataforma <span class="text-cyan-400">IDocx</span></h3>
+                  <p class="text-sm md:text-base text-slate-300 mb-6 italic opacity-90 leading-relaxed font-medium"> Sistema avanzado para la digitalización, extracción inteligente y validación cruzada, garantizando la absoluta integridad de su informacion documental. </p>
+                  <ul class="grid grid-cols-1 gap-3 mb-8">
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Identificación y extracción mediante IA, OCR e ICR</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Integración de datos estructurados a sistemas corporativos</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Validación cruzada automática entre documentos.</span></li>
+                  </ul>
+                  <a href="<?php echo home_url('/productos/idocx'); ?>" class="sw-action-btn inline-flex items-center px-10 py-4 lg:py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-xs font-black uppercase tracking-widest rounded-full hover:-translate-y-1 transition-all shadow-lg shadow-cyan-900/40 group w-fit"> Explorar Solución <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1"></i></a>
+                </div>
+                <div class="sw-logo-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/idocx.png" class="sw-logo-img">
+                </div>
+              </div>
+
+              <div id="sw-dbcheck" class="sw-panel-item sw-panel-layout transition-all duration-700 absolute top-0 left-0 w-full h-full opacity-0 translate-x-10 pointer-events-none">
+                <div class="sw-text-container">
+                  <span class="text-cyan-400 font-black uppercase tracking-widest text-[10px] mb-3 block">Compensación Electrónica</span>
+                  <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-white mb-4 uppercase"> Plataforma <span class="text-cyan-400">DbCheck</span></h3>
+                  <p class="text-sm md:text-base text-slate-300 mb-6 italic opacity-90 leading-relaxed font-medium"> Plataforma líder para el procesamiento masivo de cheques y documentos financieros con truncamiento en tiempo real. </p>
+                  <ul class="grid grid-cols-1 gap-3 mb-8">
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Cámaras de compensación automatizadas</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Aclaraciones dinámicas centralizadas</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Generación de archivos de intercambio bancario (TEI y CII) con Cecoban.</span></li>
+                  </ul>
+                  <a href="<?php echo home_url('/productos/dbcheck'); ?>" class="sw-action-btn inline-flex items-center px-10 py-4 lg:py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-xs font-black uppercase tracking-widest rounded-full hover:-translate-y-1 transition-all shadow-lg shadow-cyan-900/40 group w-fit"> Explorar Solución <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1"></i></a>
+                </div>
+                <div class="sw-logo-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CW.png" class="sw-logo-img">
+                </div>
+              </div>
+
+              <div id="sw-digidoc" class="sw-panel-item sw-panel-layout transition-all duration-700 absolute top-0 left-0 w-full h-full opacity-0 translate-x-10 pointer-events-none">
+                <div class="sw-text-container">
+                  <span class="text-cyan-400 font-black uppercase tracking-widest text-[10px] mb-3 block">Gestión Documental Pro</span>
+                  <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-white mb-4 uppercase"> Plataforma <span class="text-cyan-400">DigiDoc</span></h3>
+                  <p class="text-sm md:text-base text-slate-300 mb-6 italic opacity-90 leading-relaxed font-medium"> Captura inteligente y archivo digital con capacidades avanzadas de búsqueda y clasificación automática. </p>
+                  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>OCR de alta precisión integrado</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Indexación masiva instantánea</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Seguridad de nivel bancario</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Control total de comprobantes masivos</span></li>
+                  </ul>
+                  <a href="<?php echo home_url('/productos/digidoc'); ?>" class="sw-action-btn inline-flex items-center px-10 py-4 lg:py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-xs font-black uppercase tracking-widest rounded-full hover:-translate-y-1 transition-all shadow-lg shadow-cyan-900/40 group w-fit"> Explorar Solución <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1"></i></a>
+                </div>
+                <div class="sw-logo-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/DD.png" class="sw-logo-img">
+                </div>
+              </div>
+
+              <div id="sw-transval" class="sw-panel-item sw-panel-layout transition-all duration-700 absolute top-0 left-0 w-full h-full opacity-0 translate-x-10 pointer-events-none">
+                <div class="sw-text-container">
+                  <span class="text-cyan-400 font-black uppercase tracking-widest text-[10px] mb-3 block">Optimización de Vales</span>
+                  <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-white mb-4 uppercase"> Ecosistema <span class="text-cyan-400">Transval</span></h3>
+                  <p class="text-sm md:text-base text-slate-300 mb-6 italic opacity-90 leading-relaxed font-medium"> Unimos hardware de alta precisión y software avanzado para mejorar la trazabilidad total de reembolsos, garantizando el éxito absoluto de cada proyecto. </p>
+                  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Sincronización con lectoclasificadores</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Conciliación automática sin errores</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Reportes financieros en tiempo real</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Registro de ingresos centralizado</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Validación cruzada de folios</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Dashboard de estatus logístico</span></li>
+                  </ul>
+                  <a href="<?php echo home_url('/productos/transval'); ?>" class="sw-action-btn inline-flex items-center px-10 py-4 lg:py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-xs font-black uppercase tracking-widest rounded-full hover:-translate-y-1 transition-all shadow-lg shadow-cyan-900/40 group w-fit"> Explorar Solución <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1"></i></a>
+                </div>
+                <div class="sw-logo-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/TVN.png" class="sw-logo-img">
+                </div>
+              </div>
+
+              <div id="sw-vales" class="sw-panel-item sw-panel-layout transition-all duration-700 absolute top-0 left-0 w-full h-full opacity-0 translate-x-10 pointer-events-none">
+                <div class="sw-text-container">
+                  <span class="text-cyan-400 font-black uppercase tracking-widest text-[10px] mb-3 block">Reembolso e Inventario</span>
+                  <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-white mb-4 uppercase"> Plataforma <span class="text-cyan-400">Administración Vale Papel</span></h3>
+                  <p class="text-sm md:text-base text-slate-300 mb-6 italic opacity-90 leading-relaxed font-medium"> Ecosistema web integral diseñado para la administración, inventario y conciliación de vales de papel con trazabilidad absoluta. </p>
+                  <ul class="grid grid-cols-1 gap-3 mb-8">
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Conciliación de vales de papel</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Administración de folios físicos</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Reportes financieros y auditoría</span></li>
+                  </ul>
+                  <a href="<?php echo home_url('/productos/plataforma-administracion-vales'); ?>" class="sw-action-btn inline-flex items-center px-10 py-4 lg:py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-xs font-black uppercase tracking-widest rounded-full hover:-translate-y-1 transition-all shadow-lg shadow-cyan-900/40 group w-fit"> Explorar Solución <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1"></i></a>
+                </div>
+                <div class="sw-logo-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/Toka.png" class="sw-logo-img">
+                </div>
+              </div>
+
+              <div id="sw-credit" class="sw-panel-item sw-panel-layout transition-all duration-700 absolute top-0 left-0 w-full h-full opacity-0 translate-x-10 pointer-events-none">
+                <div class="sw-text-container">
+                  <span class="text-cyan-400 font-black uppercase tracking-widest text-[10px] mb-3 block">Credito y Cobranza</span>
+                  <h3 class="text-3xl lg:text-4xl font-black font-['Outfit'] text-white mb-4 uppercase"> Ecosistema <span class="text-cyan-400">Credit Force</span></h3>
+                  <p class="text-sm md:text-base text-slate-300 mb-6 italic opacity-90 leading-relaxed font-medium"> Productos totalmente integrados para cubrir cada etapa del ciclo de vida del crédito, asegurando una gestión eficiente, menor riesgo y mayor rentabilidad. </p>
+                  <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Evaluacion y aprobacion de creditos</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Originacion de credito</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Administracion de cartera de credito</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Gestión de cobranza</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Gestión del cobro judicial</span></li>
+                    <li class="flex items-start text-slate-200 text-sm font-medium"><div class="mr-3 w-5 h-5 rounded-full bg-cyan-500/20 flex items-center justify-center flex-shrink-0 text-cyan-400 mt-0.5"><i class="fa-solid fa-check text-[10px]"></i></div> <span>Verificación de antecedentes e identidades</span></li>
+                  </ul>
+                  <a href="<?php echo home_url('/productos/creditforce'); ?>" class="sw-action-btn inline-flex items-center px-10 py-4 lg:py-5 bg-gradient-to-r from-cyan-600 to-cyan-500 text-white text-xs font-black uppercase tracking-widest rounded-full hover:-translate-y-1 transition-all shadow-lg shadow-cyan-900/40 group w-fit"> Explorar Solución <i class="fa-solid fa-arrow-right ml-3 group-hover:translate-x-1"></i></a>
+                </div>
+                <div class="sw-logo-container">
+                  <img src="<?php echo get_template_directory_uri(); ?>/template/images/Products/Software/CreditForce.png" class="sw-logo-img">
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        function initSoftwareDark() {
+          const btns = document.querySelectorAll(".sw-tab-btn");
+          const panels = document.querySelectorAll(".sw-panel-item");
+          
+          btns.forEach(btn => {
+            btn.addEventListener("click", () => {
+              const target = btn.dataset.target;
+              
+              btns.forEach(b => {
+                b.classList.remove("active-sw-tab", "bg-white/10", "border-cyan-500/30", "shadow-lg");
+                b.classList.add("bg-transparent", "border-transparent");
+                const ico = b.querySelector(".sw-icon");
+                ico.classList.remove("bg-cyan-500", "text-white", "shadow-cyan-500/30");
+                ico.classList.add("bg-slate-800", "text-slate-400");
+                const span = b.querySelector("span");
+                span.classList.remove("text-white");
+                span.classList.add("text-slate-400");
+              });
+              
+              btn.classList.add("active-sw-tab", "bg-white/10", "border-cyan-500/30", "shadow-lg");
+              btn.classList.remove("bg-transparent", "border-transparent");
+              const activeIco = btn.querySelector(".sw-icon");
+              activeIco.classList.add("bg-cyan-500", "text-white", "shadow-cyan-500/30");
+              activeIco.classList.remove("bg-slate-800", "text-slate-400");
+              const activeSpan = btn.querySelector("span");
+              activeSpan.classList.add("text-white");
+              activeSpan.classList.remove("text-slate-400");
+              
+              panels.forEach(p => {
+                if (p.id === `sw-${target}`) {
+                  // FIX PARA ALTURA DINAMICA: Pone relative al panel activo
+                  p.classList.add("relative", "opacity-100", "translate-x-0", "pointer-events-auto");
+                  p.classList.remove("absolute", "top-0", "left-0", "w-full", "h-full", "opacity-0", "translate-x-10", "pointer-events-none");
+                } else {
+                  // FIX PARA ALTURA DINAMICA: Pone absolute a los paneles inactivos
+                  p.classList.remove("relative", "opacity-100", "translate-x-0", "pointer-events-auto");
+                  p.classList.add("absolute", "top-0", "left-0", "w-full", "h-full", "opacity-0", "translate-x-10", "pointer-events-none");
+                }
+              });
+
+              const nav = btn.closest('.sw-nav');
+              if (nav && window.innerWidth < 720) {
+                const navRect = nav.getBoundingClientRect();
+                const btnRect = btn.getBoundingClientRect();
+                nav.scrollTo({ left: nav.scrollLeft + (btnRect.left - navRect.left) - (navRect.width / 2) + (btnRect.width / 2), behavior: 'smooth' });
+              }
+            });
+          });
+        }
+        document.addEventListener("DOMContentLoaded", initSoftwareDark);
+      </script>
+    </section>
   </div>
   <div class="relative"><!--CONSULTORIA-->
     <div class="absolute top-0 left-[-4rem] hidden lg:block w-px h-full bg-slate-200"></div>
